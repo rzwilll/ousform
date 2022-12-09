@@ -1,0 +1,11 @@
+@import url('sidebar.css');
+@import url(advisee.css);
+
+.report-section{
+    background-color:#9ac5db;
+    
+}
+.report-content{
+    height: 100%;
+    padding: 1em;
+}
