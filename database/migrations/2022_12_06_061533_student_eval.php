@@ -22,7 +22,7 @@ return new class extends Migration
             $table ->string('year_level');
             $table ->foreign('subject_grade_id')
                 ->references('id')
-                ->on('subject_grade')
+                ->on('subject_grades')
                 ->onDelete('cascade');
             $table ->foreign('term_id')
                 ->references('id')

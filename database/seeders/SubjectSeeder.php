@@ -191,7 +191,7 @@ class SubjectSeeder extends Seeder
                 'id' => '25',
                 'subject_code' => 'MAT061',
                 'subject_name' => 'Calculus 2',
-                'subject_unit' =>'3'
+                'subject_unit' =>'5'
                 
             ],
             [

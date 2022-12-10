@@ -15,14 +15,14 @@ return new class extends Migration
     {
         //
 
-        Schema:: create('program', function (Blueprint $table)
+        Schema:: create('programs', function (Blueprint $table)
         {
             $table -> id();
             $table -> unsignedBigInteger('department_id');
             $table -> string('program_name');
             $table -> foreign('department_id')
                     ->references('id')
-                    -> on('department')
+                    -> on('departments')
                     -> onDelete('cascade');
 
         }

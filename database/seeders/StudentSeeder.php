@@ -252,7 +252,7 @@ class StudentSeeder extends Seeder
                 'stud_last' => 'Hill',
                 'stud_first' => 'Candice',
                 'stud_mi' => 'A.',
-                'program_id' => '4'
+                'program_id' => '2'
 
             ],
             [ 

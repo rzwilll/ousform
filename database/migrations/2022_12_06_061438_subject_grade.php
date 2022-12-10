@@ -14,19 +14,25 @@ return new class extends Migration
     public function up()
     {
         //
-        Schema:: create('subject_grade', function (Blueprint $table)
+        Schema:: create('subject_grades', function (Blueprint $table)
         {
             $table -> id();
             $table -> unsignedBigInteger('subject_id');
             $table -> string('grade');
             $table -> unsignedBigInteger('stud_id');
+            $table -> unsignedBigInteger('term_id');
+            $table ->foreign('term_id')
+                ->references('id')
+                ->on('acad_terms')
+                ->onDelete('cascade');
+            
             $table ->foreign('subject_id')
                 ->references('id')
-                ->on('subjectName')
+                ->on('subjects')
                 ->onDelete('cascade');
             $table ->foreign('stud_id')
                 ->references('id')
-                ->on('student')
+                ->on('students')
                 ->onDelete('cascade');
             
         }

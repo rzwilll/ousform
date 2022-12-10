@@ -20,14 +20,17 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        $this->call([
-            AcadTermSeeder::class,      
-            // AcadYearSeeder::class,
-            // DepartmentSeeder::class,
-            // ProgramSeeder::class,
-            // StudentSeeder::class,
-            // SubjectGradeSeeder::class,
-            // SubjectSeeder::class,
-        ]);
+        // $this->call([
+        //     //AcadTermSeeder::class,      
+        //     AcadYearSeeder::class,
+        //     //DepartmentSeeder::class,
+        //     //ProgramSeeder::class,
+        //     //StudentSeeder::class,
+        //     //SubjectGradeSeeder::class,
+        //     //SSubjectSeeder::class,
+        // ]);
+        
+        $this -> call(SubjectGradeSeeder::class);
+        
     }
 }
