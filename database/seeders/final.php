@@ -21,8 +21,8 @@ class SubjectGradeSeeder extends Seeder
                     'id' => '1',
                     'subject_id' => '1',
                     'grade' =>'2',
-                    'stud_id' => '1'
-        
+                    'stud_id' => '1',
+                    'term_id' => '1'
                 ],
                 [
                     'id' => '2',
@@ -7569,7 +7569,7 @@ class SubjectGradeSeeder extends Seeder
 
            //student 31
            
-[
+    [
     'id' => ' 1021 ',
     'subject_id' => ' 4 ',
     'grade' => ' 2.5 ',

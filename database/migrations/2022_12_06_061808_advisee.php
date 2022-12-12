@@ -14,19 +14,18 @@ return new class extends Migration
     public function up()
     {
         //
-        Schema:: create('advisee', function (Blueprint $table)
+        Schema:: create('advisees', function (Blueprint $table)
         {
             $table -> id();
-            $table -> string('total_num');
             $table -> unsignedBigInteger('user_id');
-            $table -> unsignedBigInteger('student_eval_id');
+            $table -> unsignedBigInteger('student_id');
             $table -> foreign('user_id')
                 ->references('id')
                 -> on('users')
                 ->onDelete('cascade');
-            $table ->foreign('student_eval_id')
+            $table ->foreign('student_id')
                 ->references('id')
-                ->on('student_eval')
+                ->on('students')
                 ->onDelete('cascade');
             
         });
