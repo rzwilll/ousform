@@ -6,7 +6,7 @@
 
 
 <div class="add-report">
-                       <button class="create-report p-2"><a href="{{ route('ous.add')}}"> <i class='bx bx-plus'></i>Add report</i></a></button>
+                       <button class="create-report p-2"><a href="{{ route('ous.gen_report')}}"> <i class='bx bx-plus'></i>Add report</i></a></button>
                 </div>
 
                 <div class="report-container">

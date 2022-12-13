@@ -34,3 +34,4 @@ Route::get('/ous/index', [App\Http\Controllers\OUSController:: class, 'index'])-
 Route::get('/ous/view', [App\Http\Controllers\OUSController:: class, 'show'])->name('ous.view');
 Route:: get('/ous/add', [App\Http\Controllers\OUSController::class, 'create'])-> name('ous.add');
 Route:: get('/ous/edit', [App\Http\Controllers\OUSController::class, 'edit'])-> name('ous.edit');
+Route:: get('/ous/generate_report', [App\Http\Controllers\OUSController::class, 'gen_report'])-> name('ous.gen_report');
