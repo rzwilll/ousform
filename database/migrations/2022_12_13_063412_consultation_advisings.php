@@ -20,9 +20,9 @@ return new class extends Migration
             $table -> unsignedBigInteger('advisee_id');
             $table -> unsignedBigInteger('acadyr_id');
 
-            $table -> string('date_desc');
-            $table -> string('advising_nature_desc');
-            $table -> string('action_desc');
+            $table -> string('date_desc')->nullable();
+            $table -> string('advising_nature_desc')->nullable();
+            $table -> string('action_desc')->nullable();
 
             $table -> foreign('acadyr_id')
                 ->references('id')

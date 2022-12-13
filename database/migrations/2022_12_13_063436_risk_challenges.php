@@ -20,7 +20,7 @@ return new class extends Migration
             $table -> unsignedBigInteger('advisee_id');
             $table -> unsignedBigInteger('acadyr_id');
 
-            $table -> string('risk_desc');;
+            $table -> string('risk_desc')->nullable();
 
             $table -> foreign('acadyr_id')
                 ->references('id')

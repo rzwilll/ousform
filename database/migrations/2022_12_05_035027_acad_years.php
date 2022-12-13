@@ -18,6 +18,7 @@ return new class extends Migration
         {
             $table -> id();
             $table -> string('acad_yr');
+            $table->integer('status')->default(0);
         }
     );
 
