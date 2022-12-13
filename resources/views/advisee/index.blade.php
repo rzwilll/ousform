@@ -5,22 +5,34 @@
 <link href="{{ asset('/css/advisee.css') }}" rel="stylesheet">
 
 
-    <div class="top-area">
+        <div class="top-area">
                     <div class="left-top">
-                        <span class="top-left">
-                            <div class="ay">School Year: </div>
-                            <button class=" button"> 2021-2022 <i class='bx bx-chevron-down' style="color:black;"></i></button>
-                        </span>
-                        <span class="top-left">
-                            <div class="sem">Semester:</div>
-                            <button class="button">1 <i class='bx bx-chevron-down' style="color:black;"></i></button>
-                        </span>
+                        <div class="top-left">
+                            <form action="/action_page.php">
+                                <label for="cars">School Year:</label>
+                                <select id="aac_yr" name="acad_year">
+                                  <option value="volvo">2021-2022</option>
+                                  <option value="saab">2020-2021</option>
+                                </select>
+                             </form>
+                        </div>
+
+                        <div class="top-left">
+                            <form action="/action_page.php">
+                                <label for="cars">Semester:</label>
+                                <select id="sem" name="sem">
+                                  <option value="volvo">1</option>
+                                  <option value="saab">2</option>
+                                </select>
+                          </form>
+                        </div>
                     </div>
+
                     <div class="right-top">
                         <p class="mt-2">Records Found: 20</p>
                     </div>
                 
-                </div>
+        </div>
                 <div class="pagination-container">
                     <div class="pagination">
                         <a href="#">A</a>

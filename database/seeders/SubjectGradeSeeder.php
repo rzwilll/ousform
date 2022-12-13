@@ -10561,13 +10561,6 @@ class SubjectGradeSeeder extends Seeder
             ],
 
 
-        
-
-        
-           
-    
-
-
         ];
         SubjectGrade::insert($data);
 

@@ -1,8 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AdviseeController;
 use App\Http\Controllers\OUSController;
+use App\Http\Controllers\LogoutController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +22,7 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -28,3 +32,4 @@ Route::get('/advisee/view', [App\Http\Controllers\AdviseeController:: class, 'sh
 
 Route::get('/ous/index', [App\Http\Controllers\OUSController:: class, 'index'])->name('ous.index');
 Route::get('/ous/view', [App\Http\Controllers\OUSController:: class, 'show'])->name('ous.view');
+

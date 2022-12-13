@@ -36,7 +36,8 @@
 
 }
 .table-body{
-    padding: .5em
+    padding: .5em;
+    overflow-x:auto;
 }
 
 table {
