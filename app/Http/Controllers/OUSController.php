@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Advisee;
 
 class OUSController extends Controller
 {
@@ -85,4 +86,45 @@ class OUSController extends Controller
     {
         //
     }
+
+    public function generate_program_engagement()
+    {
+        $advisee_id = Advisee::where('user_id ', auth()->user()->id)->first()->id;
+        
+        $data = [
+            ['advisee_id ' => $advisee_id, 'term_id' => 'term id'],
+            ['advisee_id ' => $advisee_id, 'term_id' => 'term id'],
+            ['advisee_id ' => $advisee_id, 'term_id' => 'term id'],
+            ['advisee_id ' => $advisee_id, 'term_id' => 'term id'],
+            ['advisee_id ' => $advisee_id, 'term_id' => 'term id']
+        ];
+    }
+    public function generate_program_output() 
+    {
+        
+    }
+    public function generate_program_consultation() 
+    {
+        
+    }
+    public function generate_program_risk() {
+        
+    }
+    public function generate_program_collaboration() 
+    {
+        
+    }
+    public function generate_program_problem() 
+    {
+        
+    }
+    public function generate_program_recommendations() 
+    {
+        
+    }
+    public function generate_program_plans() 
+        {
+        
+    }
+
 }
