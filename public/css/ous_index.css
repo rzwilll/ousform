@@ -4,6 +4,13 @@
 .add-report{
   margin: 1em;
 }
+
+.add-report a {
+  color: white;
+  text-decoration: none;
+}
+
+
 .create-report{
   background: #a41d21;
   padding: 1em;

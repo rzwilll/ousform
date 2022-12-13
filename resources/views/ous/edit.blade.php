@@ -105,32 +105,32 @@
                                 <td><input type="text " name="" id="objective" class="form-control"placeholder="Objective 1..."></td>
                                 <td><input type="text " name="" id="activities" class="form-control"placeholder="....."></td>
                                 <td><input type="text " name="" id="accomplishment" class="form-control"placeholder="....."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="objective" class="form-control"placeholder="Objective 2..."></td>
                                 <td><input type="text " name="" id="activities" class="form-control"placeholder="....."></td>
                                 <td><input type="text " name="" id="accomplishment" class="form-control"placeholder="....."></td>
-                                <td class= "remove-td"><a href=""> <button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td>  
+                                <td><a href=""> <button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td>  
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="objective" class="form-control"placeholder="Objective 3..."></td>
                                 <td><input type="text " name="" id="activities" class="form-control"placeholder="....."></td>
                                 <td><input type="text " name="" id="accomplishment" class="form-control"placeholder="....."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="objective" class="form-control"placeholder="Objective 4..."></td>
                                 <td><input type="text " name="" id="activities" class="form-control"placeholder="....."></td>
                                 <td><input type="text " name="" id="accomplishment" class="form-control"placeholder="....."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td>  
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td>  
                                
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="objective" class="form-control"placeholder="Objective 5..."></td>
                                 <td><input type="text " name="" id="activities" class="form-control"placeholder="....."></td>
                                 <td><input type="text " name="" id="accomplishment" class="form-control"placeholder="....."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td>  
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td>  
                                 
                         </table>
                         <br>
@@ -149,28 +149,28 @@
                             <tr>
                                 <td><input type="text " name="" id="prog_output" class="form-control"placeholder="1..."></td>
                                 <td><input type="text " name="" id="deliverables" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="prog_output" class="form-control"placeholder="2..."></td>
                                 <td><input type="text " name="" id="deliverables" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="prog_output" class="form-control"placeholder="3..."></td>
                                 <td><input type="text " name="" id="deliverables" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="prog_output" class="form-control"placeholder="4..."></td>
                                 <td><input type="text " name="" id="deliverables" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
 
                             <tr>
                                 <td><input type="text " name="" id="prog_output" class="form-control"placeholder="5.."></td>
                                 <td><input type="text " name="" id="deliverables" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                         </table>
                         <br>
@@ -189,25 +189,25 @@
                                 <td><input type="text " name="" id="date" class="form-control"placeholder="..."></td>
                                 <td><input type="text " name="" id="nature" class="form-control"placeholder="..."></td>
                                 <td><input type="text " name="" id="action" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="date" class="form-control"placeholder="..."></td>
                                 <td><input type="text " name="" id="nature" class="form-control"placeholder="..."></td>
                                 <td><input type="text " name="" id="action" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="date" class="form-control"placeholder="..."></td>
                                 <td><input type="text " name="" id="nature" class="form-control"placeholder="..."></td>
                                 <td><input type="text " name="" id="action" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="date" class="form-control"placeholder="..."></td>
                                 <td><input type="text " name="" id="nature" class="form-control"placeholder="..."></td>
-                                <td ><input type="text " name="" id="action" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td" ><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><input type="text " name="" id="action" class="form-control"placeholder="..."></td>
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                         </table>
                         <br>
@@ -218,23 +218,23 @@
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="risk" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="risk" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="risk" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="risk" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="risk" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                         </table>
                         <br>
@@ -245,19 +245,19 @@
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="collaboration" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="collaboration" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="collaboration" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="collaboration" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                         </table>
                         <br>
@@ -268,28 +268,28 @@
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="problems" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
     
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="problems" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
     
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="problems" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
     
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="problems" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
     
                             </tr>
     
                             <tr>
                                 <td><input type="text " name="" id="problems" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
     
                             </tr>
     
@@ -302,27 +302,27 @@
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="recommendations" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
     
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="recommendations" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
     
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="recommendations" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
     
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="recommendations" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
     
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="recommendations" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
     
                             </tr>
                         </table>
@@ -334,24 +334,24 @@
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="plans" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="plans" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="plans" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
                             <tr>
                                 <td><input type="text " name="" id="plans" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                <td><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
     
                         </table>
 
-                        <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">SUBMIT</b></button>
+                        <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">Save Changes</b></button>
                     </form>
 
 

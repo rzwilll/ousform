@@ -6,7 +6,7 @@
 
 
 <div class="add-report">
-                       <button class="create-report p-2"><i class='bx bx-plus'></i>Add report</i></button>
+                       <button class="create-report p-2"><a href="{{ route('ous.add')}}"> <i class='bx bx-plus'></i>Add report</i></a></button>
                 </div>
 
                 <div class="report-container">
@@ -23,7 +23,7 @@
                               <td>May 27, 2022</td>
                               <td>
                                 <button class="edit-button"> <a href="{{ route('ous.view')}}"><i class='bx bxs-show'></i>View</a></button>
-                                <button class="edit-button"> <a href=""><i class='bx bxs-edit' ></i>Edit</a></button>
+                                <button class="edit-button"> <a href="{{ route('ous.edit')}}"><i class='bx bxs-edit' ></i>Edit</a></button>
                             </td>
                             </tr>
                     </div>
