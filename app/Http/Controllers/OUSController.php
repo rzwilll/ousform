@@ -105,7 +105,16 @@ class OUSController extends Controller
         $this->generate_program_problem();
         $this->generate_program_recommendations();
         $this->generate_program_plans();
-    
+
+        
+        return view('ous.add');
+    }
+
+    private function get_program_engagement_list(){
+        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
+        $activeYear = AcadYear::where('status', 1)->first()->id;
+        $data = ProgramEngagementActivities::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->get();
+        return $data;
     }
 
     private function generate_program_engagement()

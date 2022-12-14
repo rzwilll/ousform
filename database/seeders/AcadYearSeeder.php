@@ -19,12 +19,13 @@ class AcadYearSeeder extends Seeder
         $data =[
             [
                 'id' => '1',
-                'acad_yr' => '2020-2021'
+                'acad_yr' => '2020-2021',
+                'status' => 0
             ],
             [
                 'id' => '2',
-                'acad_yr' => '2021-2022'
-
+                'acad_yr' => '2021-2022',
+                'status' => 1
             ]
 
             ];
