@@ -40,15 +40,15 @@
               <span aria-hidden="true">&times;</span>
             </button> -->
           </div>
-          <div class="modal-body">
-            <h5>SELECT ACADEMIC YEAR</h5>
+          <div class="modal-body" id="main-modal-body">
+            <!-- <h5>SELECT ACADEMIC YEAR</h5>
           <form action="/action_page.php">
                                 <label for="cars">School Year:</label>
                                 <select id="aac_yr" name="acad_year">
                                   <option value="volvo">2021-2022</option>
                                   <option value="saab">2020-2021</option>
                                 </select>
-                             </form>
+                             </form> -->
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -65,7 +65,14 @@
 
 <script>
   function modal_show_gen_report(){
+
     
-    $("#modal_report").modal('show');
+    $.get("/lguiligan/admin/modal_add_department_content", function(response){
+      $("#modal_report").modal('show');
+      $("#main-modal-body").html(response);
+    });
+
+
+    
   }
 </script>
