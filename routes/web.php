@@ -36,5 +36,5 @@ Route:: get('/ous/add', [App\Http\Controllers\OUSController::class, 'create'])->
 Route:: get('/ous/edit', [App\Http\Controllers\OUSController::class, 'edit'])-> name('ous.edit');
 Route:: get('/ous/generate_report', [App\Http\Controllers\OUSController::class, 'gen_report'])-> name('ous.gen_report');
 
-
-Route::get('lguiligan/admin/modal_add_executiveorders_content', [admin_executiveordersController::class, 'load_modal_addDepartemntContent']);
+Route::get('/ous/modal_report', [App\Http\Controllers\OUSController::class, 'load_modal_report']);
+// Route::get('/modal_report', [OUSController::class, 'load_modal_report'])->name('ous.gen_report');

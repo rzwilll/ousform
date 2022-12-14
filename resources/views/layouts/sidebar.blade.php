@@ -106,13 +106,52 @@
         </div>
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="modal_report" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Generate Report</h5>
+          </div>
+          <div class="modal-body" id="main-modal-body">
+            <!-- <h5>SELECT ACADEMIC YEAR</h5>
+          <form action="/action_page.php">
+                                <label for="cars">School Year:</label>
+                                <select id="aac_yr" name="acad_year">
+                                  <option value="volvo">2021-2022</option>
+                                  <option value="saab">2020-2021</option>
+                                </select>
+                             </form> -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" onclick="modal_closed();">Close</button>
+            <button type="button" class="btn btn-primary">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
     </div>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $("button#create-report").click(function() {
+        $.get("/ous/modal_report", function(response){
+            $("#modal_report").modal('show');
+            $("#main-modal-body").html(response);
+        });
+    });
+
+    function modal_closed(){
+        $("#modal_report").modal('hide');
+    }
+
+    </script>
     <script>
         
         const body = document.querySelector('body');

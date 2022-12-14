@@ -96,6 +96,11 @@ class OUSController extends Controller
         //
     }
 
+    public function load_modal_report(){
+        // $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
+        return view('modal.gen_report_content');
+    }
+
     public function gen_report(){
         $this->generate_program_engagement();
         $this->generate_program_output();
