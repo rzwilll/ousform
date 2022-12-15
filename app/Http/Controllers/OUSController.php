@@ -14,6 +14,7 @@ use App\Models\ProblemsEncountered;
 use App\Models\Recommendations;
 use App\Models\ProgramPlans;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
 
 
 
@@ -109,18 +110,32 @@ class OUSController extends Controller
         return view('modal.gen_report_content', compact('data'));
     }
 
-    public function gen_report(){
-        $this->generate_program_engagement();
-        $this->generate_program_output();
-        $this->generate_program_consultation();
-        $this->generate_program_risk();
-        $this->generate_program_collaboration();
-        $this->generate_program_problem();
-        $this->generate_program_recommendations();
-        $this->generate_program_plans();
+    public function gen_report(Request $request){
+        // return $request->acadyr_id;
+        $validator = Validator::make($request->all(), [
+            'acadyr_id ' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+
+            return response()->json(array(
+                'success' => false,
+                'errors' => $validator->getMessageBag()->toArray()
+        
+            ), 400);
+
+        }
+        // $this->generate_program_engagement();
+        // $this->generate_program_output();
+        // $this->generate_program_consultation();
+        // $this->generate_program_risk();
+        // $this->generate_program_collaboration();
+        // $this->generate_program_problem();
+        // $this->generate_program_recommendations();
+        // $this->generate_program_plans();
 
         
-        return view('ous.add');
+        // return view('ous.add');
     }
 
     private function get_program_engagement_list(){

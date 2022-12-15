@@ -8,13 +8,20 @@
         <div class="top-area">
                     <div class="left-top">
                         <div class="top-left">
-                            <form action="/action_page.php">
+                            <!-- <form action="/action_page.php">
                                 <label for="cars">School Year:</label>
                                 <select id="aac_yr" name="acad_year">
                                   <option value="volvo">2021-2022</option>
                                   <option value="saab">2020-2021</option>
                                 </select>
-                             </form>
+                             </form> -->
+
+                             @foreach($acad_years as $acad_year)
+                             <label for="yr_filter"> School Year: </label>
+                              <select name="" id="">
+                                <option value="{{$acad_year->id}}"> {{$acad_year->acad_yr}}</option>
+                                  @endforeach
+                              </select>
                         </div>
 
                         <div class="top-left">
