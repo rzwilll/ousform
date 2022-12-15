@@ -1,8 +1,7 @@
  @foreach($data as $val)
  {{ $val->acad_yr }}
  @endforeach
-
-
+ 
  <?php if(count($data) > 0){?>
         <p>display generate button</p>
 <?php } else { ?>
