@@ -123,10 +123,7 @@
                                 </select>
                              </form> -->
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" onclick="modal_closed();">Close</button>
-            <button type="button" class="btn btn-primary">Add</button>
-          </div>
+    
         </div>
       </div>
     </div>

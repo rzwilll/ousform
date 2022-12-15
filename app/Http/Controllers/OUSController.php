@@ -13,6 +13,9 @@ use App\Models\CollaborationsLinkages;
 use App\Models\ProblemsEncountered;
 use App\Models\Recommendations;
 use App\Models\ProgramPlans;
+use Illuminate\Support\Facades\DB;
+
+
 
 class OUSController extends Controller
 {
@@ -97,8 +100,13 @@ class OUSController extends Controller
     }
 
     public function load_modal_report(){
-        // $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        return view('modal.gen_report_content');
+
+        $data = DB::table('acad_years')
+        ->whereNotIn('acad_years.id', DB::table('reports')->where('adviser_id', auth()->user()->id)->pluck('acadyr_id'))
+        ->select('acad_years.id', 'acad_years.acad_yr')
+        ->get();
+
+        return view('modal.gen_report_content', compact('data'));
     }
 
     public function gen_report(){

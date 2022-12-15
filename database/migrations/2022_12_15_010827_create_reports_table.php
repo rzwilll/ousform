@@ -13,11 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        //
-        Schema:: create('reports', function (Blueprint $table)
-        {
+        Schema::create('reports', function (Blueprint $table) {
             $table -> id();
-            $table -> unsignedBigInteger('advisee_id');
+            $table -> unsignedBigInteger('adviser_id');//user id
             $table -> unsignedBigInteger('acadyr_id');
             $table -> date('date');
 
@@ -25,11 +23,11 @@ return new class extends Migration
                 ->references('id')
                 -> on('acad_years')
                 ->onDelete('cascade');
-            $table ->foreign('advisee_id')
+            $table ->foreign('adviser_id')//user id
                 ->references('id')
-                ->on('advisees')
+                ->on('users')
                 ->onDelete('cascade');
-            
+            $table->timestamps();
         });
     }
 
@@ -40,6 +38,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('reports');
     }
 };
