@@ -42,6 +42,7 @@ class OUSController extends Controller
     {
         //
         return view('ous.add');
+        
     }
 
     /**
