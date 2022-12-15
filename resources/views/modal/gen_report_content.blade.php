@@ -1,7 +1,7 @@
 
 
 <form class="form-horizontal" id="generate_form" method="POST">
-    <select class="form-select" name="acadyr_id" id="acadyr_id" aria-label="Default select example">
+    <select class="form-select" name="academic_year" id="academic_year" aria-label="Default select example" onchange="verified(this)">
         <option value="">Choose Academic Year..</option>
         @foreach($data as $val)
         <option value="{{$val->id}}">{{$val->acad_yr}}</option>
@@ -24,7 +24,12 @@ else { ?>
         e.preventDefault();
         let formData = new FormData(this);
         formData.append('_token', `{{ csrf_token() }}`);
-        
+
+        if($("#academic_year").val() == ""){
+            $("#academic_year").attr('style', 'border: 1px solid #ffc107;');
+            return;
+        }
+
         $.ajax({
             method: 'post',
             url: '/ous/generate_report',
@@ -32,30 +37,32 @@ else { ?>
             contentType: false,
             processData: false,
             success: (response) => {
-                alert(response);
+                $("#modal_report").modal('hide');
                 Swal.fire({
                     icon: 'success',
                     title: 'Your work has been saved',
                     showConfirmButton: false,
                     timer: 1500
                 }).then(result => {
-                    location.reload();  
+                    var url = "{{ route('user.edit', $id) }}";  
                 });
                 
             },
             error: function(reject){
-                console.log(reject);
-            // var errors = $.parseJSON(reject.responseText);
-            // $.each(errors, function (key, val) {
-
-            //     if(val.logodirectory){
-            //         $("img#profileDisplay").attr('style', 'border: 1px solid #ffc107; width: 30%;');
-            //         $("span#profileError-msg").text(val.logodirectory[0]);
-            //     }
-
-            // });
-        }
+                
+                $("#academic_year").attr('style', 'border: 1px solid #ffc107;');
+            
+            }
             
         });
     });
+
+    function verified(e){
+        var val = $(e).val();
+        if(val != ""){
+            $("#academic_year").attr('style', 'border: unset;');
+        }else{
+            $("#academic_year").attr('style', 'border: 1px solid #ffc107;');
+        }
+    }
 </script>

@@ -12,9 +12,11 @@ use App\Models\RiskChallenges;
 use App\Models\CollaborationsLinkages;
 use App\Models\ProblemsEncountered;
 use App\Models\Recommendations;
+use App\Models\Reports;
 use App\Models\ProgramPlans;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
+use Carbon\Carbon;
 
 
 
@@ -111,31 +113,27 @@ class OUSController extends Controller
     }
 
     public function gen_report(Request $request){
-        // return $request->acadyr_id;
-        $validator = Validator::make($request->all(), [
-            'acadyr_id ' => 'required',
-        ]);
-
-        if ($validator->fails()) {
-
-            return response()->json(array(
-                'success' => false,
-                'errors' => $validator->getMessageBag()->toArray()
         
-            ), 400);
-
+        if($request->academic_year == ""){
+            return response()->json(array('success' => false), 400);
         }
-        // $this->generate_program_engagement();
-        // $this->generate_program_output();
-        // $this->generate_program_consultation();
-        // $this->generate_program_risk();
-        // $this->generate_program_collaboration();
-        // $this->generate_program_problem();
-        // $this->generate_program_recommendations();
-        // $this->generate_program_plans();
+        $todayDate = Carbon::now()->format('Y-m-d');
+        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
 
-        
-        // return view('ous.add');
+
+        $Reports = new Reports;
+        $Reports->adviser_id = $advisee_id;
+        $Reports->acadyr_id = $request->academic_year;
+        $Reports->date = $todayDate;
+        $this->generate_program_engagement();
+        $this->generate_program_output();
+        $this->generate_program_consultation();
+        $this->generate_program_risk();
+        $this->generate_program_collaboration();
+        $this->generate_program_problem();
+        $this->generate_program_recommendations();
+        $this->generate_program_plans();
+        $Reports->save();
     }
 
     private function get_program_engagement_list(){
