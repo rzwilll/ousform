@@ -42,7 +42,7 @@ class OUSController extends Controller
     {
         //
         return view('ous.add');
-        
+
     }
 
     /**
@@ -283,6 +283,7 @@ class OUSController extends Controller
             ];
     
             ProgramPlans::insert($data);
+            
         }
     }
 
