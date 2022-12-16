@@ -124,44 +124,45 @@ class OUSController extends Controller
 
         $Reports = new Reports;
         $Reports->advisee_id = $advisee_id;
-        // $Reports->acadyr_id = $request->academic_year;
-        // $Reports->date = $todayDate;
+        $Reports->acadyr_id = $request->academic_year;
+        $Reports->date = $todayDate;
         $Reports->save();
+        $insertedid = $Reports->id;
 
        
-        $this->generate_program_engagement();
-        $this->generate_program_output();
-        $this->generate_program_consultation();
-        $this->generate_program_risk();
-        $this->generate_program_collaboration();
-        $this->generate_program_problem();
-        $this->generate_program_recommendations();
-        $this->generate_program_plans();
+        $this->generate_program_engagement($insertedid);
+        // $this->generate_program_output($insertedid);
+        // $this->generate_program_consultation($insertedid);
+        // $this->generate_program_risk($insertedid);
+        // $this->generate_program_collaboration($insertedid);
+        // $this->generate_program_problem($insertedid);
+        // $this->generate_program_recommendations($insertedid);
+        // $this->generate_program_plans($insertedid);
         
     }
 
     private function get_program_engagement_list(){
-        $advisee_id = Advisee::where('advisee_id', auth()->user()->id)->first()->id;
-        // $activeYear = AcadYear::where('status', 1)->first()->id;
-        $data = ProgramEngagementActivities::where('advisee_id', $advisee_id);
+        $report_id = Report::where('report_id', $report_id);
+        $advisee_id =Advisee::where('advisee_id', auth()->user()->id)->first()->id;
+
+        // $advisee_id = Advisee::where('advisee_id', auth()->user()->id)->first()->id;
+        // // $activeYear = AcadYear::where('status', 1)->first()->id;
+        $data = ProgramEngagementActivities::where('advisee_id', $advisee_id)->first();
         // ->where('acadyr_id', $activeYear)->get();
         return $data;
     }
 
-    private function generate_program_engagement()
+    private function generate_program_engagement($insertedid)
     {
-        $report_id = Report::where('report_id', auth()->user()->id)->first()->id;
-        $activeYear = AcadTerm::where('acad_sem', $acad_term)->first()->id;
 
-        $count_check = ProgramEngagementActivities::where('report_id', $report_id)
-        // ->where('acadyr_id', $activeYear)->count();
+        $count_check = ProgramEngagementActivities::where('report_id', $insertedid)->count();
         if($count_check <= 0){
             $data = [
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear]
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid]
             ];
     
             ProgramEngagementActivities::insert($data);
