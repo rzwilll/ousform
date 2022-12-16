@@ -15,17 +15,11 @@ return new class extends Migration
     {
         Schema::create('reports', function (Blueprint $table) {
             $table -> id();
-            $table -> unsignedBigInteger('adviser_id');//user id
-            $table -> unsignedBigInteger('acadyr_id');
-            $table -> date('date');
+            $table -> unsignedBigInteger('advisee_id');
 
-            $table -> foreign('acadyr_id')
+            $table ->foreign('advisee_id')//
                 ->references('id')
-                -> on('acad_years')
-                ->onDelete('cascade');
-            $table ->foreign('adviser_id')//user id
-                ->references('id')
-                ->on('users')
+                ->on('advisees')
                 ->onDelete('cascade');
             $table->timestamps();
         });

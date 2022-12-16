@@ -17,22 +17,17 @@ return new class extends Migration
         Schema:: create('program_engagement_activities', function (Blueprint $table)
         {
             $table -> id();
-            $table -> unsignedBigInteger('advisee_id');
-            $table -> unsignedBigInteger('acadyr_id');
-
+            $table -> unsignedBigInteger('report_id');
+           
             $table -> string('objective_desc')->nullable();
             $table -> string('activities_desc')->nullable();
             $table -> string('accomplishment_desc')->nullable();
 
-            $table -> foreign('acadyr_id')
+            $table -> foreign('report_id')
                 ->references('id')
-                -> on('acad_years')
+                -> on('reports')
                 ->onDelete('cascade');
-            $table ->foreign('advisee_id')
-                ->references('id')
-                ->on('advisees')
-                ->onDelete('cascade');
-            
+           
         });
     
     

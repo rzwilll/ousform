@@ -16,19 +16,14 @@ return new class extends Migration
          Schema:: create('program_outputs_deliverables', function (Blueprint $table)
         {
             $table -> id();
-            $table -> unsignedBigInteger('advisee_id');
-            $table -> unsignedBigInteger('acadyr_id');
-
-            $table -> string('output_desc')->nullable();
+            $table -> unsignedBigInteger('report_id');
+           
+            $table -> string('outputs_desc')->nullable();
             $table -> string('deliverables_desc')->nullable();
-
-            $table -> foreign('acadyr_id')
+       
+            $table ->foreign('report_id')
                 ->references('id')
-                -> on('acad_years')
-                ->onDelete('cascade');
-            $table ->foreign('advisee_id')
-                ->references('id')
-                ->on('advisees')
+                ->on('reports')
                 ->onDelete('cascade');
             
         });

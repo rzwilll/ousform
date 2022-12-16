@@ -17,20 +17,16 @@ return new class extends Migration
         Schema:: create('recommendations', function (Blueprint $table)
         {
             $table -> id();
-            $table -> unsignedBigInteger('advisee_id');
-            $table -> unsignedBigInteger('acadyr_id');
+            $table -> unsignedBigInteger('report_id');
 
             $table -> string('recommendation_desc')->nullable();
             
 
-            $table -> foreign('acadyr_id')
+            $table -> foreign('report_id')
                 ->references('id')
-                -> on('acad_years')
+                -> on('reports')
                 ->onDelete('cascade');
-            $table ->foreign('advisee_id')
-                ->references('id')
-                ->on('advisees')
-                ->onDelete('cascade');
+           
             
         });
     }

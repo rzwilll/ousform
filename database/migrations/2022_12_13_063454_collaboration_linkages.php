@@ -17,19 +17,15 @@ return new class extends Migration
         Schema:: create('collaboration_linkages', function (Blueprint $table)
         {
             $table -> id();
-            $table -> unsignedBigInteger('advisee_id');
-            $table -> unsignedBigInteger('acadyr_id');
+            $table -> unsignedBigInteger('report_id');
+            
 
             $table -> string('collaboration_desc')->nullable();
             
 
-            $table -> foreign('acadyr_id')
+            $table -> foreign('report_id')
                 ->references('id')
-                -> on('acad_years')
-                ->onDelete('cascade');
-            $table ->foreign('advisee_id')
-                ->references('id')
-                ->on('advisees')
+                -> on('reports')
                 ->onDelete('cascade');
             
         });

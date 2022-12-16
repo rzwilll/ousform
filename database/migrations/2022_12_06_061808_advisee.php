@@ -19,6 +19,11 @@ return new class extends Migration
             $table -> id();
             $table -> unsignedBigInteger('user_id');
             $table -> unsignedBigInteger('student_id');
+            $table -> unsignedBigInteger('term_id');
+            $table -> foreign('term_id')
+                ->references('id')
+                -> on('acad_terms')
+                ->onDelete('cascade');
             $table -> foreign('user_id')
                 ->references('id')
                 -> on('users')
