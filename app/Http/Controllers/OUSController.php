@@ -123,9 +123,12 @@ class OUSController extends Controller
 
 
         $Reports = new Reports;
-        $Reports->adviser_id = $advisee_id;
-        $Reports->acadyr_id = $request->academic_year;
-        $Reports->date = $todayDate;
+        $Reports->advisee_id = $advisee_id;
+        // $Reports->acadyr_id = $request->academic_year;
+        // $Reports->date = $todayDate;
+        $Reports->save();
+
+       
         $this->generate_program_engagement();
         $this->generate_program_output();
         $this->generate_program_consultation();
@@ -134,22 +137,24 @@ class OUSController extends Controller
         $this->generate_program_problem();
         $this->generate_program_recommendations();
         $this->generate_program_plans();
-        $Reports->save();
+        
     }
 
     private function get_program_engagement_list(){
-        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        $activeYear = AcadYear::where('status', 1)->first()->id;
-        $data = ProgramEngagementActivities::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->get();
+        $advisee_id = Advisee::where('advisee_id', auth()->user()->id)->first()->id;
+        // $activeYear = AcadYear::where('status', 1)->first()->id;
+        $data = ProgramEngagementActivities::where('advisee_id', $advisee_id);
+        // ->where('acadyr_id', $activeYear)->get();
         return $data;
     }
 
     private function generate_program_engagement()
     {
-        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        $activeYear = AcadYear::where('status', 1)->first()->id;
+        $report_id = Report::where('report_id', auth()->user()->id)->first()->id;
+        $activeYear = AcadTerm::where('acad_sem', $acad_term)->first()->id;
 
-        $count_check = ProgramEngagementActivities::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
+        $count_check = ProgramEngagementActivities::where('report_id', $report_id)
+        // ->where('acadyr_id', $activeYear)->count();
         if($count_check <= 0){
             $data = [
                 ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
