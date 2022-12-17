@@ -27,7 +27,7 @@ return new class extends Migration
                 ->references('id')
                 -> on('reports')
                 ->onDelete('cascade');
-            $table->timestamps();
+            $table -> timestamps();
            
         });
     
