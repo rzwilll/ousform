@@ -239,6 +239,7 @@ class OUSController extends Controller
                 ['report_id' => $insertedid],
                 ['report_id' => $insertedid],
                 ['report_id' => $insertedid]
+                
             ];
     
             RiskChallenges::insert($data);
