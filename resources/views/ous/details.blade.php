@@ -100,37 +100,16 @@
                                 <td><b> Accomplishment</b></td>
                                 <td></td>
                             </tr>
-                           
+                            @foreach($program_activities as $index => $val_progAc)
                             <tr>
-                                <td><input type="text " name="" id="objective" class="form-control"placeholder="Objective 1..."></td>
-                                <td><input type="text " name="" id="activities" class="form-control"placeholder="....."></td>
-                                <td><input type="text " name="" id="accomplishment" class="form-control"placeholder="....."></td>
+                                <td><input type="text " name="" id="objective" class="form-control" value="{{$val_progAc->objective_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'objective_desc', this)" placeholder="Objective {{$index+1}}..."></td>
+                                <td><input type="text " name="" id="activities" class="form-control" value="{{$val_progAc->activities_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'activities_desc', this)" placeholder="....."></td>
+                                <td><input type="text " name="" id="accomplishment" class="form-control" value="{{$val_progAc->accomplishment_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'accomplishment_desc', this)" placeholder="....."></td>
                                 <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
                             </tr>
-                            <tr>
-                                <td><input type="text " name="" id="objective" class="form-control"placeholder="Objective 2..."></td>
-                                <td><input type="text " name="" id="activities" class="form-control"placeholder="....."></td>
-                                <td><input type="text " name="" id="accomplishment" class="form-control"placeholder="....."></td>
-                                <td class= "remove-td"><a href=""> <button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td>  
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="objective" class="form-control"placeholder="Objective 3..."></td>
-                                <td><input type="text " name="" id="activities" class="form-control"placeholder="....."></td>
-                                <td><input type="text " name="" id="accomplishment" class="form-control"placeholder="....."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="objective" class="form-control"placeholder="Objective 4..."></td>
-                                <td><input type="text " name="" id="activities" class="form-control"placeholder="....."></td>
-                                <td><input type="text " name="" id="accomplishment" class="form-control"placeholder="....."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td>  
-                               
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="objective" class="form-control"placeholder="Objective 5..."></td>
-                                <td><input type="text " name="" id="activities" class="form-control"placeholder="....."></td>
-                                <td><input type="text " name="" id="accomplishment" class="form-control"placeholder="....."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td>  
+                            @endforeach
+
+                            
                                 
                         </table>
                         <br>
@@ -360,3 +339,18 @@
                 </div>
 
 @endsection
+<script>
+    function update_program_engagement_activities(id, fieldname, value){
+        var in_value = $(value).val();
+        $.ajax({
+            method: 'GET',
+            url: '/ous/update_program_engagement_activities/?id='+id+'&fieldname='+fieldname+'&value='+in_value,
+            success    :'success',
+            contentType: false,
+            processData: false,
+            success: (response) => {
+                
+            }
+        });
+    }
+</script>

@@ -30,9 +30,31 @@ class OUSController extends Controller
     public function index()
     {
         //
-        return view('ous.index');
+        $reports = DB::table('acad_years')
+        ->join('acad_terms', 'acad_terms.acadyear_id', '=', 'acad_years.id')
+        ->join('advisees', 'advisees.term_id', '=', 'acad_terms.id')
+        ->join('reports', 'reports.advisee_id', '=', 'advisees.id')
+        ->where('advisees.user_id', '=', auth()->user()->id)
+        ->select('reports.id as re_id', 'acad_years.acad_yr as school_year', 'reports.created_at')
+        ->get();
+        return view('ous.index', compact('reports'));
     }
 
+    public function get_ous_details($id){
+        $program_activities = ProgramEngagementActivities::where("report_id", $id)->get();
+        return view('ous.details', compact('program_activities'));
+    }
+
+    public function update_program_activities(Request $request){
+
+        $field_name = $request->fieldname;
+        
+        $prog_activities = ProgramEngagementActivities::where('id', $request->id)->first();
+        $prog_activities->$field_name = $request->value;
+        $prog_activities->save();
+
+        
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -106,7 +128,12 @@ class OUSController extends Controller
     public function load_modal_report(){
 
         $data = DB::table('acad_years')
-        ->whereNotIn('acad_years.id', DB::table('reports')->where('adviser_id', auth()->user()->id)->pluck('acadyr_id'))
+        ->whereNotIn('acad_years.id', DB::table('acad_years')
+        ->join('acad_terms', 'acad_terms.acadyear_id', '=', 'acad_years.id')
+        ->join('advisees', 'advisees.term_id', '=', 'acad_terms.id')
+        ->join('reports', 'reports.advisee_id', '=', 'advisees.id')
+        ->where('advisees.user_id', '=', auth()->user()->id)
+        ->pluck('acad_years.id'))
         ->select('acad_years.id', 'acad_years.acad_yr')
         ->get();
 
@@ -124,20 +151,21 @@ class OUSController extends Controller
 
         $Reports = new Reports;
         $Reports->advisee_id = $advisee_id;
-        $Reports->acadyr_id = $request->academic_year;
-        $Reports->date = $todayDate;
         $Reports->save();
+
         $insertedid = $Reports->id;
 
        
         $this->generate_program_engagement($insertedid);
-        // $this->generate_program_output($insertedid);
-        // $this->generate_program_consultation($insertedid);
-        // $this->generate_program_risk($insertedid);
-        // $this->generate_program_collaboration($insertedid);
-        // $this->generate_program_problem($insertedid);
-        // $this->generate_program_recommendations($insertedid);
-        // $this->generate_program_plans($insertedid);
+        $this->generate_program_output($insertedid);
+        $this->generate_program_consultation($insertedid);
+        $this->generate_program_risk($insertedid);
+        $this->generate_program_collaboration($insertedid);
+        $this->generate_program_problem($insertedid);
+        $this->generate_program_recommendations($insertedid);
+        $this->generate_program_plans($insertedid);
+
+        return $insertedid;
         
     }
 
@@ -156,6 +184,71 @@ class OUSController extends Controller
     {
 
         $count_check = ProgramEngagementActivities::where('report_id', $insertedid)->count();
+        $current_date_time = Carbon::now()->toDateTimeString();
+        if($count_check <= 0){
+            $data = [
+                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
+                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
+                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
+                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
+                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time]
+            ];
+    
+            ProgramEngagementActivities::insert($data);
+        }
+
+    }
+    private function generate_program_output($insertedid) 
+    {
+        $count_check = ProgramOutputsDeliverables::where('report_id', $insertedid)->count();
+
+        if($count_check <= 0){
+            $data = [
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid]
+            ];
+    
+            ProgramOutputsDeliverables::insert($data);
+        }
+
+    }
+    private function generate_program_consultation($insertedid) 
+    {
+        $count_check = ConsultationAdvising::where('report_id', $insertedid)->count();
+
+        if($count_check <= 0){
+            $data = [
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid]
+            ];
+    
+            ConsultationAdvising::insert($data);
+        }
+    }
+
+    private function generate_program_risk($insertedid) {
+        $count_check = RiskChallenges::where('report_id', $insertedid)->count();
+
+        if($count_check <= 0){
+            $data = [
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid]
+            ];
+    
+            RiskChallenges::insert($data);
+        }
+    }
+
+    private function generate_program_collaboration($insertedid) 
+    {
+        $count_check = CollaborationsLinkages::where('report_id', $insertedid)->count();
+
         if($count_check <= 0){
             $data = [
                 ['report_id' => $insertedid],
@@ -165,127 +258,49 @@ class OUSController extends Controller
                 ['report_id' => $insertedid]
             ];
     
-            ProgramEngagementActivities::insert($data);
-        }
-
-    }
-    private function generate_program_output() 
-    {
-        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        $activeYear = AcadYear::where('status', 1)->first()->id;
-
-        $count_check = ProgramOutputsDeliverables::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
-        if($count_check <= 0){
-            $data = [
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear]
-            ];
-    
-            ProgramOutputsDeliverables::insert($data);
-        }
-
-    }
-    private function generate_program_consultation() 
-    {
-        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        $activeYear = AcadYear::where('status', 1)->first()->id;
-
-        $count_check = ConsultationAdvising::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
-        if($count_check <= 0){
-            $data = [
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-            ];
-    
-            ConsultationAdvising::insert($data);
-        }
-    }
-
-    private function generate_program_risk() {
-        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        $activeYear = AcadYear::where('status', 1)->first()->id;
-
-        $count_check = RiskChallenges::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
-        if($count_check <= 0){
-            $data = [
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-            ];
-    
-            RiskChallenges::insert($data);
-        }
-    }
-
-    private function generate_program_collaboration() 
-    {
-        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        $activeYear = AcadYear::where('status', 1)->first()->id;
-
-        $count_check = CollaborationsLinkages::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
-        if($count_check <= 0){
-            $data = [
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-            ];
-    
             CollaborationsLinkages::insert($data);
         }
     }
-    private function generate_program_problem() 
+    private function generate_program_problem($insertedid) 
     {
-        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        $activeYear = AcadYear::where('status', 1)->first()->id;
-
-        $count_check = ProblemsEncountered::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
+        $count_check = ProblemsEncountered::where('report_id', $insertedid)->count();
+       
         if($count_check <= 0){
             $data = [
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid]
             ];
     
             ProblemsEncountered::insert($data);
         }
     }
-    private function generate_program_recommendations() 
+    private function generate_program_recommendations($insertedid) 
     {
-        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        $activeYear = AcadYear::where('status', 1)->first()->id;
+        $count_check = Recommendations::where('report_id', $insertedid)->count();
 
-        $count_check = Recommendations::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
         if($count_check <= 0){
             $data = [
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid]
             ];
     
             Recommendations::insert($data);
         }
     }
-    private function generate_program_plans() {
-        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        $activeYear = AcadYear::where('status', 1)->first()->id;
+    private function generate_program_plans($insertedid) {
+        $count_check = ProgramPlans::where('report_id', $insertedid)->count();
 
-        $count_check = ProgramPlans::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
         if($count_check <= 0){
             $data = [
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
-                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid]
             ];
     
             ProgramPlans::insert($data);

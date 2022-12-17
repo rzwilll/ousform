@@ -18,7 +18,6 @@ return new class extends Migration
         {
             $table -> id();
             $table -> unsignedBigInteger('report_id');
-            $table -> unsignedBigInteger('acadyr_id');
 
             $table -> string('risk_desc')->nullable();
 
@@ -26,7 +25,7 @@ return new class extends Migration
                 ->references('id')
                 -> on('reports')
                 ->onDelete('cascade');
-          
+            $table->timestamps();
             
         });
     }
