@@ -30,7 +30,7 @@ class OUSController extends Controller
     public function index()
     {
         //
-        $reports = 
+    
         return view('ous.index');
     }
 
