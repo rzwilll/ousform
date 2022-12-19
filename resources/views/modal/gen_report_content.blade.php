@@ -44,7 +44,7 @@ else { ?>
                     showConfirmButton: false,
                     timer: 1500
                 }).then(result => {
-                    // var url = "{{ route('ous.add',"+response+") }}";  
+                    var url = "{{ route('user.edit', $id) }}";  
                 });
                 
             },

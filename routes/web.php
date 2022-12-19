@@ -32,13 +32,9 @@ Route::get('/advisee/view', [App\Http\Controllers\AdviseeController:: class, 'sh
 
 Route::get('/ous/index', [App\Http\Controllers\OUSController:: class, 'index'])->name('ous.index');
 Route::get('/ous/view', [App\Http\Controllers\OUSController:: class, 'show'])->name('ous.view');
-Route::get('/ous/add', [App\Http\Controllers\OUSController::class, 'create'])-> name('ous.add');
-Route::get('/ous/edit', [App\Http\Controllers\OUSController::class, 'edit'])-> name('ous.edit');
-Route::post('/ous/generate_report', [App\Http\Controllers\OUSController::class, 'gen_report'])-> name('ous.gen_report');
-Route::get('/ous/get_reports', [App\Http\Controllers\OUSController::class, 'edit'])-> name('ous.edit');
+Route:: get('/ous/add', [App\Http\Controllers\OUSController::class, 'create'])-> name('ous.add');
+Route:: get('/ous/edit', [App\Http\Controllers\OUSController::class, 'edit'])-> name('ous.edit');
+Route:: post('/ous/generate_report', [App\Http\Controllers\OUSController::class, 'gen_report'])-> name('ous.gen_report');
+Route:: get('/ous/get_reports', [App\Http\Controllers\OUSController::class, 'edit'])-> name('ous.edit');
 Route::get('/ous/modal_report', [App\Http\Controllers\OUSController::class, 'load_modal_report']);
-
-
-Route::get('/ous/details/{id}', [App\Http\Controllers\OUSController::class, 'get_ous_details']);
-Route::get('/ous/update_program_engagement_activities', [App\Http\Controllers\OUSController::class, 'update_program_activities']);
 // Route::get('/modal_report', [OUSController::class, 'load_modal_report'])->name('ous.gen_report');

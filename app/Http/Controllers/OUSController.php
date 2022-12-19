@@ -30,7 +30,6 @@ class OUSController extends Controller
     public function index()
     {
         //
-    
         return view('ous.index');
     }
 
@@ -159,11 +158,11 @@ class OUSController extends Controller
         $count_check = ProgramEngagementActivities::where('report_id', $insertedid)->count();
         if($count_check <= 0){
             $data = [
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time]
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid],
+                ['report_id' => $insertedid]
             ];
     
             ProgramEngagementActivities::insert($data);
@@ -190,17 +189,16 @@ class OUSController extends Controller
     }
     private function generate_program_consultation() 
     {
-        // $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        // $activeYear = AcadYear::where('status', 1)->first()->id;
+        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
+        $activeYear = AcadYear::where('status', 1)->first()->id;
 
-        $count_check = ConsultationAdvising::where('report_id', $insertedid)->count();
+        $count_check = ConsultationAdvising::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
         if($count_check <= 0){
             $data = [
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time]
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
             ];
     
             ConsultationAdvising::insert($data);
@@ -208,17 +206,16 @@ class OUSController extends Controller
     }
 
     private function generate_program_risk() {
-        // $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        // $activeYear = AcadYear::where('status', 1)->first()->id;
+        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
+        $activeYear = AcadYear::where('status', 1)->first()->id;
 
-        $count_check = RiskChallenges::where('report_id', $insertedid)->count();
+        $count_check = RiskChallenges::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
         if($count_check <= 0){
             $data = [
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time]
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
             ];
     
             RiskChallenges::insert($data);
@@ -227,17 +224,17 @@ class OUSController extends Controller
 
     private function generate_program_collaboration() 
     {
-        // $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        // $activeYear = AcadYear::where('status', 1)->first()->id;
+        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
+        $activeYear = AcadYear::where('status', 1)->first()->id;
 
-        $count_check = CollaborationsLinkages::where('report_id', $insertedid)->count();
+        $count_check = CollaborationsLinkages::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
         if($count_check <= 0){
             $data = [
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time]
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
             ];
     
             CollaborationLinkages::insert($data);
@@ -245,17 +242,17 @@ class OUSController extends Controller
     }
     private function generate_program_problem() 
     {
-        // $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        // $activeYear = AcadYear::where('status', 1)->first()->id;
+        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
+        $activeYear = AcadYear::where('status', 1)->first()->id;
 
-        $count_check = ProblemsEncountered::where('report_id', $insertedid)->count();
+        $count_check = ProblemsEncountered::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
         if($count_check <= 0){
             $data = [
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time]
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
             ];
     
             ProblemsEncountered::insert($data);
@@ -263,34 +260,32 @@ class OUSController extends Controller
     }
     private function generate_program_recommendations() 
     {
-        // $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        // $activeYear = AcadYear::where('status', 1)->first()->id;
+        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
+        $activeYear = AcadYear::where('status', 1)->first()->id;
 
-        $count_check = Recommendations::where('report_id', $insertedid)->count();
+        $count_check = Recommendations::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
         if($count_check <= 0){
             $data = [
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time]
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
             ];
     
             Recommendations::insert($data);
         }
     }
     private function generate_program_plans() {
-        // $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
-        // $activeYear = AcadYear::where('status', 1)->first()->id;
+        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
+        $activeYear = AcadYear::where('status', 1)->first()->id;
 
-        $count_check = ProgramPlans::where('report_id', $insertedid)->count();
+        $count_check = ProgramPlans::where('advisee_id', $advisee_id)->where('acadyr_id', $activeYear)->count();
         if($count_check <= 0){
             $data = [
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time],
-                ['report_id' => $insertedid, 'created_at' => $current_date_time, 'updated_at' => $current_date_time]
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
+                ['advisee_id' => $advisee_id, 'acadyr_id' => $activeYear],
             ];
     
             ProgramPlans::insert($data);

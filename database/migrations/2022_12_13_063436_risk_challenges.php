@@ -18,6 +18,7 @@ return new class extends Migration
         {
             $table -> id();
             $table -> unsignedBigInteger('report_id');
+            $table -> unsignedBigInteger('acadyr_id');
 
             $table -> string('risk_desc')->nullable();
 
@@ -26,8 +27,11 @@ return new class extends Migration
                 -> on('reports')
                 ->onDelete('cascade');
           
+<<<<<<< HEAD
             $table -> timestamps();
             
+=======
+>>>>>>> parent of 4f3c8c9 (--)
             
         });
     }
