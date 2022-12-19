@@ -1,5 +1,3 @@
-
-
 <form class="form-horizontal" id="generate_form" method="POST">
     <select class="form-select" name="academic_year" id="academic_year" aria-label="Default select example" onchange="verified(this)">
         <option value="">Choose Academic Year..</option>
@@ -24,12 +22,10 @@ else { ?>
         e.preventDefault();
         let formData = new FormData(this);
         formData.append('_token', `{{ csrf_token() }}`);
-
         if($("#academic_year").val() == ""){
             $("#academic_year").attr('style', 'border: 1px solid #ffc107;');
             return;
         }
-
         $.ajax({
             method: 'post',
             url: '/ous/generate_report',
@@ -44,7 +40,10 @@ else { ?>
                     showConfirmButton: false,
                     timer: 1500
                 }).then(result => {
-                    var url = "{{ route('user.edit', $id) }}";  
+                    var id = response;
+                    var url = "{{ route('ous.get_ous_details', ':id') }}";
+                    url = url.replace(':id', id);
+                    location.href = url;
                 });
                 
             },
@@ -56,7 +55,6 @@ else { ?>
             
         });
     });
-
     function verified(e){
         var val = $(e).val();
         if(val != ""){

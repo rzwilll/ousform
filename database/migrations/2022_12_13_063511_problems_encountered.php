@@ -25,28 +25,8 @@ return new class extends Migration
                 ->references('id')
                 -> on('reports')
                 ->onDelete('cascade');
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             
             $table->timestamps();
-=======
-           
->>>>>>> parent of 4f3c8c9 (--)
-=======
-           
->>>>>>> parent of 4f3c8c9 (--)
-=======
-           
->>>>>>> parent of 4f3c8c9 (--)
-=======
-           
->>>>>>> parent of 4f3c8c9 (--)
-=======
-           
->>>>>>> parent of 4f3c8c9 (--)
             
         });
     }
