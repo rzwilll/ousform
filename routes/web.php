@@ -43,5 +43,6 @@ Route::get('/ous/details/{id}', [App\Http\Controllers\OUSController::class, 'get
 Route::get('/ous/details/{id}',[OUSController::class,'get_ous_details'])->name('ous.get_ous_details');
 Route::get('/ous/update_program_engagement_activities', [App\Http\Controllers\OUSController::class, 'update_program_activities']);
 Route::get('/ous/add_program_engagement_activities', [App\Http\Controllers\OUSController::class, 'add_program_activities']);
+Route::get('/ous/remove_program_engagement_activities', [App\Http\Controllers\OUSController::class, 'remove_program_activities']);
 
 // Route::get('/modal_report', [OUSController::class, 'load_modal_report'])->name('ous.gen_report');

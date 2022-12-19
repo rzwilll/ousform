@@ -56,13 +56,26 @@ class OUSController extends Controller
 
     }
 
-    public function add_program_activities(){
-        $engagementProgramm = new ProgramEngagementActivities;
-        $engagementProgramm->report_id = $insertedid;
-        $engagementProgramm->save();
+    public function add_program_activities(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+            $engagementProgramm = new ProgramEngagementActivities;
+            $engagementProgramm->report_id = $data['report_id'];
+            $engagementProgramm->save();
+            $insertedid = $engagementProgramm->id;
 
-        $insertedid = $engagementProgramm->id;
-        return $insertedid;
+            return response()->json(array('insertedid' => $insertedid), 200);
+        }
+    }
+
+    public function remove_program_activities(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+
+            $engagementProgramm=ProgramEngagementActivities::where('id',$data['report_id'])->delete();
+
+            return response()->json(array('succcess' => true), 200);
+        }
     }
     /**
      * Show the form for creating a new resource.

@@ -87,34 +87,39 @@
                             </tr>
                         </table>
                          <br>
-                        <table>
-                            <tr>
-                                <td colspan="3"class="report-section"><b>II. Program Engagement & Activities</b> </td>
-                                <td class="col-1 report-section add-btn"> 
-                                    <form class="form-horizontal" id="add_program_engagement_form" method="POST">
-                                        <button type="button" class="btn btn-info" onclick="add_program_engagement_activities();"><i class='bx bx-plus'></i>Add</button>
-                                    </form>
-                                </td>
-                                
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><b>Objectives</b></td>
-                                <td><b>Curricular & Co-curricular Activities</b></td>
-                                <td><b> Accomplishment</b></td>
-                                <td></td>
-                            </tr>
-                            @foreach($program_activities as $index => $val_progAc)
-                            <tr>
-                                <td><input type="text " name="" id="objective" class="form-control" value="{{$val_progAc->objective_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'objective_desc', this)" placeholder="Objective {{$index+1}}..."></td>
-                                <td><input type="text " name="" id="activities" class="form-control" value="{{$val_progAc->activities_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'activities_desc', this)" placeholder="....."></td>
-                                <td><input type="text " name="" id="accomplishment" class="form-control" value="{{$val_progAc->accomplishment_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'accomplishment_desc', this)" placeholder="....."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            @endforeach
-
-                            
-                                
+                        <table id="tbl_engagement_activities">
+                            <thead>
+                                <tr>
+                                    <th colspan="3"class="report-section"><b>II. Program Engagement & Activities</b> </th>
+                                    <th class="col-1 report-section add-btn"> 
+                                        <form class="form-horizontal" id="add_program_engagement_form" method="POST">
+                                            <button type="button" class="btn btn-info" onclick="add_program_engagement_activities({{$report_id}});"><i class='bx bx-plus'></i>Add</button>
+                                        </form>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>Objectives</b></td>
+                                    <td><b>Curricular & Co-curricular Activities</b></td>
+                                    <td><b> Accomplishment</b></td>
+                                    <td></td>
+                                </tr>
+                                @foreach($program_activities as $index => $val_progAc)
+                                <tr id="tbl_tr_{{$val_progAc->id}}">
+                                    <td><input type="text " name="" id="objective" class="form-control" value="{{$val_progAc->objective_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'objective_desc', this)" placeholder="....."></td>
+                                    <td><input type="text " name="" id="activities" class="form-control" value="{{$val_progAc->activities_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'activities_desc', this)" placeholder="....."></td>
+                                    <td><input type="text " name="" id="accomplishment" class="form-control" value="{{$val_progAc->accomplishment_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'accomplishment_desc', this)" placeholder="....."></td>
+                                    <td class= "remove-td">
+                                        <?php
+                                            if($index > 5){?>
+                                                <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="conferm_remove_program_engagement_activities({{$val_progAc->id}})"></i></button>
+                                            <?php }
+                                        ?>
+                                    </td> 
+                                </tr>
+                                @endforeach
+                            </tbody>
                         </table>
                         <br>
                         <table>
@@ -344,15 +349,61 @@
 
 @endsection
 <script>
-    function add_program_engagement_activities(){
+
+    function conferm_remove_program_engagement_activities(e){
+        swal({
+            text: 'Are you sure you want to remove this ?',
+            showCancelButton: true,
+            icon: "warning",
+            buttons: true,
+            closeModal: false,
+        }).then(result => {
+            
+            if (result == true){
+                $(".btn").attr("disabled", true);
+                $.ajax({
+                    method: 'GET',
+                    url: '/ous/remove_program_engagement_activities/?report_id='+e,
+                    success    :'success',
+                    contentType: false,
+                    processData: false,
+                    success: (response) => {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Your work has been saved',
+                            showConfirmButton: false,
+                            timer: 1500
+                        }).then(result => {
+                            $(".btn").attr("disabled", false);
+                            $('#tbl_tr_'+e).remove(); 
+                        });
+                    }
+                });
+            }
+
+        });
+    }
+
+    function add_program_engagement_activities(e){
         $.ajax({
             method: 'GET',
-            url: '/ous/add_program_engagement_activities/',
+            url: '/ous/add_program_engagement_activities/?report_id='+e,
             success    :'success',
             contentType: false,
             processData: false,
             success: (response) => {
-                alert(response);
+                var newRowContent = `
+                    <tr id="tbl_tr_${response.insertedid}">
+                        <td><input type="text " name="" id="objective" class="form-control"  onfocusout="update_program_engagement_activities(${response.insertedid}, 'objective_desc', this)" placeholder="....."></td>
+                        <td><input type="text " name="" id="activities" class="form-control"  onfocusout="update_program_engagement_activities(${response.insertedid}, 'activities_desc', this)" placeholder="....."></td>
+                        <td><input type="text " name="" id="accomplishment" class="form-control" onfocusout="update_program_engagement_activities(${response.insertedid}, 'accomplishment_desc', this)" placeholder="....."></td>
+                        <td class= "remove-td">
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="conferm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        </td> 
+                    </tr>
+                `;
+                jQuery("#tbl_engagement_activities tbody").append(newRowContent);
+                
             }
         });
     }
