@@ -28,7 +28,7 @@ return new class extends Migration
                 -> on('reports')
                 ->onDelete('cascade');
 
-                $table -> timestamps();
+            
             
             $table->timestamps();
         });
