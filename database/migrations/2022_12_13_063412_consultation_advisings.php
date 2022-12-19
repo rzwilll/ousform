@@ -29,8 +29,11 @@ return new class extends Migration
                 ->onDelete('cascade');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $table->timestamps();
 =======
+=======
+>>>>>>> parent of 4f3c8c9 (--)
 =======
 >>>>>>> parent of 4f3c8c9 (--)
            
