@@ -42,9 +42,81 @@ class OUSController extends Controller
 
     public function get_ous_details($id){
         $program_activities = ProgramEngagementActivities::where("report_id", $id)->get();
+        $program_outputs_deliverables = ProgramOutputsDeliverables::where("report_id", $id)->get();
+        $program_consultation_advising = ConsultationAdvising::where("report_id", $id)->get();
+        $program_risk_challenges = RiskChallenges::where("report_id", $id)->get();
+        $program_collaboration_linkages= CollaborationsLinkages::where("report_id", $id)->get();
+        $program_problems_encountered = ProblemsEncountered::where("report_id", $id)->get();
+        $program_recommendations = Recommendations::where("report_id", $id)->get();
+        $program_program_plans = ProgramPlans::where("report_id", $id)->get();
+
         $report_id = $id;
-        return view('ous.details', compact('program_activities', 'report_id'));
+        return view('ous.details', compact('program_activities', 'report_id', 'program_outputs_deliverables', 
+                    'program_consultation_advising', 'program_risk_challenges','program_collaboration_linkages', 
+                    'program_problems_encountered','program_recommendations','program_program_plans'));
     }
+
+    //UPDATE 
+    public function update_program_consultation_advising(Request $request){
+
+        $field_name = $request->fieldname;
+        
+        $prog_activities = ConsultationAdvising::where('id', $request->id)->first();
+        $prog_activities->$field_name = $request->value;
+        $prog_activities->save();
+
+    }
+
+    public function update_program_risk_challenges(Request $request){
+
+        $field_name = $request->fieldname;
+        
+        $prog_activities = RiskChallenges::where('id', $request->id)->first();
+        $prog_activities->$field_name = $request->value;
+        $prog_activities->save();
+
+    }
+
+    public function update_program_collaboration_linkages(Request $request){
+
+        $field_name = $request->fieldname;
+        
+        $prog_activities =CollaborationsLinkages::where('id', $request->id)->first();
+        $prog_activities->$field_name = $request->value;
+        $prog_activities->save();
+
+    }
+
+    public function update_program_problems_ecountered(Request $request){
+
+        $field_name = $request->fieldname;
+        
+        $prog_activities =ProblemsEncountered::where('id', $request->id)->first();
+        $prog_activities->$field_name = $request->value;
+        $prog_activities->save();
+
+    }
+
+    public function update_program_recommendations(Request $request){
+
+        $field_name = $request->fieldname;
+        
+        $prog_activities =Recommendations::where('id', $request->id)->first();
+        $prog_activities->$field_name = $request->value;
+        $prog_activities->save();
+
+    }
+
+    public function update_program_plans(Request $request){
+
+        $field_name = $request->fieldname;
+        
+        $prog_activities =ProgramPlans::where('id', $request->id)->first();
+        $prog_activities->$field_name = $request->value;
+        $prog_activities->save();
+
+    }
+
 
     public function update_program_activities(Request $request){
 
@@ -54,6 +126,28 @@ class OUSController extends Controller
         $prog_activities->$field_name = $request->value;
         $prog_activities->save();
 
+    }
+
+    public function update_program_output_deliverables(Request $request){
+        $field_name = $request->fieldname;
+
+        $prog_activities = ProgramOutputsDeliverables::where('id', $request->id)->first();
+        $prog_activities->$field_name = $request->value;
+        $prog_activities->save();
+    }
+
+    //ADD
+    
+    public function add_program_output_deliverables(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+            $output_deliverables = new ProgramOutputsDeliverables;
+            $output_deliverables->report_id = $data['report_id'];
+            $output_deliverables->save();
+            $insertedid = $output_deliverables->id;
+
+            return response()->json(array('insertedid' => $insertedid), 200);
+        }
     }
 
     public function add_program_activities(Request $request){
@@ -68,6 +162,90 @@ class OUSController extends Controller
         }
     }
 
+
+    public function add_program_consultation_advising(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+            $program_consultation = new ConsultationAdvising;
+            $program_consultation->report_id = $data['report_id'];
+            $program_consultation->save();
+            $insertedid = $program_consultation->id;
+
+            return response()->json(array('insertedid' => $insertedid), 200);
+        }
+    }
+
+    public function add_program_risk_challenges(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+            $program_risk= new RiskChallenges;
+            $program_risk->report_id = $data['report_id'];
+            $program_risk->save();
+            $insertedid =  $program_risk->id;
+
+            return response()->json(array('insertedid' => $insertedid), 200);
+        }
+    }
+
+    public function add_pogram_collaborations_linkages(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+            $program_collaborations = new CollaborationsLinkages;
+            $program_collaborations ->report_id = $data['report_id'];
+            $program_collaborations ->save();
+            $insertedid =$program_collaborations ->id;
+
+            return response()->json(array('insertedid' => $insertedid), 200);
+        }
+    }
+
+    public function add_program_problems(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+            $program_problems = new ProblemsEncountered;
+            $program_problems ->report_id = $data['report_id'];
+            $program_problems ->save();
+            $insertedid = $program_problems ->id;
+
+            return response()->json(array('insertedid' => $insertedid), 200);
+        }
+    }
+
+    public function add_program_recommendations(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+            $program_recommend = new Recommendations;
+            $program_recommend ->report_id = $data['report_id'];
+            $program_recommend ->save();
+            $insertedid = $program_recommend ->id;
+
+            return response()->json(array('insertedid' => $insertedid), 200);
+        }
+    }
+
+    public function add_program_plans(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+            $program_plans = new ProgramPlans;
+            $program_plans ->report_id = $data['report_id'];
+            $program_plans ->save();
+            $insertedid =  $program_plans ->id;
+
+            return response()->json(array('insertedid' => $insertedid), 200);
+        }
+    }
+
+    //Remove
+
+    public function  remove_program_output_deliverables(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+
+            $engagementProgramm=ProgramOutputsDeliverables::where('id',$data['report_id'])->delete();
+
+            return response()->json(array('succcess' => true), 200);
+        }
+    }
     public function remove_program_activities(Request $request){
         $data = $request->all();
         if(isset($data['report_id'])){
@@ -77,6 +255,68 @@ class OUSController extends Controller
             return response()->json(array('succcess' => true), 200);
         }
     }
+
+    public function remove_program_consultation(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+
+            $program_consultation=ConsultationAdvising::where('id',$data['report_id'])->delete();
+
+            return response()->json(array('succcess' => true), 200);
+        }
+    }
+
+    public function remove_program_risk(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+
+            $program_risk=RiskChallenges::where('id',$data['report_id'])->delete();
+
+            return response()->json(array('succcess' => true), 200);
+        }
+    }
+
+    public function remove_program_collaborations(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+
+            $program_collaboration=CollaborationsLinkages::where('id',$data['report_id'])->delete();
+
+            return response()->json(array('succcess' => true), 200);
+        }
+    }
+
+    public function remove_program_problems(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+
+            $program_problems=ProblemsEncountered::where('id',$data['report_id'])->delete();
+
+            return response()->json(array('succcess' => true), 200);
+        }
+    }
+
+    public function remove_program_recommendations(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+
+            $program_recommendations=Recommendations::where('id',$data['report_id'])->delete();
+
+            return response()->json(array('succcess' => true), 200);
+        }
+    }
+
+    public function remove_program_plans(Request $request){
+        $data = $request->all();
+        if(isset($data['report_id'])){
+
+            $program_plans=ProgramPlans::where('id',$data['report_id'])->delete();
+
+            return response()->json(array('succcess' => true), 200);
+        }
+    }
+
+ 
     /**
      * Show the form for creating a new resource.
      *

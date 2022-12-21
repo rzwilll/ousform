@@ -21,12 +21,25 @@
  .add-button a i  {
     color: white;
  }
+
+ .add-button :hover {
+    background: #a41d21;
+ }
 .report-content{
     height: 100%;
     padding: 1em;
 }
 
+.btn-info.add-button i{
+    color: white;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
 
+
+.btn-info.add-button::hover {
+    background: #a41d21;
+}
 .add-btn button {
     border: none;
     padding: .5em;

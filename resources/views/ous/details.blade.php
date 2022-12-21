@@ -90,10 +90,10 @@
                         <table id="tbl_engagement_activities">
                             <thead>
                                 <tr>
-                                    <th colspan="3"class="report-section"><b>II. Program Engagement & Activities</b> </th>
+                                    <td colspan="3"class="report-section"><b>II. Program Engagement & Activities</b> </th>
                                     <th class="col-1 report-section add-btn"> 
                                         <form class="form-horizontal" id="add_program_engagement_form" method="POST">
-                                            <button type="button" class="btn btn-info" onclick="add_program_engagement_activities({{$report_id}});"><i class='bx bx-plus'></i>Add</button>
+                                            <button type="button" class="btn  btn-info add-button" onclick="add_program_engagement_activities({{$report_id}});"><i class='bx bx-plus'>Add</i></button>
                                         </form>
                                     </th>
                                 </tr>
@@ -112,8 +112,8 @@
                                     <td><input type="text " name="" id="accomplishment" class="form-control" value="{{$val_progAc->accomplishment_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'accomplishment_desc', this)" placeholder="....."></td>
                                     <td class= "remove-td">
                                         <?php
-                                            if($index > 5){?>
-                                                <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="conferm_remove_program_engagement_activities({{$val_progAc->id}})"></i></button>
+                                            if($index > 4){?>
+                                                <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities({{$val_progAc->id}})"></i></button>
                                             <?php }
                                         ?>
                                     </td> 
@@ -122,221 +122,206 @@
                             </tbody>
                         </table>
                         <br>
-                        <table>
-                            <tr>
-                                <td colspan="2" class="report-section"><b>III. Program Outputs and Deliverables</b></td>
-                                <td class="col-1 report-section add-btn"> <button class="add-button"> <a href=""><i class='bx bx-plus'></i>Add</a></button></td>
-                                
-                            </tr>
-                            <tr>
-                                <td><b>Program Outputs</b></td>
-                                <td><b>Deliverables</b></td>
-                                <td></td>
-                            </tr>
-
-                            <tr>
-                                <td><input type="text " name="" id="prog_output" class="form-control"placeholder="1..."></td>
-                                <td><input type="text " name="" id="deliverables" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="prog_output" class="form-control"placeholder="2..."></td>
-                                <td><input type="text " name="" id="deliverables" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="prog_output" class="form-control"placeholder="3..."></td>
-                                <td><input type="text " name="" id="deliverables" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="prog_output" class="form-control"placeholder="4..."></td>
-                                <td><input type="text " name="" id="deliverables" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-
-                            <tr>
-                                <td><input type="text " name="" id="prog_output" class="form-control"placeholder="5.."></td>
-                                <td><input type="text " name="" id="deliverables" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
+                        <table id="tbl_output_deliverables">
+                            <thead>
+                                <tr>
+                                    <td colspan="2" class="report-section"><b>III. Program Outputs and Deliverables</b></td>
+                                    <td class="col-1 report-section add-btn">
+                                        <button type="button" class="btn  btn-info add-button" onclick="add_program_output_deliverables({{$report_id}});"><i class='bx bx-plus'>Add</i></button>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>Program Outputs</b></td>
+                                    <td><b>Deliverables</b></td>
+                                    <td></td>
+                                </tr>
+                                @foreach($program_outputs_deliverables as $index => $val_progDeli)
+                                    <tr id="tbl_tr_{{$val_progDeli->id}}">
+                                        <td><input type="text " name="" id="prog_output" value="{{$val_progDeli->outputs_desc}}" onfocusout="update_program_output_deliverables({{$val_progDeli->id}}, 'outputs_desc', this)" class="form-control"placeholder="..."></td>
+                                        <td><input type="text " name="" id="deliverables" value="{{$val_progDeli->deliverables_desc}}" onfocusout="update_program_output_deliverables({{$val_progDeli->id}}, 'deliverables_desc', this)" class="form-control"placeholder="..."></td>
+                                        <td class= "remove-td">
+                                            <?php
+                                                if($index > 3){?>
+                                                    <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_output_deliverables({{$val_progDeli->id}})"></i></button>
+                                                <?php }
+                                            ?>
+                                        </td> 
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                           
                         </table>
                         <br>
-                        <table>
-                            <tr>
-                                <td colspan="3" class="report-section"><b>IV. Consultation and Advising</b></td>
-                                <td class="col-1 report-section add-btn"> <button class="add-button"> <a href=""><i class='bx bx-plus'></i>Add</a></button></td>
-                            </tr>
-                            <tr>
+                        <table id ="tbl_consultation_advising">
+                            <thead>
+                                <tr>
+                                    <td colspan="3" class="report-section"><b>IV. Consultation and Advising</b></td>
+                                    <td class="col-1 report-section add-btn"> 
+                                        <button type="button" class="btn  btn-info add-button" onclick="add_program_consultation_advising({{$report_id}});"><i class='bx bx-plus'></i>Add</button>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr >
                                 <td>Date of Consultation</td>
                                 <td>Nature of Advising</td>
                                 <td>Action Taken</td>
                                 <td></td>
                             </tr>
-                            <tr>
-                                <td><input type="text " name="" id="date" class="form-control"placeholder="..."></td>
-                                <td><input type="text " name="" id="nature" class="form-control"placeholder="..."></td>
-                                <td><input type="text " name="" id="action" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
+                                @foreach($program_consultation_advising as $index => $val_consultation_advising)
+                            <tr id = "tbl_tr_{{$val_consultation_advising->id}}">
+                                <td><input type="text " name="" id="date"  value="{{$val_consultation_advising->date_desc}}" onfocusout="update_program_consultation_advising({{$val_consultation_advising->id}}, 'date_desc', this)" class="form-control"placeholder="..."></td>
+                                <td><input type="text " name="" id="nature"  value="{{$val_consultation_advising->advising_nature_desc}}" onfocusout="update_program_consultation_advising({{$val_consultation_advising->id}}, 'advising_nature_desc', this)"class="form-control"placeholder="..."></td>
+                                <td><input type="text " name="" id="action" value="{{$val_consultation_advising->action_desc}}" onfocusout="update_program_consultation_advising({{$val_consultation_advising->id}}, 'action_desc', this)"class="form-control"placeholder="..."></td>
+                                <td class= "remove-td">
+                                        <?php
+                                            if($index > 3){?>
+                                                <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_consultation({{$val_consultation_advising->id}})"></i></button>
+                                            <?php }
+                                        ?>
+                                    </td> 
+                                </td> 
                             </tr>
-                            <tr>
-                                <td><input type="text " name="" id="date" class="form-control"placeholder="..."></td>
-                                <td><input type="text " name="" id="nature" class="form-control"placeholder="..."></td>
-                                <td><input type="text " name="" id="action" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="date" class="form-control"placeholder="..."></td>
-                                <td><input type="text " name="" id="nature" class="form-control"placeholder="..."></td>
-                                <td><input type="text " name="" id="action" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="date" class="form-control"placeholder="..."></td>
-                                <td><input type="text " name="" id="nature" class="form-control"placeholder="..."></td>
-                                <td ><input type="text " name="" id="action" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td" ><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
+                            @endforeach
+                            </tbody>
+                           
                         </table>
                         <br>
-                        <table>
-                            <tr>
-                                <td colspan="1" class="report-section"><b>V.Risk and Challenges</b></td>
-                                <td class="col-1 report-section add-btn"> <button class="add-button"> <a href=""><i class='bx bx-plus'></i>Add</a></button></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="risk" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="risk" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="risk" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="risk" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="risk" class="form-control"placeholder="..."></td>
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
+                        <table id = "tbl_risk_challenges">  
+                            <thead>
+                                <tr>
+                                    <td colspan="1" class="report-section"><b>V.Risk and Challenges</b></td>
+                                    <td class="col-1 report-section add-btn"> 
+                                        <button type="button" class="btn  btn-info add-button"onclick="add_program_risk_challenges({{$report_id}});"> <i class='bx bx-plus'></i>Add
+                                    </button>
+                                     </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($program_risk_challenges as $index => $val_program_risk_challenges)
+                                <tr id = "tbl_tr_{{$val_program_risk_challenges->id}}">
+                                    <td><input type="text " name="" id="risk" value="{{$val_program_risk_challenges->risk_desc}}" onfocusout="update_program_risk_challenges({{$val_program_risk_challenges->id}}, 'risk_desc', this)"class="form-control"placeholder="..."></td>
+                                    <td class= "remove-td">
+                                    <?php
+                                            if($index > 3){?>
+                                                <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_risk({{$val_program_risk_challenges->id}})"></i></button>
+                                            <?php }
+                                        ?>
+                                    </td> 
+                                </tr>
+                            @endforeach
+                            </tbody>
                         </table>
                         <br>
-                        <table>
-                            <tr>
-                                <td colspan ="1"class="report-section"><b>V.Collaborations and Linkage</b></td>
-                                <td class="col-1 report-section add-btn"> <button class="add-button"> <a href=""><i class='bx bx-plus'></i>Add</a></button></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="collaboration" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="collaboration" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="collaboration" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="collaboration" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
+                        <table id= "tbl_collaboration_linkages">
+                            <thead>
+                                <tr>
+                                    <td colspan ="1"class="report-section"><b>V.Collaborations and Linkage</b></td>
+                                    <td class="col-1 report-section add-btn"> 
+                                        <button type="button" class="btn  btn-info add-button" onclick="add_pogram_collaborations_linkages({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
+                                    </td>
+                                </tr>
+                            </thead>
+                           <tbody>
+                                @foreach($program_collaboration_linkages as $index => $val_program_collab)
+                                <tr id = "tbl_tr_{{$val_program_collab->id}}">
+                                        <td><input type="text " name="" id="collaboration" value="{{$val_program_collab->collaboration_desc}}" onfocusout="update_program_collaboration_linkages({{$val_program_collab->id}}, 'collaboration_desc', this)"class="form-control"placeholder="..."></td>   
+                                        <td class= "remove-td">
+                                            <?php
+                                                if($index > 4){?>
+                                                    <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick=" confirm_remove_program_collaborations({{$val_program_collab->id}})"></i></button>
+                                                <?php }
+                                            ?>
+                                        </td> 
+                                </tr>
+                                @endforeach
+                           </tbody>
+                           
                         </table>
                         <br>
-                        <table>
-                            <tr>
-                                <td  colspan= "1"class="report-section"><b>VII. Problems Encountered</b></td>
-                                <td class="col-1 report-section add-btn"> <button class="add-button"> <a href=""><i class='bx bx-plus'></i>Add</a></button></td>
+                        <table id = "tbl_problems_ecountered">
+                           <thead>
+                                <tr>
+                                    <th  colspan= "1"class="report-section"><b>VII. Problems Encountered</b></th>
+                                    <th class="col-1 report-section add-btn">
+                                         <button type="button" class="btn  btn-info add-button" onclick="add_program_problems({{$report_id}});" > <i class='bx bx-plus'></i>Add
+                                        </button>
+                                    </th>
+                                </tr>
+                           </thead>
+                           <tbody>
+                           @foreach($program_problems_encountered as $index => $val_program_problem_encountered)
+                            <tr id = "tbl_tr_{{$val_program_problem_encountered->id}}">
+                                    <td><input type="text " name="" id="problems" value="{{$val_program_problem_encountered->problem_desc}}" onfocusout="update_program_problems_ecountered({{$val_program_problem_encountered->id}}, 'problem_desc', this)" class="form-control"placeholder="..."></td>   
+                                    <td class= "remove-td">
+                                        <?php
+                                            if($index > 4){?>
+                                            <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_problems({{$val_program_problem_encountered->id}})"></i></button>
+                                        <?php }
+                                            ?>
+                                    </td> 
+                            
                             </tr>
-                            <tr>
-                                <td><input type="text " name="" id="problems" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-    
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="problems" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-    
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="problems" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-    
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="problems" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-    
-                            </tr>
-    
-                            <tr>
-                                <td><input type="text " name="" id="problems" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-    
-                            </tr>
-    
+                            @endforeach
+                           </tbody>
+                            
                         </table>
                         <br>
-                        <table>
-                            <tr>
-                                <td  colspan="1" class="report-section"><b>VIII. Recommendations</b></td>
-                                <td class="col-1 report-section add-btn"> <button class="add-button"> <a href=""><i class='bx bx-plus'></i>Add</a></button></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="recommendations" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-    
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="recommendations" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-    
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="recommendations" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-    
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="recommendations" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-    
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="recommendations" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-    
-                            </tr>
+                        <table id = "tbl_recommendations">
+                            <thead>
+                                <tr>
+                                    <td  colspan="1" class="report-section"><b>VIII. Recommendations</b></td>
+                                    <td class="col-1 report-section add-btn"> 
+                                        <button type="button" class="btn  btn-info add-button" onclick="add_program_recommendations({{$report_id}});"> <i class='bx bx-plus'></i>Add
+                                        </button>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody> 
+                                @foreach($program_recommendations as $index => $val_program_recommendation)
+                                <tr id = "tbl_tr_{{$val_program_recommendation->id}}">
+                                    <td><input type="text " name="" id="recommendations" value="{{$val_program_recommendation->recommendation_desc}}"  onfocusout="update_program_recommendations({{$val_program_recommendation->id}}, 'recommendation_desc', this)" class="form-control"placeholder="..."></td>   
+                                    <td class= "remove-td">
+                                        <?php
+                                            if($index > 4){?>
+                                            <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_recommendations({{$val_program_recommendation->id}})"></i></button>
+                                        <?php }
+                                        ?>
+                                    </td> 
+        
+                                </tr>
+                                @endforeach
+                            </tbody>
+                            
                         </table>
                         <br>
-                        <table>
-                            <tr>
-                            <td colspan="1" class="report-section"><b>IX.Program Plans</b></td>
-                            <td class="col-1 report-section add-btn"> <button class="add-button"> <a href=""><i class='bx bx-plus'></i>Add</a></button></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="plans" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="plans" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="plans" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
-                            <tr>
-                                <td><input type="text " name="" id="plans" class="form-control"placeholder="..."></td>   
-                                <td class= "remove-td"><a href=""><button class = "remove-btn"><i class='bx bxs-trash-alt'></i></button></a></td> 
-                            </tr>
+                        <table id = "tbl_program_plans">
+                           <thead>
+                                <tr>
+                                    <td colspan="1" class="report-section"><b>IX.Program Plans</b></td>
+                                    <td class="col-1 report-section add-btn">
+                                         <button type="button" class="btn  btn-info add-button"  onclick="add_program_plans({{$report_id}});"><i class='bx bx-plus'></i>Add
+                                        </button>
+                                    </td>
+                                </tr>
+                           </thead>
+                           <tbody>
+                                @foreach($program_program_plans as $index => $val_program_plans)
+                                <tr id = "tbl_tr_{{$val_program_plans->id}}">
+                                    <td><input type="text " name="" id="plans" value="{{$val_program_plans->plan_desc}}" onfocusout="update_program_plans({{$val_program_plans->id}}, 'plan_desc', this)" class="form-control"placeholder="..."></td>   
+                                    <td class= "remove-td">
+                                        <?php
+                                            if($index > 2){?>
+                                            <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_plans({{$val_program_plans->id}})"></i></button>
+                                        <?php }
+                                        ?>
+                                    </td> 
+                                </tr>
+                                @endforeach
     
+                           </tbody>
                         </table>
 
                         <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">SUBMIT</b></button>
@@ -350,9 +335,45 @@
 @endsection
 <script>
 
-    function conferm_remove_program_engagement_activities(e){
+    //remove
+
+    function confirm_remove_program_output_deliverables(e){
         swal({
-            text: 'Are you sure you want to remove this ?',
+            text: 'Are you sure you want to remove this?',
+            showCancelButton: true,
+            icon: "warning",
+            buttons: true,
+            closeModal: false,
+        }).then(result => {
+            
+            if (result == true){
+                $(".btn").attr("disabled", true);
+                $.ajax({
+                    method: 'GET',
+                    url: '/ous/remove_program_output_deliverables/?report_id='+e,
+                    success    :'success',
+                    contentType: false,
+                    processData: false,
+                    success: (response) => {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Your work has been saved',
+                            showConfirmButton: false,
+                            timer: 1500
+                        }).then(result => {
+                            $(".btn").attr("disabled", false);
+                            $('#tbl_tr_'+e).remove(); 
+                        });
+                    }
+                });
+            }
+
+        });
+    }
+
+    function confirm_remove_program_engagement_activities(e){
+        swal({
+            text: 'Are you sure you want to remove this?',
             showCancelButton: true,
             icon: "warning",
             buttons: true,
@@ -384,6 +405,237 @@
         });
     }
 
+    function confirm_remove_program_consultation(e){
+        swal({
+            text: 'Are you sure you want to remove this?',
+            showCancelButton: true,
+            icon: "warning",
+            buttons: true,
+            closeModal: false,
+        }).then(result => {
+            
+            if (result == true){
+                $(".btn").attr("disabled", true);
+                $.ajax({
+                    method: 'GET',
+                    url: '/ous/remove_program_consultation/?report_id='+e,
+                    success    :'success',
+                    contentType: false,
+                    processData: false,
+                    success: (response) => {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Your work has been saved',
+                            showConfirmButton: false,
+                            timer: 1500
+                        }).then(result => {
+                            $(".btn").attr("disabled", false);
+                            $('#tbl_tr_'+e).remove(); 
+                        });
+                    }
+                });
+            }
+
+        });
+    }
+
+    function confirm_remove_program_risk(e){
+        swal({
+            text: 'Are you sure you want to remove this?',
+            showCancelButton: true,
+            icon: "warning",
+            buttons: true,
+            closeModal: false,
+        }).then(result => {
+            
+            if (result == true){
+                $(".btn").attr("disabled", true);
+                $.ajax({
+                    method: 'GET',
+                    url: '/ous/remove_program_risk/?report_id='+e,
+                    success    :'success',
+                    contentType: false,
+                    processData: false,
+                    success: (response) => {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Your work has been saved',
+                            showConfirmButton: false,
+                            timer: 1500
+                        }).then(result => {
+                            $(".btn").attr("disabled", false);
+                            $('#tbl_tr_'+e).remove(); 
+                        });
+                    }
+                });
+            }
+
+        });
+    }
+
+    function confirm_remove_program_collaborations(e){
+        swal({
+            text: 'Are you sure you want to remove this?',
+            showCancelButton: true,
+            icon: "warning",
+            buttons: true,
+            closeModal: false,
+        }).then(result => {
+            
+            if (result == true){
+                $(".btn").attr("disabled", true);
+                $.ajax({
+                    method: 'GET',
+                    url: '/ous/remove_program_collaborations/?report_id='+e,
+                    success    :'success',
+                    contentType: false,
+                    processData: false,
+                    success: (response) => {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Your work has been saved',
+                            showConfirmButton: false,
+                            timer: 1500
+                        }).then(result => {
+                            $(".btn").attr("disabled", false);
+                            $('#tbl_tr_'+e).remove(); 
+                        });
+                    }
+                });
+            }
+
+        });
+    }
+
+    function confirm_remove_program_problems(e){
+        swal({
+            text: 'Are you sure you want to remove this?',
+            showCancelButton: true,
+            icon: "warning",
+            buttons: true,
+            closeModal: false,
+        }).then(result => {
+            
+            if (result == true){
+                $(".btn").attr("disabled", true);
+                $.ajax({
+                    method: 'GET',
+                    url: '/ous/remove_program_problems/?report_id='+e,
+                    success    :'success',
+                    contentType: false,
+                    processData: false,
+                    success: (response) => {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Your work has been saved',
+                            showConfirmButton: false,
+                            timer: 1500
+                        }).then(result => {
+                            $(".btn").attr("disabled", false);
+                            $('#tbl_tr_'+e).remove(); 
+                        });
+                    }
+                });
+            }
+
+        });
+    }
+    function confirm_remove_program_recommendations(e){
+        swal({
+            text: 'Are you sure you want to remove this?',
+            showCancelButton: true,
+            icon: "warning",
+            buttons: true,
+            closeModal: false,
+        }).then(result => {
+            
+            if (result == true){
+                $(".btn").attr("disabled", true);
+                $.ajax({
+                    method: 'GET',
+                    url: '/ous/remove_program_recommendations/?report_id='+e,
+                    success    :'success',
+                    contentType: false,
+                    processData: false,
+                    success: (response) => {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Your work has been saved',
+                            showConfirmButton: false,
+                            timer: 1500
+                        }).then(result => {
+                            $(".btn").attr("disabled", false);
+                            $('#tbl_tr_'+e).remove(); 
+                        });
+                    }
+                });
+            }
+
+        });
+    }
+    function confirm_remove_program_plans(e){
+        swal({
+            text: 'Are you sure you want to remove this?',
+            showCancelButton: true,
+            icon: "warning",
+            buttons: true,
+            closeModal: false,
+        }).then(result => {
+            
+            if (result == true){
+                $(".btn").attr("disabled", true);
+                $.ajax({
+                    method: 'GET',
+                    url: '/ous/remove_program_plans/?report_id='+e,
+                    success    :'success',
+                    contentType: false,
+                    processData: false,
+                    success: (response) => {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Your work has been saved',
+                            showConfirmButton: false,
+                            timer: 1500
+                        }).then(result => {
+                            $(".btn").attr("disabled", false);
+                            $('#tbl_tr_'+e).remove(); 
+                        });
+                    }
+                });
+            }
+
+        });
+    }
+
+
+
+
+    //ADD
+
+    function add_program_output_deliverables(e){
+        $.ajax({
+            method: 'GET',
+            url: '/ous/add_program_output_deliverables/?report_id='+e,
+            success    :'success',
+            contentType: false,
+            processData: false,
+            success: (response) => {
+
+                var newRowContent = `
+                    <tr id="tbl_tr_${response.insertedid}">
+                        <td><input type="text " name="" id="prog_output" onfocusout="update_program_output_deliverables(${response.insertedid}, 'outputs_desc', this)" class="form-control"placeholder="..."></td>
+                        <td><input type="text " name="" id="deliverables" onfocusout="update_program_output_deliverables(${response.insertedid}, 'deliverables_desc', this)" class="form-control"placeholder="..."></td>
+                        <td class= "remove-td">
+                            <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_output_deliverables(${response.insertedid})"></i></button>
+                        </td> 
+                    </tr>
+                `;
+                jQuery("#tbl_output_deliverables tbody").append(newRowContent);
+                
+            }
+        });
+    }
+
     function add_program_engagement_activities(e){
         $.ajax({
             method: 'GET',
@@ -398,11 +650,162 @@
                         <td><input type="text " name="" id="activities" class="form-control"  onfocusout="update_program_engagement_activities(${response.insertedid}, 'activities_desc', this)" placeholder="....."></td>
                         <td><input type="text " name="" id="accomplishment" class="form-control" onfocusout="update_program_engagement_activities(${response.insertedid}, 'accomplishment_desc', this)" placeholder="....."></td>
                         <td class= "remove-td">
-                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="conferm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
                         </td> 
                     </tr>
                 `;
                 jQuery("#tbl_engagement_activities tbody").append(newRowContent);
+                
+            }
+        });
+    }
+
+    function add_program_consultation_advising(e){
+        $.ajax({
+            method: 'GET',
+            url: '/ous/add_program_consultation_advising/?report_id='+e,
+            success    :'success',
+            contentType: false,
+            processData: false,
+            success: (response) => {
+                var newRowContent = `
+                    <tr id="tbl_tr_${response.insertedid}">
+                        <td><input type="text " name="" id="date" class="form-control"  onfocusout="update_program_consultation_advising(${response.insertedid}, 'date_desc', this)" placeholder="....."></td>
+                        <td><input type="text " name="" id="nature" class="form-control"  onfocusout="update_program_consultation_advising(${response.insertedid}, 'advising_nature_desc', this)" placeholder="....."></td>
+                        <td><input type="text " name="" id="action" class="form-control" onfocusout="update_program_consultation_advising(${response.insertedid}, 'action_desc', this)" placeholder="....."></td>
+                        <td class= "remove-td">
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        </td> 
+                    </tr>
+                `;
+                jQuery("#tbl_consultation_advising tbody").append(newRowContent);
+                
+            }
+        });
+    }
+
+    function add_program_risk_challenges(e){
+        $.ajax({
+            method: 'GET',
+            url: '/ous/add_program_risk_challenges/?report_id='+e,
+            success    :'success',
+            contentType: false,
+            processData: false,
+            success: (response) => {
+                var newRowContent = `
+                    <tr id="tbl_tr_${response.insertedid}">
+                        <td><input type="text " name="" id="risk" class="form-control"  onfocusout="update_program_risk_challenges(${response.insertedid}, 'risk_desc', this)" placeholder="....."></td>
+                        <td class= "remove-td">
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        </td> 
+                    </tr>
+                `;
+                jQuery("#tbl_risk_challenges tbody").append(newRowContent);
+                
+            }
+        });
+    }
+
+    function add_pogram_collaborations_linkages(e){
+        $.ajax({
+            method: 'GET',
+            url: '/ous/add_pogram_collaborations_linkages/?report_id='+e,
+            success    :'success',
+            contentType: false,
+            processData: false,
+            success: (response) => {
+                var newRowContent = `
+                    <tr id="tbl_tr_${response.insertedid}">
+                        <td><input type="text " name="" id="collaboration" class="form-control"  onfocusout=" update_program_collaboration_linkages(${response.insertedid}, 'collaboration_desc, this)" placeholder="....."></td>
+                        <td class= "remove-td">
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        </td> 
+                    </tr>
+                `;
+                jQuery("#tbl_collaboration_linkages tbody").append(newRowContent);
+                
+            }
+        });
+    }
+
+    function add_program_problems(e){
+        
+        $.ajax({
+            method: 'GET',
+            url: '/ous/add_program_problem/?report_id='+e,
+            success    :'success',
+            contentType: false,
+            processData: false,
+            success: (response) => {
+                var newRowContent = `
+                    <tr id="tbl_tr_${response.insertedid}">
+                        <td><input type="text " name="" id="problems" class="form-control"  onfocusout="update_program_problems_ecountered(${response.insertedid}, 'problem_desc', this)" placeholder="....."></td>
+                        <td class= "remove-td">
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        </td> 
+                    </tr>
+                `;
+                jQuery("#tbl_problems_ecountered tbody").append(newRowContent);
+                
+            }
+        });
+    }
+
+    function add_program_recommendations(e){
+        $.ajax({
+            method: 'GET',
+            url: '/ous/add_program_recommendations/?report_id='+e,
+            success    :'success',
+            contentType: false,
+            processData: false,
+            success: (response) => {
+                var newRowContent = `
+                    <tr id="tbl_tr_${response.insertedid}">
+                        <td><input type="text " name="" id="recommendations" class="form-control"  onfocusout="update_program_recommendations(${response.insertedid}, 'recommendation_desc', this)" placeholder="....."></td>
+                        <td class= "remove-td">
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        </td> 
+                    </tr>
+                `;
+                jQuery("#tbl_recommendations tbody").append(newRowContent);
+                
+            }
+        });
+    }
+
+    function add_program_plans(e){
+        $.ajax({
+            method: 'GET',
+            url: '/ous/add_program_plans/?report_id='+e,
+            success    :'success',
+            contentType: false,
+            processData: false,
+            success: (response) => {
+                var newRowContent = `
+                    <tr id="tbl_tr_${response.insertedid}">
+                        <td><input type="text " name="" id="plans" class="form-control"  onfocusout="update_program_plans(${response.insertedid}, 'plan_desc', this)" placeholder="....."></td>
+                        
+                        <td class= "remove-td">
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        </td> 
+                    </tr>
+                `;
+                jQuery("#tbl_program_plans tbody").append(newRowContent);
+                
+            }
+        });
+    }
+
+    //UPDATE 
+    function update_program_output_deliverables(id, fieldname, value){
+        var in_value = $(value).val();
+        $.ajax({
+            method: 'GET',
+            url: '/ous/update_program_output_deliverables/?id='+id+'&fieldname='+fieldname+'&value='+in_value,
+            success    :'success',
+            contentType: false,
+            processData: false,
+            success: (response) => {
                 
             }
         });
@@ -421,5 +824,99 @@
             }
         });
     }
+
+    function update_program_consultation_advising (id, fieldname, value) {
+        var in_value = $(value).val();
+        $.ajax({
+            method: 'GET',
+            url: '/ous/update_program_consultation_advising/?id='+id+'&fieldname='+fieldname+'&value='+in_value,
+            success    :'success',
+            contentType: false,
+            processData: false,
+            success: (response) => {
+                
+            }
+        });
+
+    }
+
+    function update_program_collaboration_linkages (id, fieldname, value) {
+     
+        var in_value = $(value).val();
+        $.ajax({
+            method: 'GET',
+            url: '/ous/update_program_collaboration_linkages/?id='+id+'&fieldname='+fieldname+'&value='+in_value,
+            success    :'success',
+            contentType: false,
+            processData: false,
+            success: (response) => {
+                
+            }
+        });
+    }
+
+    function update_program_problems_ecountered (id, fieldname, value) {
+     
+     var in_value = $(value).val();
+     $.ajax({
+         method: 'GET',
+         url: '/ous/update_program_problems_ecountered/?id='+id+'&fieldname='+fieldname+'&value='+in_value,
+         success    :'success',
+         contentType: false,
+         processData: false,
+         success: (response) => {
+             
+         }
+     });
+    }
+
+    function update_program_recommendations (id, fieldname, value) {
+     
+     var in_value = $(value).val();
+     $.ajax({
+         method: 'GET',
+         url: '/ous/update_program_recommendations/?id='+id+'&fieldname='+fieldname+'&value='+in_value,
+         success    :'success',
+         contentType: false,
+         processData: false,
+         success: (response) => {
+             
+         }
+     });
+    }
+
+    function update_program_plans (id, fieldname, value) {
+     
+     var in_value = $(value).val();
+     $.ajax({
+         method: 'GET',
+         url: '/ous/update_program_plans/?id='+id+'&fieldname='+fieldname+'&value='+in_value,
+         success    :'success',
+         contentType: false,
+         processData: false,
+         success: (response) => {
+             
+         }
+     });
+    }
+
+    function update_program_risk_challenges (id, fieldname, value) {
+     
+     var in_value = $(value).val();
+     $.ajax({
+         method: 'GET',
+         url: '/ous/update_program_risk_challenges/?id='+id+'&fieldname='+fieldname+'&value='+in_value,
+         success    :'success',
+         contentType: false,
+         processData: false,
+         success: (response) => {
+             
+         }
+     });
+    }
+
+
+
+    
 
 </script>

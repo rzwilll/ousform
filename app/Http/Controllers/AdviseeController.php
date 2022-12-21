@@ -13,10 +13,13 @@ class AdviseeController extends Controller
      */
     public function index()
     {
+        // $user = Auth::user();
+
         //
         return view('advisee.index');
     }
 
+    
     /**
      * Show the form for creating a new resource.
      *

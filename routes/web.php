@@ -25,6 +25,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::group(['middleware' => ['auth']], function() { 
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/advisee/index', [App\Http\Controllers\AdviseeController:: class, 'index'])->name('advisee.index');
@@ -41,8 +43,48 @@ Route::get('/ous/modal_report', [App\Http\Controllers\OUSController::class, 'loa
 
 Route::get('/ous/details/{id}', [App\Http\Controllers\OUSController::class, 'get_ous_details']);
 Route::get('/ous/details/{id}',[OUSController::class,'get_ous_details'])->name('ous.get_ous_details');
+
+//engagement_activities
 Route::get('/ous/update_program_engagement_activities', [App\Http\Controllers\OUSController::class, 'update_program_activities']);
 Route::get('/ous/add_program_engagement_activities', [App\Http\Controllers\OUSController::class, 'add_program_activities']);
 Route::get('/ous/remove_program_engagement_activities', [App\Http\Controllers\OUSController::class, 'remove_program_activities']);
 
+//output_deliverables
+Route::get('/ous/update_program_output_deliverables', [App\Http\Controllers\OUSController::class, 'update_program_output_deliverables']);
+Route::get('/ous/add_program_output_deliverables', [App\Http\Controllers\OUSController::class, 'add_program_output_deliverables']);
+Route::get('/ous/remove_program_output_deliverables', [App\Http\Controllers\OUSController::class, 'remove_program_output_deliverables']);
+
+//consultation Advising
+Route::get('/ous/update_program_consultation_advising', [App\Http\Controllers\OUSController::class, 'update_program_consultation_advising']);
+Route::get('/ous/add_program_consultation_advising', [App\Http\Controllers\OUSController::class, 'add_program_consultation_advising']);
+Route::get('/ous/remove_program_consultation', [App\Http\Controllers\OUSController::class, 'remove_program_consultation']);
+
+//program risk challenges
+Route::get('/ous/update_program_risk_challenges', [App\Http\Controllers\OUSController::class, 'update_program_risk_challenges']);
+Route::get('/ous/add_program_risk_challenges', [App\Http\Controllers\OUSController::class, 'add_program_risk_challenges']);
+Route::get('/ous/remove_program_risk', [App\Http\Controllers\OUSController::class, 'remove_program_risk']);
+
+
+// problems_recommendation
+Route::get('/ous/update_program_recommendations ', [App\Http\Controllers\OUSController::class, 'update_program_recommendations ']);
+Route::get('/ous/add_program_recommendations', [App\Http\Controllers\OUSController::class, 'add_program_recommendations']);
+Route::get('/ous/remove_program_recommendations', [App\Http\Controllers\OUSController::class, 'remove_program_recommendations']);
+
+//problem encountered
+Route::get('/ous/update_program_problems_ecountered ', [App\Http\Controllers\OUSController::class, 'update_program_problems_ecountered']);
+// Route::get('/ous/add_program_problems', [App\Http\Controllers\OUSController::class, ' add_program_problems']);
+Route::get('/ous/add_program_problem', [App\Http\Controllers\OUSController::class, 'add_program_problems']);
+Route::get('/ous/remove_program_problems', [App\Http\Controllers\OUSController::class, 'remove_program_problems']);
+
+
+// program plans
+Route::get('/ous/update_program_plans', [App\Http\Controllers\OUSController::class, 'update_program_plans']);
+Route::get('/ous/add_program_plans', [App\Http\Controllers\OUSController::class, 'add_program_plans']);
+Route::get('/ous/remove_program_plans', [App\Http\Controllers\OUSController::class, 'remove_program_plans']);
+
+//collaboration and linkages
+Route::get('/ous/update_program_collaboration_linkages', [App\Http\Controllers\OUSController::class, 'update_program_collaboration_linkages']);
+Route::get('/ous/add_pogram_collaborations_linkages', [App\Http\Controllers\OUSController::class, 'add_pogram_collaborations_linkages']);
+Route::get('/ous/remove_program_collaborations', [App\Http\Controllers\OUSController::class, 'remove_program_collaborations']);
 // Route::get('/modal_report', [OUSController::class, 'load_modal_report'])->name('ous.gen_report');
+});

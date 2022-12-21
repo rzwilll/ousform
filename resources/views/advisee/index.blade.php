@@ -16,11 +16,11 @@
                                 </select>
                              </form> -->
 
-                             @foreach($acad_years as $acad_year)
+                             
                              <label for="yr_filter"> School Year: </label>
                               <select name="" id="">
-                                <option value="{{$acad_year->id}}"> {{$acad_year->acad_yr}}</option>
-                                  @endforeach
+                                <option value=""> 2020-2021</option>
+                                
                               </select>
                         </div>
 
@@ -62,7 +62,7 @@
                         <a href="#">S</a>
                         <a href="#">T</a>
                         <a href="#">U</a>
-                        <a href="#">VV</a>
+                        <a href="#">W</a>
                         <a href="#">X</a>
                         <a href="#">Y</a>
                         <a href="#">Z</a>
