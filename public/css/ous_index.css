@@ -38,3 +38,14 @@
   text-decoration: none;
 }
 
+a.btn.btn-info{
+  border: none;
+  background:  #e8e8e8;
+  color: #a41d21;
+  padding: .5em;
+  border-radius: 10px;
+}
+a.btn.btn-info i {
+  color: #a41d21;
+  font-size:1.2em;
+}
