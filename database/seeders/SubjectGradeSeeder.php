@@ -57,7 +57,7 @@ class SubjectGradeSeeder extends Seeder
             //     [
             //         'id' => '5',
             //         'subject_id' => '30',
-            //         'grade' =>'INC',
+            //         'grade' =>'5',
             //         'stud_id' => '1',
             //         'term_id' => '1'
         
@@ -1506,7 +1506,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => '177',
                 'subject_id' => '3',
-                'grade' =>'INC',
+                'grade' =>'5',
                 'stud_id' => '3',
                 'term_id' => '2'
 
@@ -2824,7 +2824,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 351 ',
                     'subject_id' => ' 4 ',
-                    'grade' => ' WDRW ',
+                    'grade' => '5',
                     'stud_id' => ' 3 ',
                     'term_id' => '3'
                    ],
@@ -3529,7 +3529,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                     'id' => ' 450 ',
                     'subject_id' => ' 30 ',
-                    'grade' => ' INC ',
+                    'grade' => ' 5 ',
                     'stud_id' => ' 9 ',
                     'term_id' => '4'
                 ],
@@ -6847,7 +6847,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 912 ',
             'subject_id' => ' 39 ',
-            'grade' => ' INC ',
+            'grade' => ' 5 ',
             'stud_id' => ' 23 ',
             'term_id' =>'3'
            ],
@@ -7081,7 +7081,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 945 ',
             'subject_id' => ' 42 ',
-            'grade' => ' INC ',
+            'grade' => ' 5 ',
             'stud_id' => ' 25 ',
             'term_id' => '4'
            ],
@@ -7481,7 +7481,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1001 ',
             'subject_id' => ' 42 ',
-            'grade' => ' INC ',
+            'grade' => ' 5 ',
             'stud_id' => ' 29 ',
             'term_id' => '4'
            ],
