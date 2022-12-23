@@ -17,11 +17,13 @@
                              </form> -->
 
                              
-                             <label for="yr_filter"> School Year: </label>
-                              <select name="" id="">
-                                <option value=""> 2020-2021</option>
-                                
-                              </select>
+                              <label for="yr_filter"> School Year: </label>
+                                  <select name="" id="">
+                                    @foreach ($academic_school_year as $acadyear)
+                                    <option value="{{$acadyear->id}}"> {{$acadyear->acad_yr}}</option>
+                                    @endforeach   
+                                  </select>
+                           
                         </div>
 
                         <div class="top-left">
@@ -40,7 +42,7 @@
                     </div>
                 
         </div>
-                <div class="pagination-container">
+                <!-- <div class="pagination-container">
                     <div class="pagination">
                         <a href="#">A</a>
                         <a class="active" href="#">B</a>
@@ -67,7 +69,7 @@
                         <a href="#">Y</a>
                         <a href="#">Z</a>
                     </div>
-                </div>
+                </div> -->
 
                
                 <div class="table-body">
@@ -81,14 +83,17 @@
                           <th>CGPA</th>
                           <th></th>
                         </tr>
-                        <tr>
-                          <td>2021-1100</td>
-                          <td>Rizahtin B. Camama</td>
-                          <td>2</td>
-                          <td>1.85</td>
-                          <td>1.85</td>
-                          <td><a href="{{route('advisee.view')}}">View</a></td>
-                        </tr>
+                        @foreach($adviseelist as $student )
+                          <tr>
+                            <td>{{$student->stud_idnum}}</td>
+                            <td>{{$student->stud_last}}</td>
+                            <td>2</td>
+                            <td>1.85</td>
+                            <td>1.85</td>
+                            <td><a href="{{route('advisee.view')}}">View</a></td>
+                          </tr>
+                        @endforeach
+                        <!-- 
                         <tr>
                             <td>2021-1123</td>
                             <td>Nikki Omandac</td>
@@ -96,7 +101,7 @@
                             <td>1.50</td>
                             <td>1.75</td>
                             <td><a href="#">View</a></td>
-                          </tr>
+                        </tr>
                         <tr>
                             <td>2021-1120</td>
                             <td>Kyle Pacquingan</td>
@@ -105,7 +110,6 @@
                             <td>1.50</td>
                             <td><a href="#">View</a></td>
                         </tr>
-
                         <tr>
                             <td>2021-2010</td>
                             <td>Kent Pabes</td>
@@ -113,9 +117,7 @@
                             <td>1.25</td>
                             <td>1.50</td>
                             <td><a href="#">View</a></td>
-                          </tr>
-
-                        
+                        </tr>                       
                         <tr>
                             <td>2021-2100</td>
                             <td>Abdulrahman Lingga</td>
@@ -123,9 +125,7 @@
                             <td>1</td>
                             <td>1.25</td>
                             <td><a href="#">View</a></td>
-                         </tr>
-
-                         
+                        </tr>                       
                         <tr>
                             <td>2021-2300</td>
                             <td>Liza Soberano</td>
@@ -133,9 +133,7 @@
                             <td>2</td>
                             <td>1.75</td>
                             <td><a href="#">View</a></td>
-                        </tr>
-
-                        
+                        </tr>  
                         <tr>
                             <td>2021-2010</td>
                             <td>Kathryn</td>
@@ -144,7 +142,7 @@
                             <td>1.85</td>
                             <td><a href="#">View</a></td>
                         </tr>
-                        
+                         -->
                       </table>
 
                       
