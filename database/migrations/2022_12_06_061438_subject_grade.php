@@ -21,6 +21,8 @@ return new class extends Migration
             $table -> string('grade');
             $table -> unsignedBigInteger('stud_id');
             $table -> unsignedBigInteger('term_id');
+
+            $table -> string('year_level')->nullable();
             $table ->foreign('term_id')
                 ->references('id')
                 ->on('acad_terms')

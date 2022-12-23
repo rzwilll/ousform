@@ -41,6 +41,8 @@ class OUSController extends Controller
     }
 
     public function get_ous_details($id){
+        $report_status = Reports::where('id', $id)->first();
+        
         $program_activities = ProgramEngagementActivities::where("report_id", $id)->get();
         $program_outputs_deliverables = ProgramOutputsDeliverables::where("report_id", $id)->get();
         $program_consultation_advising = ConsultationAdvising::where("report_id", $id)->get();
@@ -53,7 +55,7 @@ class OUSController extends Controller
         $report_id = $id;
         return view('ous.details', compact('program_activities', 'report_id', 'program_outputs_deliverables', 
                     'program_consultation_advising', 'program_risk_challenges','program_collaboration_linkages', 
-                    'program_problems_encountered','program_recommendations','program_program_plans'));
+                    'program_problems_encountered','program_recommendations','program_program_plans', 'report_status'));
     }
 
     //UPDATE 
@@ -408,11 +410,23 @@ class OUSController extends Controller
             return response()->json(array('success' => false), 400);
         }
         $todayDate = Carbon::now()->format('Y-m-d');
-        $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
+
+
+        $advisee_id = DB::table('acad_terms')
+        ->join('acad_years', 'acad_terms.acadyear_id', '=', 'acad_years.id')
+        ->join('advisees', 'advisees.term_id', '=', 'acad_terms.id')
+        ->where('acad_terms.acadyear_id', $request->academic_year)
+        ->where('advisees.user_id', auth()->user()->id)
+        ->select('advisees.id')
+        ->first();
+
+
+
+        // $advisee_id = Advisee::where('user_id', auth()->user()->id)->first()->id;
 
 
         $Reports = new Reports;
-        $Reports->advisee_id = $advisee_id;
+        $Reports->advisee_id = $advisee_id->id;
         $Reports->save();
 
         $insertedid = $Reports->id;

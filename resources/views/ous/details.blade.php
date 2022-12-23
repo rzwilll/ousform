@@ -107,9 +107,48 @@
                                 </tr>
                                 @foreach($program_activities as $index => $val_progAc)
                                 <tr id="tbl_tr_{{$val_progAc->id}}">
-                                    <td><input type="text " name="" id="objective" class="form-control" value="{{$val_progAc->objective_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'objective_desc', this)" placeholder="....."></td>
-                                    <td><input type="text " name="" id="activities" class="form-control" value="{{$val_progAc->activities_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'activities_desc', this)" placeholder="....."></td>
-                                    <td><input type="text " name="" id="accomplishment" class="form-control" value="{{$val_progAc->accomplishment_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'accomplishment_desc', this)" placeholder="....."></td>
+
+                                    <td>
+                                        <?php
+
+                                                if($report_status->status == 1){?>
+                                                    <p>{{$val_progAc->objective_desc}}</p>
+                                                <?php } else { ?>
+                                                    <input type="text " name="" id="objective" class="form-control" value="{{$val_progAc->objective_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'objective_desc', this)" placeholder=".....">
+                                                <?php }
+
+                                        ?>
+
+                                    </td>
+                                            
+                                    <td>
+                                        <?php
+
+                                            if($report_status->status == 1){?>
+                                                <p>{{$val_progAc->activities_desc}}</p>
+                                            <?php } else { ?>
+                                                <input type="text " name="" id="activities" class="form-control" value="{{$val_progAc->activities_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'activities_desc', this)" placeholder=".....">
+                                            <?php }
+
+                                        ?>
+
+                                    </td>
+
+                                    <td>
+                                        <?php
+
+                                        if($report_status->status == 1){?>
+                                            <p>{{$val_progAc->accomplishment_desc}}</p>
+                                        <?php } else { ?>
+                                            <input type="text " name="" id="accomplishment" class="form-control" value="{{$val_progAc->accomplishment_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'accomplishment_desc', this)" placeholder=".....">
+                                        <?php }
+
+                                        ?>
+
+                                    </td>
+                                    <!-- <td><input type="text " name="" id="objective" class="form-control" value="{{$val_progAc->objective_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'objective_desc', this)" placeholder="....."></td>
+                                    <td><input type="text " name="" id="activities" class="form-control" value="{{$val_progAc->activities_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'activities_desc', this)" placeholder="....."></td> -->
+                                    <!-- <td><input type="text " name="" id="accomplishment" class="form-control" value="{{$val_progAc->accomplishment_desc}}" onfocusout="update_program_engagement_activities({{$val_progAc->id}}, 'accomplishment_desc', this)" placeholder="....."></td> -->
                                     <td class= "remove-td">
                                         <?php
                                             if($index > 4){?>
@@ -139,8 +178,36 @@
                                 </tr>
                                 @foreach($program_outputs_deliverables as $index => $val_progDeli)
                                     <tr id="tbl_tr_{{$val_progDeli->id}}">
-                                        <td><input type="text " name="" id="prog_output" value="{{$val_progDeli->outputs_desc}}" onfocusout="update_program_output_deliverables({{$val_progDeli->id}}, 'outputs_desc', this)" class="form-control"placeholder="..."></td>
-                                        <td><input type="text " name="" id="deliverables" value="{{$val_progDeli->deliverables_desc}}" onfocusout="update_program_output_deliverables({{$val_progDeli->id}}, 'deliverables_desc', this)" class="form-control"placeholder="..."></td>
+
+                                    <td>
+                                        <?php
+
+                                                if($report_status->status == 1){?>
+                                                    <p>{{$val_progDeli->outputs_desc}}</p>
+                                                <?php } else { ?>
+                                                    <td><input type="text " name="" id="prog_output" value="{{$val_progDeli->outputs_desc}}" onfocusout="update_program_output_deliverables({{$val_progDeli->id}}, 'outputs_desc', this)" class="form-control"placeholder="..."></td>
+                                                <?php }
+
+                                        ?>
+
+                                    </td>
+
+                                    <td>
+                                        <?php
+
+                                                if($report_status->status == 1){?>
+                                                    <p>{{$val_progDeli->deliverables_desc}}</p>
+                                                <?php } else { ?>
+                                                    <td><input type="text " name="" id="deliverables" value="{{$val_progDeli->deliverables_desc}}" onfocusout="update_program_output_deliverables({{$val_progDeli->id}}, 'deliverables_desc', this)" class="form-control"placeholder="..."></td>
+                                                <?php }
+
+                                        ?>
+
+                                    </td>
+                                        
+
+                                        <!-- <td><input type="text " name="" id="prog_output" value="{{$val_progDeli->outputs_desc}}" onfocusout="update_program_output_deliverables({{$val_progDeli->id}}, 'outputs_desc', this)" class="form-control"placeholder="..."></td>
+                                        <td><input type="text " name="" id="deliverables" value="{{$val_progDeli->deliverables_desc}}" onfocusout="update_program_output_deliverables({{$val_progDeli->id}}, 'deliverables_desc', this)" class="form-control"placeholder="..."></td> -->
                                         <td class= "remove-td">
                                             <?php
                                                 if($index > 3){?>
@@ -172,9 +239,37 @@
                             </tr>
                                 @foreach($program_consultation_advising as $index => $val_consultation_advising)
                             <tr id = "tbl_tr_{{$val_consultation_advising->id}}">
-                                <td><input type="text " name="" id="date"  value="{{$val_consultation_advising->date_desc}}" onfocusout="update_program_consultation_advising({{$val_consultation_advising->id}}, 'date_desc', this)" class="form-control"placeholder="..."></td>
+
+                                    <td>
+                                        <?php
+
+                                                if($report_status->status == 1){?>
+                                                    <p>{{$val_consultation_advising->date_desc}}</p>
+                                                <?php } else { ?>
+                                                    <td><input type="text " name="" id="date"  value="{{$val_consultation_advising->date_desc}}" onfocusout="update_program_consultation_advising({{$val_consultation_advising->id}}, 'date_desc', this)" class="form-control"placeholder="..."></td>
+                                                <?php }
+
+                                        ?>
+
+                                    </td>
+
+                                    <td>
+                                        <?php
+
+                                                if($report_status->status == 1){?>
+                                                    <p>{{$val_consultation_advising->advising_nature_desc}}</p>
+                                                <?php } else { ?>
+                                                    <td><input type="text " name="" id="nature"  value="{{$val_consultation_advising->advising_nature_desc}}" onfocusout="update_program_consultation_advising({{$val_consultation_advising->id}}, 'advising_nature_desc', this)"class="form-control"placeholder="..."></td>
+                                                <?php }
+
+                                        ?>
+
+                                    </td>
+
+                                    
+                                <!-- <td><input type="text " name="" id="date"  value="{{$val_consultation_advising->date_desc}}" onfocusout="update_program_consultation_advising({{$val_consultation_advising->id}}, 'date_desc', this)" class="form-control"placeholder="..."></td>
                                 <td><input type="text " name="" id="nature"  value="{{$val_consultation_advising->advising_nature_desc}}" onfocusout="update_program_consultation_advising({{$val_consultation_advising->id}}, 'advising_nature_desc', this)"class="form-control"placeholder="..."></td>
-                                <td><input type="text " name="" id="action" value="{{$val_consultation_advising->action_desc}}" onfocusout="update_program_consultation_advising({{$val_consultation_advising->id}}, 'action_desc', this)"class="form-control"placeholder="..."></td>
+                                <td><input type="text " name="" id="action" value="{{$val_consultation_advising->action_desc}}" onfocusout="update_program_consultation_advising({{$val_consultation_advising->id}}, 'action_desc', this)"class="form-control"placeholder="..."></td> -->
                                 <td class= "remove-td">
                                         <?php
                                             if($index > 3){?>
@@ -219,22 +314,40 @@
                             <thead>
                                 <tr>
                                     <td colspan ="1"class="report-section"><b>V.Collaborations and Linkage</b></td>
-                                    <td class="col-1 report-section add-btn"> 
-                                        <button type="button" class="btn  btn-info add-button" onclick="add_pogram_collaborations_linkages({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
-                                    </td>
+                                    <?php
+                                        if($report_status->status != 1){?>
+                                            <td class="col-1 report-section add-btn"> 
+                                                <button type="button" class="btn  btn-info add-button" onclick="add_pogram_collaborations_linkages({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
+                                            </td>   
+                                        <?php }
+                                    ?>
+                            
                                 </tr>
                             </thead>
                            <tbody>
                                 @foreach($program_collaboration_linkages as $index => $val_program_collab)
                                 <tr id = "tbl_tr_{{$val_program_collab->id}}">
-                                        <td><input type="text " name="" id="collaboration" value="{{$val_program_collab->collaboration_desc}}" onfocusout="update_program_collaboration_linkages({{$val_program_collab->id}}, 'collaboration_desc', this)"class="form-control"placeholder="..."></td>   
-                                        <td class= "remove-td">
+                                        <td>
                                             <?php
-                                                if($index > 4){?>
-                                                    <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick=" confirm_remove_program_collaborations({{$val_program_collab->id}})"></i></button>
+                                                if($report_status->status == 1){?>
+                                                    <p>{{$val_program_collab->collaboration_desc}}</p>
+                                                <?php } else { ?>
+                                                    <input type="text " name="" id="collaboration" value="{{$val_program_collab->collaboration_desc}}" onfocusout="update_program_collaboration_linkages({{$val_program_collab->id}}, 'collaboration_desc', this)"class="form-control"placeholder="...">
                                                 <?php }
                                             ?>
-                                        </td> 
+                                            
+                                        </td>   
+                                        <?php
+                                            if($report_status->status != 1){?>
+                                                <td class= "remove-td">
+                                                    <?php
+                                                        if($index > 4){?>
+                                                            <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick=" confirm_remove_program_collaborations({{$val_program_collab->id}})"></i></button>
+                                                        <?php }
+                                                    ?>
+                                                </td>
+                                            <?php }
+                                        ?> 
                                 </tr>
                                 @endforeach
                            </tbody>

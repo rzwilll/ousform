@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('reports', function (Blueprint $table) {
             $table -> id();
             $table -> unsignedBigInteger('advisee_id');
-
+            $table -> tinyInteger('status')->default(0);
             $table ->foreign('advisee_id')//
                 ->references('id')
                 ->on('advisees')

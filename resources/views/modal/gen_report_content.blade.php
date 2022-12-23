@@ -33,6 +33,7 @@ else { ?>
             contentType: false,
             processData: false,
             success: (response) => {
+                
                 $("#modal_report").modal('hide');
                 Swal.fire({
                     icon: 'success',
