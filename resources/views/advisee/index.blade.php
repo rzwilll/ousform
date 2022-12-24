@@ -85,10 +85,10 @@
                         </tr>
                         @foreach($adviseelist as $student )
                           <tr>
-                            <td>{{$student->stud_idnum}}</td>
-                            <td>{{$student->stud_last}}</td>
-                            <td>2</td>
-                            <td>1.85</td>
+                            <td>{{$student['stud_idnum']}}</td>
+                            <td>{{$student['stud_last']}}</td>
+                            <td></td>
+                            <td>{{$student['student_gpa']}}</td>
                             <td>1.85</td>
                             <td><a href="{{route('advisee.view')}}">View</a></td>
                           </tr>

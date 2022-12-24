@@ -39,30 +39,51 @@ class AdviseeController extends Controller
         // INNER JOIN students ON advisees.student_id = students.id 
         // INNER JOIN acad_terms ON advisees.term_id = acad_terms.id 
         // WHERE users.id = 1 AND acad_terms.acadyear_id = 1 AND acad_terms.acad_sem = 2;
-        
-        
+
+
+        // SELECT acad_years.acad_yr, students.stud_idnum, students.stud_last, students.stud_first, students.stud_mi, (SUM(subject_grades.grade*subjects.subject_unit)/SUM(subjects.subject_unit)) as GPA FROM subject_grades
+        // INNER JOIN subjects ON subject_grades.subject_id = subjects.id
+        // INNER JOIN students ON subject_grades.stud_id = students.id
+        // INNER JOIN acad_terms ON subject_grades.term_id = acad_terms.id
+        // INNER JOIN acad_years ON acad_terms.acadyear_id = acad_years.id
+        // WHERE acad_terms.acad_sem =1 AND acad_years.id = 1 AND students.id = 2;
+        $adviseelist = [];
         $academic_school_year = AcadYear::orderBy('status', 'DESC')->get();
 
-        // $reports = DB::table('acad_years')
-        // ->join('acad_terms', 'acad_terms.acadyear_id', '=', 'acad_years.id')
-        // ->join('advisees', 'advisees.term_id', '=', 'acad_terms.id')
-        // ->join('reports', 'reports.advisee_id', '=', 'advisees.id')
-        // ->where('advisees.user_id', '=', auth()->user()->id)
-        // ->select('reports.id as re_id', 'acad_years.acad_yr as school_year', 'reports.created_at')
-        // ->get();
-
-        // ->join('users', 'users.id', '=', 'advisees.user_id')
-
-        $adviseelist = DB::table('advisees')
+        $adviseelist_students = DB::table('advisees')
         ->join('users', 'users.id', '=', 'advisees.user_id')
         ->join('students', 'advisees.student_id', '=', 'students.id')
         ->join('acad_terms', 'advisees.term_id', '=', 'acad_terms.id')
         ->where('users.id', '=', auth()->user()->id)
         ->where('acad_terms.acadyear_id', 1,) 
         ->where('acad_terms.acad_sem',1)
+        ->select('students.*')
         ->get(); 
 
+        foreach ($adviseelist_students as $value) {
+             $student_gpa = DB::table('subject_grades')
+            ->join('subjects', 'subject_grades.subject_id', '=', 'subjects.id')
+            ->join('students', 'subject_grades.stud_id', '=', 'students.id')
+            ->join('acad_terms', 'subject_grades.term_id', '=', 'acad_terms.id')
+            ->join('acad_years', 'acad_terms.acadyear_id', '=', 'acad_years.id')
+            ->where('acad_terms.acad_sem', '=', 1)
+            ->where('acad_years.id', 1,) 
+            ->where('students.id',$value->id)
+            ->select(DB::raw('(SUM(subject_grades.grade*subjects.subject_unit)/SUM(subjects.subject_unit)) as GPA'))
+            ->first(); 
 
+
+            $student_gpa = array(
+                'id' => $value->id,
+                'stud_idnum' => $value->stud_idnum,
+                'stud_last' => $value->stud_last,
+                'stud_first' => $value->stud_first,
+                'stud_mi' => $value->stud_mi,
+                'student_gpa' => $student_gpa->GPA
+            );
+
+            array_push($adviseelist, $student_gpa);
+        }
 
         return view('advisee.index', compact('adviseelist', 'academic_school_year'));
 
