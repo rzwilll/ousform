@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="right-top">
-                        <p class="mt-2">Records Found: 20</p>
+                        <p class="mt-2">Records Found: {{count($adviseelist)}}</p>
                     </div>
                 
         </div>
@@ -89,8 +89,8 @@
                           <tr>
                             <td>{{$student['stud_idnum']}}</td>
                             <td>{{$student['stud_first']}} {{$student['stud_mi']}} {{$student['stud_last']}} </td>
-                            <td></td>
-                            <td>{{$student['student_gpa']}}</td>
+                            <td>{{$student['year_level']}}</td>
+                            <td>{{number_format($student['student_gpa'], 3, '.', '')}}</td>
                             <td>1.85</td>
                             <td><a href="{{route('advisee.view')}}">View</a></td>
                           </tr>

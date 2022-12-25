@@ -61,33 +61,57 @@ class AdviseeController extends Controller
         ->get(); 
 
         foreach ($adviseelist_students as $value) {
-             $student_gpa = DB::table('subject_grades')
-            ->join('subjects', 'subject_grades.subject_id', '=', 'subjects.id')
-            ->join('students', 'subject_grades.stud_id', '=', 'students.id')
+
+
+            $student_grade = DB::table('subject_grades')
             ->join('acad_terms', 'subject_grades.term_id', '=', 'acad_terms.id')
-            ->join('acad_years', 'acad_terms.acadyear_id', '=', 'acad_years.id')
+            ->join('subjects', 'subject_grades.subject_id', '=', 'subjects.id')
             ->where('acad_terms.acad_sem', '=', 1)
-            ->where('acad_years.id', 1,) 
-            ->where('students.id',$value->id)
-            ->select(DB::raw('ROUND((SUM(subject_grades.grade*subjects.subject_unit))/(SUM(subjects.subject_unit)), 3) as GPA'))
-            ->first(); 
+            ->where('acad_terms.acadyear_id', 1) 
+            ->where('subject_grades.stud_id',$value->id)
+            ->select('subjects.subject_unit', 'subject_grades.year_level', 'subject_grades.grade')
+            ->get();
 
 
+            $gpa = 0;
+            $total_units = 0;
+            $total_subject_times_unit = 0;
+            $yearLevel = "";
+
+
+            foreach ($student_grade as $std_grade){
+                $total_units = ($total_units + $std_grade->subject_unit);
+                $total_subject_times_unit = ($total_subject_times_unit + ($std_grade->grade * $std_grade->subject_unit));
+                $yearLevel = $std_grade->year_level;
+            }
+
+            $gpa = ($total_subject_times_unit/$total_units);
+
+
+            
+            
             $student_gpa = array(
                 'id' => $value->id,
                 'stud_idnum' => $value->stud_idnum,
                 'stud_last' => $value->stud_last,
                 'stud_first' => $value->stud_first,
                 'stud_mi' => $value->stud_mi,
-                'student_gpa' => $student_gpa->GPA
+                'student_gpa' => $gpa,
+                'total_units' => $total_units,
+                'year_level' => $yearLevel,
+                'total_subject_times_unit' => $total_subject_times_unit
             );
 
             array_push($adviseelist, $student_gpa);
+
+            $gpa = 0;
+            $total_units = 0;
+            $total_subject_times_unit = 0;
+            $yearLevel = "";
         }
 
+
         return view('advisee.index', compact('adviseelist', 'academic_school_year'));
-
-
 
     }
 
