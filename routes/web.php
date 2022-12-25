@@ -30,7 +30,8 @@ Route::group(['middleware' => ['auth']], function() {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/advisee/index', [App\Http\Controllers\AdviseeController:: class, 'index'])->name('advisee.index');
-Route::get('/advisee/view', [App\Http\Controllers\AdviseeController:: class, 'show'])->name('advisee.view');
+// Route::get('/advisee/view', [App\Http\Controllers\AdviseeController:: class, 'show'])->name('advisee.view');
+Route::get('advisee/view/{id}/{year_id}/{sem_id}/{year_level}', [App\Http\Controllers\AdviseeController::class, 'show']);
 Route::get('/advisee/get_advisee_list', [App\Http\Controllers\AdviseeController:: class, 'get_advisee_list']);
 
 

@@ -94,8 +94,8 @@
                                 <td>{{number_format($student['student_gpa'], 3, '.', '')}}</td>
                                 <td></td>
                                 <td>
-                                    <a href="{!! route('switch', ['prisw'=>$info->prisw, 'secsw'=>$info->secsw]) !!}">View</a>
-                                    <!-- <a href="{{route('advisee.view')}}">View</a> -->
+                                    <a href="{{ url('advisee/view/'.$student['id']. '/'.$student['year_id'].'/'.$student['sem_id'].'/'.$student['year_level']) }}">View</a>
+                                  
                                 </td>
                             </tr>
                             @endforeach
@@ -124,14 +124,18 @@
                 $("p#total-count").html(`Records Found: ${response.length}`);
                 var tr_body;
                 for (let i = 0; i < response.length; i++) {
+                    
+                    var link = `<a href="{{ url('advisee/view/'.$student['id']. '/'.$student['year_id'].'/'.$student['sem_id'].'/'.$student['year_level']) }}">View</a>`;
                     tr_body = `
-                        <tr id="tr-${response[i].stud_idnum}">
+                        <tr id="tr-${response[i].id}">
                             <td>${response[i].stud_idnum}</td>
                             <td>${response[i].stud_first} ${response[i].stud_mi} ${response[i].stud_last} </td>
                             <td>${response[i].year_level}</td>
                             <td>${response[i].student_gpa}</td>
                             <td></td>
-                            <td><a href="{{route('advisee.view')}}">View</a></td>
+                            <td>
+                                ${link}
+                            </td>
                         </tr>
                     `;
                  

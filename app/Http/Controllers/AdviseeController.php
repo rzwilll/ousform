@@ -13,6 +13,7 @@ use App\Models\CollaborationsLinkages;
 use App\Models\ProblemsEncountered;
 use App\Models\Recommendations;
 use App\Models\Reports;
+use App\Models\Student;
 use App\Models\ProgramPlans;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
@@ -52,13 +53,14 @@ class AdviseeController extends Controller
         // WHERE acad_terms.acad_sem =1 AND acad_years.id = 1 AND students.id = 2;
         $adviseelist = [];
         $academic_school_year = AcadYear::orderBy('status', 'DESC')->get();
+        $currrent_year = AcadYear::where('status', 1)->first();
 
         $adviseelist_students = DB::table('advisees')
         ->join('users', 'users.id', '=', 'advisees.user_id')
         ->join('students', 'advisees.student_id', '=', 'students.id')
         ->join('acad_terms', 'advisees.term_id', '=', 'acad_terms.id')
         ->where('users.id', '=', auth()->user()->id)
-        ->where('acad_terms.acadyear_id', 1,) 
+        ->where('acad_terms.acadyear_id', $currrent_year->id) 
         ->where('acad_terms.acad_sem',1, )
         ->select('students.*')
         ->get(); 
@@ -70,7 +72,7 @@ class AdviseeController extends Controller
             ->join('acad_terms', 'subject_grades.term_id', '=', 'acad_terms.id')
             ->join('subjects', 'subject_grades.subject_id', '=', 'subjects.id')
             ->where('acad_terms.acad_sem', '=', 1)
-            ->where('acad_terms.acadyear_id', 1) 
+            ->where('acad_terms.acadyear_id', $currrent_year->id) 
             ->where('subject_grades.stud_id',$value->id)
             ->select('subjects.subject_unit', 'subject_grades.year_level', 'subject_grades.grade')
             ->get();
@@ -102,7 +104,9 @@ class AdviseeController extends Controller
                 'student_gpa' => $gpa,
                 'total_units' => $total_units,
                 'year_level' => $yearLevel,
-                'total_subject_times_unit' => $total_subject_times_unit
+                'total_subject_times_unit' => $total_subject_times_unit,
+                'sem_id' => 1,
+                'year_id' => $currrent_year->id
             );
 
             array_push($adviseelist, $student_gpa);
@@ -172,7 +176,9 @@ class AdviseeController extends Controller
                 'student_gpa' => number_format($gpa, 3, '.', ''),
                 'total_units' => $total_units,
                 'year_level' => $yearLevel,
-                'total_subject_times_unit' => $total_subject_times_unit
+                'total_subject_times_unit' => $total_subject_times_unit,
+                'sem_id' => $request->sem_id,
+                'year_id' =>$request->year_id
             );
 
             array_push($adviseelist, $student_gpa);
@@ -214,14 +220,37 @@ class AdviseeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id, $year_id, $sem_id, $year_level)
     {
-        
-        //
 
+        // return $year_id;
         
+        $student_info = Student::where('id', $id)->first();
 
-        return view('advisee.view');
+        $student_grade = DB::table('subject_grades')
+        ->join('acad_terms', 'subject_grades.term_id', '=', 'acad_terms.id')
+        ->join('subjects', 'subject_grades.subject_id', '=', 'subjects.id')
+        ->where('acad_terms.acad_sem', $sem_id)
+        ->where('acad_terms.acadyear_id', $year_id) 
+        ->where('subject_grades.stud_id',$id)
+        ->get();
+        // return $student_grade;
+
+        $acad_year = AcadYear::where('id', $year_id)->first();
+
+        $gpa = 0;
+        $total_units = 0;
+        $total_subject_times_unit = 0;
+        $yearLevel = "";
+
+
+        foreach ($student_grade as $std_grade){
+            $total_units = ($total_units + $std_grade->subject_unit);
+            $total_subject_times_unit = ($total_subject_times_unit + ($std_grade->grade * $std_grade->subject_unit));
+        }
+        $gpa = number_format(($total_subject_times_unit/$total_units), 3, '.', '');
+        
+        return view('advisee.view', compact('student_info', 'year_level', 'sem_id', 'student_grade', 'acad_year', 'gpa'));
     }
 
     /**

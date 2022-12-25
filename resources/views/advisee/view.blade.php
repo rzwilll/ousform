@@ -6,10 +6,10 @@
 
 
 <div class="student-info">
-    <p><b>NAME: </b>Rizahtin B. Camama</p>
-    <p><b>YEAR LEVEL: </b>2</p>
+    <p><b>NAME: </b>{{$student_info->stud_first}} {{$student_info->stud_mi}} {{$student_info->stud_last}}</p>
+    <p><b>YEAR LEVEL: </b>{{$year_level}}</p>
     <p><b>CGPA: </b>1.85</p>
-    <p><b>GPA: </b>1.85</p>
+    <p><b>GPA: </b>{{$gpa}}</p>
 
 </div>
 
@@ -18,55 +18,26 @@
         <tr>
             <th>Subject Code</th>
             <th>Description</th>
+            <th>Unit</th>
             <th>Grade</th>
         </tr>
         <tr>
-            <td colspan ="3"class="sem-info"><p><b> SY: </b> <b> 2018-2019</b> <b>SEM: </b> <b>1</b> <small>(Bachelor of Sciene in Information Technology)</small></p>
+            <td colspan ="4"class="sem-info"><p><b> SY: </b> <b> {{$acad_year->acad_yr}}</b> <b>SEM: </b> <b>{{$sem_id}}</b> <small>(Bachelor of Sciene in Information Technology)</small></p>
             </td>
         </tr>
+        
+        @foreach($student_grade as $student )
         <tr>
-            <td>CCC100</td>
-            <td>Fundamentals of Computing</td>
-            <td><b>1.25</b></td>
+            <td>{{$student->subject_code}}</td>
+            <td>{{$student->subject_name}}</td>
+            <td>{{$student->subject_unit}}</th>
+            <td><b>{{$student->grade}}</b></td>
         </tr>
-        <tr>
-            <td>CCC101</td>
-            <td>Computer Programming</td>
-            <td><b>2.50</b></td>
-            </tr>
-        <tr>
-            <td>GEC101</td>
-            <td>Computer Programming</td>
-            <td><b>2.50</b></td>
-        </tr>
-        <tr>
-            <td>GEC102</td>
-            <td>Computer Programming</td>
-            <td><b>2.50</b></td>
-        </tr>
-        <tr>
-            <td>GEC104</td>
-            <td>Computer Programming</td>
-            <td><b>2.50</b></td>
-        </tr>
-        <tr>
-            <td>MAT104</td>
-            <td>Computer Programming</td>
-            <td><b>2.50</b></td>
-        </tr>
-        <tr>
-            <td>NST001</td>
-            <td>Computer Programming</td>
-            <td><b>2.50</b></td>
-        </tr>
-        <tr>
-            <td>PED001</td>
-            <td>Computer Programming</td>
-            <td><b>2.50</b></td>
-        </tr>
+        @endforeach
+        
         <tr class="gpa-data">
-            <td colspan="2" class=" text-danger gpa">GPA</td>
-            <td class=""><b class=" text-danger">2.50</b></td>
+            <td colspan="3" class=" text-danger gpa">GPA</td>
+            <td class=""><b class=" text-danger">{{$gpa}}</b></td>
         </tr>
 
 
