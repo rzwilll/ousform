@@ -93,7 +93,10 @@
                                 <td>{{$student['year_level']}}</td>
                                 <td>{{number_format($student['student_gpa'], 3, '.', '')}}</td>
                                 <td></td>
-                                <td><a href="{{route('advisee.view')}}">View</a></td>
+                                <td>
+                                    <a href="{!! route('switch', ['prisw'=>$info->prisw, 'secsw'=>$info->secsw]) !!}">View</a>
+                                    <!-- <a href="{{route('advisee.view')}}">View</a> -->
+                                </td>
                             </tr>
                             @endforeach
                         </tbody>
