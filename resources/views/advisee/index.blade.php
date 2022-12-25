@@ -19,28 +19,28 @@
                              </form> -->
 
                              
-                              <label for="yr_filter"> School Year: </label>
-                                  <select name="" id="">
-                                    @foreach ($academic_school_year as $acadyear)
-                                    <option value="{{$acadyear->id}}"> {{$acadyear->acad_yr}}</option>
-                                    @endforeach   
-                                  </select>
+                            <label for="yr_filter"> School Year: </label>
+                            <select name="acad_year" id="acad_year" onchange="get_advisee_list()">
+                            @foreach ($academic_school_year as $acadyear)
+                            <option value="{{$acadyear->id}}" <?php if($acadyear->status == 1){?> selected <?php }?>> {{$acadyear->acad_yr}}</option>
+                            @endforeach   
+                            </select>
                            
                         </div>
 
                         <div class="top-left">
-                            <form action="/action_page.php">
-                                <label for="cars">Semester:</label>
-                                <select id="sem" name="sem">
-                                  <option value="volvo">1</option>
-                                  <option value="saab">2</option>
-                                </select>
-                          </form>
+                           
+                            <label for="cars">Semester:</label>
+                            <select id="semester" name="semester" onchange="get_advisee_list()">
+                                <option value="1">First Semester</option>
+                                <option value="2">Second Semester</option>
+                            </select>
+                          
                         </div>
                     </div>
 
                     <div class="right-top">
-                        <p class="mt-2">Records Found: {{count($adviseelist)}}</p>
+                        <p class="mt-2" id="total-count">Records Found: {{count($adviseelist)}}</p>
                     </div>
                 
         </div>
@@ -76,7 +76,7 @@
                
                 <div class="table-body">
 
-                    <table>
+                    <table id="tbl_advisees">
                         <tr>
                           <th>Student ID No.</th>
                           <th>Full Name</th>
@@ -85,69 +85,57 @@
                           <th>CGPA</th>
                           <th></th>
                         </tr>
-                        @foreach($adviseelist as $student )
-                          <tr>
-                            <td>{{$student['stud_idnum']}}</td>
-                            <td>{{$student['stud_first']}} {{$student['stud_mi']}} {{$student['stud_last']}} </td>
-                            <td>{{$student['year_level']}}</td>
-                            <td>{{number_format($student['student_gpa'], 3, '.', '')}}</td>
-                            <td></td>
-                            <td><a href="{{route('advisee.view')}}">View</a></td>
-                          </tr>
-                        @endforeach
-                        <!-- 
-                        <tr>
-                            <td>2021-1123</td>
-                            <td>Nikki Omandac</td>
-                            <td>2</td>
-                            <td>1.50</td>
-                            <td>1.75</td>
-                            <td><a href="#">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>2021-1120</td>
-                            <td>Kyle Pacquingan</td>
-                            <td>2</td>
-                            <td>1.25</td>
-                            <td>1.50</td>
-                            <td><a href="#">View</a></td>
-                        </tr>
-                        <tr>
-                            <td>2021-2010</td>
-                            <td>Kent Pabes</td>
-                            <td>2</td>
-                            <td>1.25</td>
-                            <td>1.50</td>
-                            <td><a href="#">View</a></td>
-                        </tr>                       
-                        <tr>
-                            <td>2021-2100</td>
-                            <td>Abdulrahman Lingga</td>
-                            <td>2</td>
-                            <td>1</td>
-                            <td>1.25</td>
-                            <td><a href="#">View</a></td>
-                        </tr>                       
-                        <tr>
-                            <td>2021-2300</td>
-                            <td>Liza Soberano</td>
-                            <td>2</td>
-                            <td>2</td>
-                            <td>1.75</td>
-                            <td><a href="#">View</a></td>
-                        </tr>  
-                        <tr>
-                            <td>2021-2010</td>
-                            <td>Kathryn</td>
-                            <td>1</td>
-                            <td>1.85</td>
-                            <td>1.85</td>
-                            <td><a href="#">View</a></td>
-                        </tr>
-                         -->
+                        <tbody id="tbl-tbody-advisees">
+                            @foreach($adviseelist as $student )
+                            <tr>
+                                <td>{{$student['stud_idnum']}}</td>
+                                <td>{{$student['stud_first']}} {{$student['stud_mi']}} {{$student['stud_last']}} </td>
+                                <td>{{$student['year_level']}}</td>
+                                <td>{{number_format($student['student_gpa'], 3, '.', '')}}</td>
+                                <td></td>
+                                <td><a href="{{route('advisee.view')}}">View</a></td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                        
                       </table>
 
                       
                 </div>
 
 @endsection
+
+<script>
+    function get_advisee_list(){
+        var acad_year = $("#acad_year").val();
+        var acad_semester = $("#semester").val();
+        jQuery("#tbl-tbody-advisees").html('');
+        $.ajax({
+            method: 'GET',
+            url: '/advisee/get_advisee_list/?year_id='+acad_year+'&sem_id='+acad_semester,
+            success    :'success',
+            contentType: false,
+            processData: false,
+            success: (response) => {
+          
+                $("p#total-count").html(`Records Found: ${response.length}`);
+                var tr_body;
+                for (let i = 0; i < response.length; i++) {
+                    tr_body = `
+                        <tr id="tr-${response[i].stud_idnum}">
+                            <td>${response[i].stud_idnum}</td>
+                            <td>${response[i].stud_first} ${response[i].stud_mi} ${response[i].stud_last} </td>
+                            <td>${response[i].year_level}</td>
+                            <td>${response[i].student_gpa}</td>
+                            <td></td>
+                            <td><a href="{{route('advisee.view')}}">View</a></td>
+                        </tr>
+                    `;
+                 
+                    jQuery("#tbl-tbody-advisees").append(tr_body);
+                }
+                
+            }
+        });
+    }
+</script>

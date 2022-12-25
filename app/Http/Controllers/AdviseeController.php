@@ -27,6 +27,9 @@ class AdviseeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    
+
     public function index()
     {
         // $user = Auth::user();
@@ -113,6 +116,74 @@ class AdviseeController extends Controller
 
         return view('advisee.index', compact('adviseelist', 'academic_school_year'));
 
+    }
+
+    public function get_advisee_list(Request $request){
+
+        $adviseelist = [];
+        $academic_school_year = AcadYear::orderBy('status', 'DESC')->get();
+
+        $adviseelist_students = DB::table('advisees')
+        ->join('users', 'users.id', '=', 'advisees.user_id')
+        ->join('students', 'advisees.student_id', '=', 'students.id')
+        ->join('acad_terms', 'advisees.term_id', '=', 'acad_terms.id')
+        ->where('users.id', '=', auth()->user()->id)
+        ->where('acad_terms.acadyear_id', $request->year_id,) 
+        ->where('acad_terms.acad_sem',$request->sem_id, )
+        ->select('students.*')
+        ->get(); 
+
+        foreach ($adviseelist_students as $value) {
+
+
+            $student_grade = DB::table('subject_grades')
+            ->join('acad_terms', 'subject_grades.term_id', '=', 'acad_terms.id')
+            ->join('subjects', 'subject_grades.subject_id', '=', 'subjects.id')
+            ->where('acad_terms.acad_sem', '=', $request->sem_id)
+            ->where('acad_terms.acadyear_id', $request->year_id) 
+            ->where('subject_grades.stud_id',$value->id)
+            ->select('subjects.subject_unit', 'subject_grades.year_level', 'subject_grades.grade')
+            ->get();
+
+
+            $gpa = 0;
+            $total_units = 0;
+            $total_subject_times_unit = 0;
+            $yearLevel = "";
+
+
+            foreach ($student_grade as $std_grade){
+                $total_units = ($total_units + $std_grade->subject_unit);
+                $total_subject_times_unit = ($total_subject_times_unit + ($std_grade->grade * $std_grade->subject_unit));
+                $yearLevel = $std_grade->year_level;
+            }
+
+            $gpa = ($total_subject_times_unit/$total_units);
+
+
+            
+            
+            $student_gpa = array(
+                'id' => $value->id,
+                'stud_idnum' => $value->stud_idnum,
+                'stud_last' => $value->stud_last,
+                'stud_first' => $value->stud_first,
+                'stud_mi' => $value->stud_mi,
+                'student_gpa' => number_format($gpa, 3, '.', ''),
+                'total_units' => $total_units,
+                'year_level' => $yearLevel,
+                'total_subject_times_unit' => $total_subject_times_unit
+            );
+
+            array_push($adviseelist, $student_gpa);
+
+            $gpa = 0;
+            $total_units = 0;
+            $total_subject_times_unit = 0;
+            $yearLevel = "";
+        }
+
+        return response()->json($adviseelist);
     }
 
     
