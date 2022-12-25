@@ -104,6 +104,22 @@ class AdminUserSeeder extends Seeder
             'password' => bcrypt('cs123456789'), // password
             'remember_token' => Str::random(10),
        ],
+       [ 
+            'id' => '6',
+            'name' => 'Cris Santos ',
+            'email' => 'crissantos@example.com',
+            'email_verified_at' => now(),
+            'password' => bcrypt('it123456789'), // password
+            'remember_token' => Str::random(10),
+        ],
+        [ 
+            'id' => '7',
+            'name' => 'Mic Onz',
+            'email' => 'miconz@example.com',
+            'email_verified_at' => now(),
+            'password' => bcrypt('it1011121314'), // password
+            'remember_token' => Str::random(10),
+        ],
 
     ];
     User::insert($data);

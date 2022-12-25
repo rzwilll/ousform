@@ -56,7 +56,7 @@ class AdviseeController extends Controller
         ->join('acad_terms', 'advisees.term_id', '=', 'acad_terms.id')
         ->where('users.id', '=', auth()->user()->id)
         ->where('acad_terms.acadyear_id', 1,) 
-        ->where('acad_terms.acad_sem',1)
+        ->where('acad_terms.acad_sem',1, )
         ->select('students.*')
         ->get(); 
 
@@ -69,7 +69,7 @@ class AdviseeController extends Controller
             ->where('acad_terms.acad_sem', '=', 1)
             ->where('acad_years.id', 1,) 
             ->where('students.id',$value->id)
-            ->select(DB::raw('(SUM(subject_grades.grade*subjects.subject_unit)/SUM(subjects.subject_unit)) as GPA'))
+            ->select(DB::raw('ROUND((SUM(subject_grades.grade*subjects.subject_unit))/(SUM(subjects.subject_unit)), 3) as GPA'))
             ->first(); 
 
 
@@ -121,7 +121,11 @@ class AdviseeController extends Controller
      */
     public function show()
     {
+        
         //
+
+        
+
         return view('advisee.view');
     }
 

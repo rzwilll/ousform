@@ -20,1266 +20,14 @@ class SubjectGradeSeeder extends Seeder
 
         $data = 
         [
-            // //Student 1, 1st year 1st sem
-            //     [
-            //         'id' => '1',
-            //         'subject_id' => '1',
-            //         'grade' =>'2',
-            //         'stud_id' => '1',
-            //         'term_id' => '1'
-        
-            //     ],
-            //     [
-            //         'id' => '2',
-            //         'subject_id' => '2',
-            //         'grade' =>'2',
-            //         'stud_id' => '1',
-            //         'term_id' => '1'
-        
-            //     ],
-            //     [
-            //         'id' => '3',
-            //         'subject_id' => '6',
-            //         'grade' =>'1.25',
-            //         'stud_id' => '1',
-            //         'term_id' => '1'
-        
-            //     ],
-                
-            //     [
-            //         'id' => '4',
-            //         'subject_id' => '7',
-            //         'grade' =>'1.25',
-            //         'stud_id' => '1',
-            //         'term_id' => '1'
-        
-            //     ],
-            //     [
-            //         'id' => '5',
-            //         'subject_id' => '30',
-            //         'grade' =>'5',
-            //         'stud_id' => '1',
-            //         'term_id' => '1'
-        
-            //     ],
-
-            [
-                'id' => '1',
-                'subject_id' => '1',
-                'grade' =>'2',
-                'stud_id' => '1',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            [
-                'id' => '2',
-                'subject_id' => '2',
-                'grade' =>'2',
-                'stud_id' => '1',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            [
-                'id' => '3',
-                'subject_id' => '6',
-                'grade' =>'1.25',
-                'stud_id' => '1',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
             
-            [
-                'id' => '4',
-                'subject_id' => '7',
-                'grade' =>'1.25',
-                'stud_id' => '1',
-                'term_id' => '1',
-                'year_level' => '1'
-                
-    
-            ],
-            [
-                'id' => '5',
-                'subject_id' => '9',
-                'grade' =>'1.25',
-                'stud_id' => '1',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            [
-                'id' => '6',
-                'subject_id' => '23',
-                'grade' =>'1.75',
-                'stud_id' => '1',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            [
-                'id' => '7',
-                'subject_id' => '21',
-                'grade' =>'1',
-                'stud_id' => '1',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            [
-                'id' => '8',
-                'subject_id' => '17',
-                'grade' =>'1',
-                'stud_id' => '1',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            [
-                'id' => '9',
-                'subject_id' => '1',
-                'grade' =>'1.5',
-                'stud_id' => '2',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            [
-                'id' => '10',
-                'subject_id' => '2',
-                'grade' =>'1.5',
-                'stud_id' => '2',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            [
-                'id' => '11',
-                'subject_id' => '6',
-                'grade' =>'1.25',
-                'stud_id' => '2',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            [
-                'id' => '12',
-                'subject_id' => '7',
-                'grade' =>'1',
-                'stud_id' => '2',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            [
-                'id' => '13',
-                'subject_id' => '9',
-                'grade' =>'1.25',
-                'stud_id' => '2',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            [
-                'id' => '14',
-                'subject_id' => '23',
-                'grade' =>'2',
-                'stud_id' => '2',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            [
-                'id' => '15',
-                'subject_id' => '21',
-                'grade' =>'1',
-                'stud_id' => '2',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            [
-                'id' => '16',
-                'subject_id' => '17',
-                'grade' =>'1',
-                'stud_id' => '2',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-            //student 3, 1st year 1st sem
-        
-            [
-                'id' => '17',
-                'subject_id' => '1',
-                'grade' =>'1.75',
-                'stud_id' => '3',
-                'term_id' => '1',
-                'year_level' => '1'
-    
-            ],
-
-            //student 18, 1st yr 1st sem
-            [
-                'id' => '137',
-                'subject_id' => '1',
-                'grade' =>'1.5',
-                'stud_id' => '18',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '138',
-                'subject_id' => '2',
-                'grade' =>'1.25',
-                'stud_id' => '18',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '139',
-                'subject_id' => '6',
-                'grade' =>'1',
-                'stud_id' => '18',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '140',
-                'subject_id' => '7',
-                'grade' =>'1.25',
-                'stud_id' => '18',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '141',
-                'subject_id' => '9',
-                'grade' =>'1.5',
-                'stud_id' => '18',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '142',
-                'subject_id' => '23',
-                'grade' =>'2',
-                'stud_id' => '18',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '143',
-                'subject_id' => '21',
-                'grade' =>'1',
-                'stud_id' => '18',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '144',
-                'subject_id' => '17',
-                'grade' =>'1',
-                'stud_id' => '18',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            //student 19, 1st yr 1sts sem 
-            [
-                'id' => '145',
-                'subject_id' => '1',
-                'grade' =>'2',
-                'stud_id' => '19',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '146',
-                'subject_id' => '2',
-                'grade' =>'1',
-                'stud_id' => '19',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '147',
-                'subject_id' => '6',
-                'grade' =>'1.5',
-                'stud_id' => '19',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '148',
-                'subject_id' => '7',
-                'grade' =>'1',
-                'stud_id' => '19',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '149',
-                'subject_id' => '9',
-                'grade' =>'1.75',
-                'stud_id' => '19',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '150',
-                'subject_id' => '23',
-                'grade' =>'2',
-                'stud_id' => '19',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '151',
-                'subject_id' => '21',
-                'grade' =>'1',
-                'stud_id' => '19',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '152',
-                'subject_id' => '17',
-                'grade' =>'1.25',
-                'stud_id' => '19',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            //student 20, 1st yr 1st sem
-            [
-                'id' => '153',
-                'subject_id' => '1',
-                'grade' =>'1.75',
-                'stud_id' => '20',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '154',
-                'subject_id' => '2',
-                'grade' =>'1',
-                'stud_id' => '20',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '155',
-                'subject_id' => '6',
-                'grade' =>'1.5',
-                'stud_id' => '20',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '156',
-                'subject_id' => '7',
-                'grade' =>'1.75',
-                'stud_id' => '20',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '157',
-                'subject_id' => '9',
-                'grade' =>'1.25',
-                'stud_id' => '20',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '158',
-                'subject_id' => '23',
-                'grade' =>'1.75',
-                'stud_id' => '20',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '159',
-                'subject_id' => '21',
-                'grade' =>'1',
-                'stud_id' => '20',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '160',
-                'subject_id' => '17',
-                'grade' =>'1',
-                'stud_id' => '20',
-                'term_id' => '1',
-                'year_level' => '1'
-
-            ],
-            //student 1, 1st 2nd sem 
-            [
-                'id' => '161',
-                'subject_id' => '3',
-                'grade' =>'1.5',
-                'stud_id' => '1',
-                'term_id' => '2',
-                'year_level' => '1'
-                
-
-            ],
-            [
-                'id' => '162',
-                'subject_id' => '28',
-                'grade' =>'1',
-                'stud_id' => '1',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '163',
-                'subject_id' => '10',
-                'grade' =>'1.25',
-                'stud_id' => '1',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '164',
-                'subject_id' => '12',
-                'grade' =>'1.25',
-                'stud_id' => '1',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '165',
-                'subject_id' => '13',
-                'grade' =>'1.25',
-                'stud_id' => '1',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '166',
-                'subject_id' => '24',
-                'grade' =>'1.75',
-                'stud_id' => '1',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '167',
-                'subject_id' => '22',
-                'grade' =>'1',
-                'stud_id' => '1',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '168',
-                'subject_id' => '18',
-                'grade' =>'1.25',
-                'stud_id' => '1',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            //student 2, 1st 2nd sem
-            [
-                'id' => '169',
-                'subject_id' => '3',
-                'grade' =>'1.5',
-                'stud_id' => '2',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '170',
-                'subject_id' => '28',
-                'grade' =>'1',
-                'stud_id' => '2',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '171',
-                'subject_id' => '10',
-                'grade' =>'1',
-                'stud_id' => '2',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '172',
-                'subject_id' => '12',
-                'grade' =>'1.25',
-                'stud_id' => '2',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '173',
-                'subject_id' => '13',
-                'grade' =>'1.5',
-                'stud_id' => '2',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '174',
-                'subject_id' => '24',
-                'grade' =>'2.5',
-                'stud_id' => '2',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '175',
-                'subject_id' => '22',
-                'grade' =>'1.25',
-                'stud_id' => '2',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '176',
-                'subject_id' => '18',
-                'grade' =>'1.25',
-                'stud_id' => '2',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            //student 3, 1st yr 2nd sem 
-
-            [
-                'id' => '177',
-                'subject_id' => '3',
-                'grade' =>'5',
-                'stud_id' => '3',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '178',
-                'subject_id' => '28',
-                'grade' =>'1.5',
-                'stud_id' => '3',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '179',
-                'subject_id' => '10',
-                'grade' =>'1.5',
-                'stud_id' => '3',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '180',
-                'subject_id' => '12',
-                'grade' =>'1',
-                'stud_id' => '3',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '181',
-                'subject_id' => '13',
-                'grade' =>'1.75',
-                'stud_id' => '3',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '182',
-                'subject_id' => '24',
-                'grade' =>'1.75',
-                'stud_id' => '3',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '183',
-                'subject_id' => '22',
-                'grade' =>'1',
-                'stud_id' => '3',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '184',
-                'subject_id' => '18',
-                'grade' =>'1.5',
-                'stud_id' => '3',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            //student 4, 1st yr 2nd sem 
-            [
-                'id' => '185',
-                'subject_id' => '3',
-                'grade' =>'1.5',
-                'stud_id' => '4',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '186',
-                'subject_id' => '28',
-                'grade' =>'1.25',
-                'stud_id' => '4',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '187',
-                'subject_id' => '10',
-                'grade' =>'1',
-                'stud_id' => '4',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '188',
-                'subject_id' => '12',
-                'grade' =>'1',
-                'stud_id' => '4',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '189',
-                'subject_id' => '13',
-                'grade' =>'1.25',
-                'stud_id' => '4',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '190',
-                'subject_id' => '24',
-                'grade' =>'2',
-                'stud_id' => '4',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '191',
-                'subject_id' => '22',
-                'grade' =>'1',
-                'stud_id' => '4',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '192',
-                'subject_id' => '18',
-                'grade' =>'1',
-                'stud_id' => '4',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-
-            //student 5 1st yr 2nd sem
-            [
-                'id' => '193',
-                'subject_id' => '3',
-                'grade' =>'1',
-                'stud_id' => '5',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '194',
-                'subject_id' => '28',
-                'grade' =>'1',
-                'stud_id' => '5',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '195',
-                'subject_id' => '10',
-                'grade' =>'1',
-                'stud_id' => '5',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '196',
-                'subject_id' => '12',
-                'grade' =>'1.25',
-                'stud_id' => '5',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '197',
-                'subject_id' => '13',
-                'grade' =>'2',
-                'stud_id' => '5',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '198',
-                'subject_id' => '24',
-                'grade' =>'2',
-                'stud_id' => '5',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '199',
-                'subject_id' => '22',
-                'grade' =>'1',
-                'stud_id' => '5',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '200',
-                'subject_id' => '18',
-                'grade' =>'1.5',
-                'stud_id' => '5',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            //student 6, 1st yr 2nd sem
-            [
-                'id' => '201',
-                'subject_id' => '3',
-                'grade' =>'1.5',
-                'stud_id' => '6',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '202',
-                'subject_id' => '28',
-                'grade' =>'1',
-                'stud_id' => '6',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '203',
-                'subject_id' => '10',
-                'grade' =>'1.5',
-                'stud_id' => '6',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '204',
-                'subject_id' => '12',
-                'grade' =>'1',
-                'stud_id' => '6',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '205',
-                'subject_id' => '13',
-                'grade' =>'1.75',
-                'stud_id' => '6',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '206',
-                'subject_id' => '24',
-                'grade' =>'2.75',
-                'stud_id' => '6',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '207',
-                'subject_id' => '22',
-                'grade' =>'1',
-                'stud_id' => '6',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '208',
-                'subject_id' => '18',
-                'grade' =>'1.5',
-                'stud_id' => '6',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-
-            //student 7, 1st yr 2nd sem
-
-            [
-                'id' => '209',
-                'subject_id' => '3',
-                'grade' =>'2',
-                'stud_id' => '7',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '210',
-                'subject_id' => '28',
-                'grade' =>'1',
-                'stud_id' => '7',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '211',
-                'subject_id' => '10',
-                'grade' =>'1',
-                'stud_id' => '7',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '212',
-                'subject_id' => '12',
-                'grade' =>'1.5',
-                'stud_id' => '7',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '213',
-                'subject_id' => '13',
-                'grade' =>'1.25',
-                'stud_id' => '7',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '214',
-                'subject_id' => '24',
-                'grade' =>'2.5',
-                'stud_id' => '7',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '215',
-                'subject_id' => '22',
-                'grade' =>'1',
-                'stud_id' => '7',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '216',
-                'subject_id' => '18',
-                'grade' =>'1',
-                'stud_id' => '7',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-
-            //student 8, 1st yr 2nd sem
-
-            [
-                'id' => '217',
-                'subject_id' => '3',
-                'grade' =>'1.5',
-                'stud_id' => '8',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '218',
-                'subject_id' => '28',
-                'grade' =>'1.25',
-                'stud_id' => '8',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '219',
-                'subject_id' => '10',
-                'grade' =>'1.5',
-                'stud_id' => '8',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '220',
-                'subject_id' => '12',
-                'grade' =>'1',
-                'stud_id' => '8',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '221',
-                'subject_id' => '13',
-                'grade' =>'1.25',
-                'stud_id' => '8',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '222',
-                'subject_id' => '24',
-                'grade' =>'3',
-                'stud_id' => '8',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '223',
-                'subject_id' => '22',
-                'grade' =>'1',
-                'stud_id' => '8',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '224',
-                'subject_id' => '18',
-                'grade' =>'1.25',
-                'stud_id' => '8',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-
-            //student 9, 1st yr 2nd sem 
-            [
-                'id' => '225',
-                'subject_id' => '3',
-                'grade' =>'2',
-                'stud_id' => '9',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '226',
-                'subject_id' => '28',
-                'grade' =>'1',
-                'stud_id' => '9',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '227',
-                'subject_id' => '10',
-                'grade' =>'1.25',
-                'stud_id' => '9',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '228',
-                'subject_id' => '12',
-                'grade' =>'1.25',
-                'stud_id' => '9',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '229',
-                'subject_id' => '13',
-                'grade' =>'1.5',
-                'stud_id' => '9',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '230',
-                'subject_id' => '24',
-                'grade' =>'1.75',
-                'stud_id' => '9',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '231',
-                'subject_id' => '22',
-                'grade' =>'1',
-                'stud_id' => '9',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '232',
-                'subject_id' => '18',
-                'grade' =>'1.5',
-                'stud_id' => '9',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-              //student 10, 1st yr 2nd sem
             
-              [
-                'id' => '233',
-                'subject_id' => '3',
-                'grade' =>'2',
-                'stud_id' => '10',
-                'term_id' => '2',
-                'year_level' => '1'
+          
 
-            ],
-            [
-                'id' => '234',
-                'subject_id' => '28',
-                'grade' =>'1',
-                'stud_id' => '10',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '235',
-                'subject_id' => '10',
-                'grade' =>'1',
-                'stud_id' => '10',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '236',
-                'subject_id' => '12',
-                'grade' =>'1',
-                'stud_id' => '10',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '237',
-                'subject_id' => '13',
-                'grade' =>'2',
-                'stud_id' => '10',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '238',
-                'subject_id' => '24',
-                'grade' =>'2.25',
-                'stud_id' => '10',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '239',
-                'subject_id' => '22',
-                'grade' =>'1',
-                'stud_id' => '10',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-            [
-                'id' => '240',
-                'subject_id' => '18',
-                'grade' =>'1.25',
-                'stud_id' => '10',
-                'term_id' => '2',
-                'year_level' => '1'
-
-            ],
-
+           
             
                 
-                //student 11 1st 2nd sem
-
-                [
-                    'id' => ' 241 ',
-                    'subject_id' => ' 3 ',
-                    'grade' => ' 1.75 ',
-                    'stud_id' => ' 11 ',
-                    'term_id' => '2',
-                    'year_level' => '1'
-                ],
-                [
-                    'id' => ' 242 ',
-                    'subject_id' => ' 28 ',
-                    'grade' => ' 1 ',
-                    'stud_id' => ' 11 ',
-                    'term_id' => '2',
-                    'year_level' => '1'
-                ],
-                [
-                    'id' => ' 243 ',
-                    'subject_id' => ' 10 ',
-                    'grade' => ' 1.5 ',
-                    'stud_id' => ' 11 ',
-                    'term_id' => '2',
-                    'year_level' => '1'
-                ],
-                [
-                    'id' => ' 244 ',
-                    'subject_id' => ' 12 ',
-                    'grade' => ' 1 ',
-                    'stud_id' => ' 11 ',
-                    'term_id' => '2',
-                    'year_level' => '1'
-                ],
-                [
-                    'id' => ' 245 ',
-                    'subject_id' => ' 13 ',
-                    'grade' => ' 1.5 ',
-                    'stud_id' => ' 11 ',
-                    'term_id' => '2',
-                    'year_level' => '1'
-                ],
-                [
-                    'id' => ' 246 ',
-                    'subject_id' => ' 24 ',
-                    'grade' => ' 2.25 ',
-                    'stud_id' => ' 11 ',
-                    'term_id' => '2',
-                    'year_level' => '1'
-                ],
-                [
-                    'id' => ' 247 ',
-                    'subject_id' => ' 22 ',
-                    'grade' => ' 1 ',
-                    'stud_id' => ' 11 ',
-                    'term_id' => '2',
-                    'year_level' => '1'
-                ],
-                [
-                    'id' => ' 248 ',
-                    'subject_id' => ' 18 ',
-                    'grade' => ' 1.5 ',
-                    'stud_id' => ' 11 ',
-                    'term_id' => '2',
-                    'year_level' => '1'
-                ],
-                [
-                    'id' => ' 249 ',
-                    'subject_id' => ' 3 ',
-                    'grade' => ' 2 ',
-                    'stud_id' => ' 12 ',
-                    'term_id' => '2',
-                    'year_level' => '1'
-                ],
-                [
-                    'id' => ' 250 ',
-                    'subject_id' => ' 28 ',
-                    'grade' => ' 1.25 ',
-                    'stud_id' => ' 12 ',
-                    'term_id' => '2',
-                    'year_level' => '1'
-                ],
-                [
-                    'id' => ' 251 ',
-                    'subject_id' => ' 10 ',
-                    'grade' => ' 1 ',
-                    'stud_id' => ' 12 ',
-                    'term_id' => '2',
-                    'year_level' => '1'
-                ],
-                [
-                    'id' => ' 252 ',
-                    'subject_id' => ' 12 ',
-                    'grade' => ' 1.25 ',
-                    'stud_id' => ' 12 ',
-                    'term_id' => '2',
-                    'year_level' => '1'
-                ],
+               
                 [
                     'id' => ' 253 ',
                     'subject_id' => ' 13 ',
@@ -10899,6 +9647,2559 @@ class SubjectGradeSeeder extends Seeder
                 'term_id' => '2',
                 'year_level' => '1'
             ],
+
+            [
+                'id' => ' 1431 ',
+                'subject_id' => ' 1 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1432 ',
+                'subject_id' => ' 2 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1433 ',
+                'subject_id' => ' 6 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1434 ',
+                'subject_id' => ' 7 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1435 ',
+                'subject_id' => ' 9 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1436 ',
+                'subject_id' => ' 23 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1437 ',
+                'subject_id' => ' 21 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1438 ',
+                'subject_id' => ' 17 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+
+               [
+                'id' => ' 1439 ',
+                'subject_id' => ' 1 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1440 ',
+                'subject_id' => ' 2 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1441 ',
+                'subject_id' => ' 6 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1442 ',
+                'subject_id' => ' 7 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1443 ',
+                'subject_id' => ' 9 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1444 ',
+                'subject_id' => ' 23 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1445 ',
+                'subject_id' => ' 21 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1446 ',
+                'subject_id' => ' 17 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+
+               [
+                'id' => ' 1447 ',
+                'subject_id' => ' 1 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1448 ',
+                'subject_id' => ' 2 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1449 ',
+                'subject_id' => ' 6 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1450 ',
+                'subject_id' => ' 7 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1451 ',
+                'subject_id' => ' 9 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1452 ',
+                'subject_id' => ' 23 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1453 ',
+                'subject_id' => ' 21 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1454 ',
+                'subject_id' => ' 17 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+
+               [
+                'id' => ' 1455 ',
+                'subject_id' => ' 1 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1456 ',
+                'subject_id' => ' 2 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1457 ',
+                'subject_id' => ' 6 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1458 ',
+                'subject_id' => ' 7 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1459 ',
+                'subject_id' => ' 9 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1460 ',
+                'subject_id' => ' 23 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1461 ',
+                'subject_id' => ' 21 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1462 ',
+                'subject_id' => ' 17 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1463 ',
+                'subject_id' => ' 1 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1464 ',
+                'subject_id' => ' 2 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1465 ',
+                'subject_id' => ' 6 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1466 ',
+                'subject_id' => ' 7 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1467 ',
+                'subject_id' => ' 9 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1468 ',
+                'subject_id' => ' 23 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1469 ',
+                'subject_id' => ' 21 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1470 ',
+                'subject_id' => ' 17 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1471 ',
+                'subject_id' => ' 1 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1472 ',
+                'subject_id' => ' 2 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1473 ',
+                'subject_id' => ' 6 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1474 ',
+                'subject_id' => ' 7 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1475 ',
+                'subject_id' => ' 9 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1476 ',
+                'subject_id' => ' 23 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1477 ',
+                'subject_id' => ' 21 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1478 ',
+                'subject_id' => ' 17 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1479 ',
+                'subject_id' => ' 1 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1480 ',
+                'subject_id' => ' 2 ',
+                'grade' => ' 2.5 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1481 ',
+                'subject_id' => ' 6 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1482 ',
+                'subject_id' => ' 7 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1483 ',
+                'subject_id' => ' 9 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1484 ',
+                'subject_id' => ' 23 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1485 ',
+                'subject_id' => ' 21 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1486 ',
+                'subject_id' => ' 17 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1487 ',
+                'subject_id' => ' 1 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1488 ',
+                'subject_id' => ' 2 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1489 ',
+                'subject_id' => ' 6 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1490 ',
+                'subject_id' => ' 7 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1491 ',
+                'subject_id' => ' 9 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1492 ',
+                'subject_id' => ' 23 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1493 ',
+                'subject_id' => ' 21 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1494 ',
+                'subject_id' => ' 17 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1495 ',
+                'subject_id' => ' 1 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1496 ',
+                'subject_id' => ' 2 ',
+                'grade' => ' 2.5 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1497 ',
+                'subject_id' => ' 6 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1498 ',
+                'subject_id' => ' 7 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1499 ',
+                'subject_id' => ' 9 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1500 ',
+                'subject_id' => ' 23 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1501 ',
+                'subject_id' => ' 21 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1502 ',
+                'subject_id' => ' 17 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1503 ',
+                'subject_id' => ' 1 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1504 ',
+                'subject_id' => ' 2 ',
+                'grade' => ' 2.75 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1505 ',
+                'subject_id' => ' 6 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1506 ',
+                'subject_id' => ' 7 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1507 ',
+                'subject_id' => ' 9 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1508 ',
+                'subject_id' => ' 23 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1509 ',
+                'subject_id' => ' 21 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1510 ',
+                'subject_id' => ' 17 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+
+               [
+                'id' => ' 1511 ',
+                'subject_id' => ' 1 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1512 ',
+                'subject_id' => ' 2 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1513 ',
+                'subject_id' => ' 6 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1514 ',
+                'subject_id' => ' 7 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1515 ',
+                'subject_id' => ' 9 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1516 ',
+                'subject_id' => ' 23 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1517 ',
+                'subject_id' => ' 21 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1518 ',
+                'subject_id' => ' 17 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 1 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1519 ',
+                'subject_id' => ' 3 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1520 ',
+                'subject_id' => ' 28 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1521 ',
+                'subject_id' => ' 10 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1522 ',
+                'subject_id' => ' 12 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1523 ',
+                'subject_id' => ' 13 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1524 ',
+                'subject_id' => ' 24 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1525 ',
+                'subject_id' => ' 22 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1526 ',
+                'subject_id' => ' 18 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1527 ',
+                'subject_id' => ' 3 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1528 ',
+                'subject_id' => ' 28 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1529 ',
+                'subject_id' => ' 10 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1530 ',
+                'subject_id' => ' 12 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1531 ',
+                'subject_id' => ' 13 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1532 ',
+                'subject_id' => ' 24 ',
+                'grade' => ' 2.75 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1533 ',
+                'subject_id' => ' 22 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1534 ',
+                'subject_id' => ' 18 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1535 ',
+                'subject_id' => ' 3 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1536 ',
+                'subject_id' => ' 28 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1537 ',
+                'subject_id' => ' 10 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1538 ',
+                'subject_id' => ' 12 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1539 ',
+                'subject_id' => ' 13 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1540 ',
+                'subject_id' => ' 24 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1541 ',
+                'subject_id' => ' 22 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1542 ',
+                'subject_id' => ' 18 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1543 ',
+                'subject_id' => ' 3 ',
+                'grade' => ' 2.5 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1544 ',
+                'subject_id' => ' 28 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1545 ',
+                'subject_id' => ' 10 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1546 ',
+                'subject_id' => ' 12 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1547 ',
+                'subject_id' => ' 13 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1548 ',
+                'subject_id' => ' 24 ',
+                'grade' => ' 3 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1549 ',
+                'subject_id' => ' 22 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1550 ',
+                'subject_id' => ' 18 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],[
+                'id' => ' 1551 ',
+                'subject_id' => ' 3 ',
+                'grade' => ' 2.75 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1552 ',
+                'subject_id' => ' 28 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1553 ',
+                'subject_id' => ' 10 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1554 ',
+                'subject_id' => ' 12 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1555 ',
+                'subject_id' => ' 13 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1556 ',
+                'subject_id' => ' 24 ',
+                'grade' => ' 2.5 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1557 ',
+                'subject_id' => ' 22 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1558 ',
+                'subject_id' => ' 18 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1559 ',
+                'subject_id' => ' 3 ',
+                'grade' => ' 2.5 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1560 ',
+                'subject_id' => ' 28 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1561 ',
+                'subject_id' => ' 10 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1562 ',
+                'subject_id' => ' 12 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1563 ',
+                'subject_id' => ' 13 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1564 ',
+                'subject_id' => ' 24 ',
+                'grade' => ' 2.75 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1565 ',
+                'subject_id' => ' 22 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1566 ',
+                'subject_id' => ' 18 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1567 ',
+                'subject_id' => ' 3 ',
+                'grade' => ' 2.75 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1568 ',
+                'subject_id' => ' 28 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1569 ',
+                'subject_id' => ' 10 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1570 ',
+                'subject_id' => ' 12 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1571 ',
+                'subject_id' => ' 13 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1572 ',
+                'subject_id' => ' 24 ',
+                'grade' => ' 2.5 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1573 ',
+                'subject_id' => ' 22 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1574 ',
+                'subject_id' => ' 18 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1575 ',
+                'subject_id' => ' 3 ',
+                'grade' => ' 2.5 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1576 ',
+                'subject_id' => ' 28 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1577 ',
+                'subject_id' => ' 10 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1578 ',
+                'subject_id' => ' 12 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1579 ',
+                'subject_id' => ' 13 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1580 ',
+                'subject_id' => ' 24 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1581 ',
+                'subject_id' => ' 22 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1582 ',
+                'subject_id' => ' 18 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1583 ',
+                'subject_id' => ' 3 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1584 ',
+                'subject_id' => ' 28 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1585 ',
+                'subject_id' => ' 10 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1586 ',
+                'subject_id' => ' 12 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1587 ',
+                'subject_id' => ' 13 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1588 ',
+                'subject_id' => ' 24 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1589 ',
+                'subject_id' => ' 22 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1590 ',
+                'subject_id' => ' 18 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1591 ',
+                'subject_id' => ' 3 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1592 ',
+                'subject_id' => ' 28 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1593 ',
+                'subject_id' => ' 10 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1594 ',
+                'subject_id' => ' 12 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1595 ',
+                'subject_id' => ' 13 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1596 ',
+                'subject_id' => ' 24 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1597 ',
+                'subject_id' => ' 22 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1598 ',
+                'subject_id' => ' 18 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 2 ',
+                'year_level' => ' 1 '
+               ],
+               [
+                'id' => ' 1599 ',
+                'subject_id' => ' 4 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1600 ',
+                'subject_id' => ' 14 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1601 ',
+                'subject_id' => ' 15 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1602 ',
+                'subject_id' => ' 29 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1603 ',
+                'subject_id' => ' 25 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1604 ',
+                'subject_id' => ' 36 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1605 ',
+                'subject_id' => ' 19 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1606 ',
+                'subject_id' => ' 4 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1607 ',
+                'subject_id' => ' 14 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1608 ',
+                'subject_id' => ' 15 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1609 ',
+                'subject_id' => ' 29 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1610 ',
+                'subject_id' => ' 25 ',
+                'grade' => ' 2.75 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1611 ',
+                'subject_id' => ' 36 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1612 ',
+                'subject_id' => ' 19 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1613 ',
+                'subject_id' => ' 4 ',
+                'grade' => ' 2.5 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1614 ',
+                'subject_id' => ' 14 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1615 ',
+                'subject_id' => ' 15 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1616 ',
+                'subject_id' => ' 29 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1617 ',
+                'subject_id' => ' 25 ',
+                'grade' => ' 3 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1618 ',
+                'subject_id' => ' 36 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1619 ',
+                'subject_id' => ' 19 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1620 ',
+                'subject_id' => ' 4 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1621 ',
+                'subject_id' => ' 14 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1622 ',
+                'subject_id' => ' 15 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1623 ',
+                'subject_id' => ' 29 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1624 ',
+                'subject_id' => ' 25 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1625 ',
+                'subject_id' => ' 36 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1626 ',
+                'subject_id' => ' 19 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1627 ',
+                'subject_id' => ' 4 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1628 ',
+                'subject_id' => ' 14 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1629 ',
+                'subject_id' => ' 15 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1630 ',
+                'subject_id' => ' 29 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1631 ',
+                'subject_id' => ' 25 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1632 ',
+                'subject_id' => ' 36 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1633 ',
+                'subject_id' => ' 19 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1634 ',
+                'subject_id' => ' 4 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1635 ',
+                'subject_id' => ' 14 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1636 ',
+                'subject_id' => ' 15 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1637 ',
+                'subject_id' => ' 29 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1638 ',
+                'subject_id' => ' 25 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1639 ',
+                'subject_id' => ' 36 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1640 ',
+                'subject_id' => ' 19 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1641 ',
+                'subject_id' => ' 4 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1642 ',
+                'subject_id' => ' 14 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1643 ',
+                'subject_id' => ' 15 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1644 ',
+                'subject_id' => ' 29 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1645 ',
+                'subject_id' => ' 25 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1646 ',
+                'subject_id' => ' 36 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1647 ',
+                'subject_id' => ' 19 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1648 ',
+                'subject_id' => ' 4 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1649 ',
+                'subject_id' => ' 14 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1650 ',
+                'subject_id' => ' 15 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1651 ',
+                'subject_id' => ' 29 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1652 ',
+                'subject_id' => ' 25 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1653 ',
+                'subject_id' => ' 36 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1654 ',
+                'subject_id' => ' 19 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1655 ',
+                'subject_id' => ' 4 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1656 ',
+                'subject_id' => ' 14 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1657 ',
+                'subject_id' => ' 15 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1658 ',
+                'subject_id' => ' 29 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1659 ',
+                'subject_id' => ' 25 ',
+                'grade' => ' 2.5 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1660 ',
+                'subject_id' => ' 36 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1661 ',
+                'subject_id' => ' 19 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+
+               [
+                'id' => ' 1662 ',
+                'subject_id' => ' 4 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1663 ',
+                'subject_id' => ' 14 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1664 ',
+                'subject_id' => ' 15 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1665 ',
+                'subject_id' => ' 29 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1666 ',
+                'subject_id' => ' 25 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1667 ',
+                'subject_id' => ' 36 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1668 ',
+                'subject_id' => ' 19 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 3 ',
+                'year_level' => ' 2 '
+               ],
+
+               [
+                'id' => ' 1669 ',
+                'subject_id' => ' 5 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1670 ',
+                'subject_id' => ' 16 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1671 ',
+                'subject_id' => ' 30 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1672 ',
+                'subject_id' => ' 31 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1673 ',
+                'subject_id' => ' 32 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1674 ',
+                'subject_id' => ' 20 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1675 ',
+                'subject_id' => ' 26 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1676 ',
+                'subject_id' => ' 27 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 61 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+
+               [
+                'id' => ' 1677 ',
+                'subject_id' => ' 5 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1678 ',
+                'subject_id' => ' 16 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1679 ',
+                'subject_id' => ' 30 ',
+                'grade' => ' 2.5 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1680 ',
+                'subject_id' => ' 31 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1681 ',
+                'subject_id' => ' 32 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1682 ',
+                'subject_id' => ' 20 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1683 ',
+                'subject_id' => ' 26 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1684 ',
+                'subject_id' => ' 27 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 62 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1685 ',
+                'subject_id' => ' 5 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1686 ',
+                'subject_id' => ' 16 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1687 ',
+                'subject_id' => ' 30 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1688 ',
+                'subject_id' => ' 31 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1689 ',
+                'subject_id' => ' 32 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1690 ',
+                'subject_id' => ' 20 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1691 ',
+                'subject_id' => ' 26 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1692 ',
+                'subject_id' => ' 27 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 63 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1693 ',
+                'subject_id' => ' 5 ',
+                'grade' => ' 2.5 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1694 ',
+                'subject_id' => ' 16 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1695 ',
+                'subject_id' => ' 30 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1696 ',
+                'subject_id' => ' 31 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1697 ',
+                'subject_id' => ' 32 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1698 ',
+                'subject_id' => ' 20 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1699 ',
+                'subject_id' => ' 26 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1700 ',
+                'subject_id' => ' 27 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 64 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1701 ',
+                'subject_id' => ' 5 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1702 ',
+                'subject_id' => ' 16 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1703 ',
+                'subject_id' => ' 30 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1704 ',
+                'subject_id' => ' 31 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1705 ',
+                'subject_id' => ' 32 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1706 ',
+                'subject_id' => ' 20 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1707 ',
+                'subject_id' => ' 26 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1708 ',
+                'subject_id' => ' 27 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 65 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1709 ',
+                'subject_id' => ' 5 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1710 ',
+                'subject_id' => ' 16 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1711 ',
+                'subject_id' => ' 30 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1712 ',
+                'subject_id' => ' 31 ',
+                'grade' => ' 1.25 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1713 ',
+                'subject_id' => ' 32 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1714 ',
+                'subject_id' => ' 20 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1715 ',
+                'subject_id' => ' 26 ',
+                'grade' => ' 1 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1716 ',
+                'subject_id' => ' 27 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 66 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1717 ',
+                'subject_id' => ' 5 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1718 ',
+                'subject_id' => ' 16 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1719 ',
+                'subject_id' => ' 30 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1720 ',
+                'subject_id' => ' 31 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1721 ',
+                'subject_id' => ' 32 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1722 ',
+                'subject_id' => ' 20 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1723 ',
+                'subject_id' => ' 26 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1724 ',
+                'subject_id' => ' 27 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 67 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1725 ',
+                'subject_id' => ' 5 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1726 ',
+                'subject_id' => ' 16 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1727 ',
+                'subject_id' => ' 30 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1728 ',
+                'subject_id' => ' 31 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1729 ',
+                'subject_id' => ' 32 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1730 ',
+                'subject_id' => ' 20 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1731 ',
+                'subject_id' => ' 26 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1732 ',
+                'subject_id' => ' 27 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 68 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1733 ',
+                'subject_id' => ' 5 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1734 ',
+                'subject_id' => ' 16 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1735 ',
+                'subject_id' => ' 30 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1736 ',
+                'subject_id' => ' 31 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1737 ',
+                'subject_id' => ' 32 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1738 ',
+                'subject_id' => ' 20 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1739 ',
+                'subject_id' => ' 26 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1740 ',
+                'subject_id' => ' 27 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 69 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1741 ',
+                'subject_id' => ' 5 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1742 ',
+                'subject_id' => ' 16 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1743 ',
+                'subject_id' => ' 30 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1744 ',
+                'subject_id' => ' 31 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1745 ',
+                'subject_id' => ' 32 ',
+                'grade' => ' 1.5 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1746 ',
+                'subject_id' => ' 20 ',
+                'grade' => ' 1.75 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1747 ',
+                'subject_id' => ' 26 ',
+                'grade' => ' 2 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+               [
+                'id' => ' 1748 ',
+                'subject_id' => ' 27 ',
+                'grade' => ' 2.25 ',
+                'stud_id' => ' 70 ',
+                'term_id' => ' 4 ',
+                'year_level' => ' 2 '
+               ],
+
+
 
 
 

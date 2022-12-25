@@ -579,6 +579,190 @@ class StudentSeeder extends Seeder
                 
 
             ],
+
+
+            //IT 
+
+            [ 
+                'id' => '61',
+                'stud_idnum' => '2020-0319',
+                'stud_last' => 'Acevedo',
+                'stud_first' => 'Ariel',
+                'stud_mi' => 'P.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '62',
+                'stud_idnum' => '2020-1073',
+                'stud_last' => 'Benevido',
+                'stud_first' => 'Felton',
+                'stud_mi' => 'T.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '63',
+                'stud_idnum' => '2020-2188',
+                'stud_last' => 'Benson',
+                'stud_first' => 'Elnora',
+                'stud_mi' => 'Z.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '64',
+                'stud_idnum' => '2020-1975',
+                'stud_last' => 'Carney',
+                'stud_first' => 'Harlan',
+                'stud_mi' => 'F.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '65',
+                'stud_idnum' => '2020-1586',
+                'stud_last' => 'Cooley',
+                'stud_first' => 'Delbert',
+                'stud_mi' => 'O.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '66',
+                'stud_idnum' => '2020-1171',
+                'stud_last' => 'Doyle',
+                'stud_first' => 'William',
+                'stud_mi' => 'S.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '67',
+                'stud_idnum' => '2020-0973',
+                'stud_last' => 'Foster',
+                'stud_first' => 'Opelia',
+                'stud_mi' => 'J.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '68',
+                'stud_idnum' => '2020-2251',
+                'stud_last' => 'Gordon',
+                'stud_first' => 'Buck',
+                'stud_mi' => 'P.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '69',
+                'stud_idnum' => '2020-2639',
+                'stud_last' => 'Hickman',
+                'stud_first' => 'Theresa',
+                'stud_mi' => 'Z.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '70',
+                'stud_idnum' => '2020-1161',
+                'stud_last' => 'Hubbard',
+                'stud_first' => 'Sussane',
+                'stud_mi' => 'V.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '71',
+                'stud_idnum' => '2020-0205',
+                'stud_last' => 'Norton',
+                'stud_first' => 'Ali',
+                'stud_mi' => 'J.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '72',
+                'stud_idnum' => '2020-0734',
+                'stud_last' => 'Randall',
+                'stud_first' => 'Arturo',
+                'stud_mi' => 'H.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '73',
+                'stud_idnum' => '2020-0887',
+                'stud_last' => 'Reynolds',
+                'stud_first' => 'Antoine',
+                'stud_mi' => 'U.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '74',
+                'stud_idnum' => '2020-1270',
+                'stud_last' => 'Rubio',
+                'stud_first' => 'Rosie',
+                'stud_mi' => 'A.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '75',
+                'stud_idnum' => '2020-0378',
+                'stud_last' => 'Rush',
+                'stud_first' => 'Kristen',
+                'stud_mi' => 'B.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '76',
+                'stud_idnum' => '2020-1365',
+                'stud_last' => 'Short',
+                'stud_first' => 'Heather',
+                'stud_mi' => 'Q.',
+                'program_id' => '1'
+
+            ], 
+            [ 
+                'id' => '77',
+                'stud_idnum' => '2020-1599',
+                'stud_last' => 'Taylor',
+                'stud_first' => 'Juana',
+                'stud_mi' => 'C.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '78',
+                'stud_idnum' => '2020-1817',
+                'stud_last' => 'Trujillo',
+                'stud_first' => 'Dane',
+                'stud_mi' => 'E.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '79',
+                'stud_idnum' => '2020-1943',
+                'stud_last' => 'Velasquez',
+                'stud_first' => 'Cong',
+                'stud_mi' => 'I.',
+                'program_id' => '1'
+
+            ],
+            [ 
+                'id' => '80',
+                'stud_idnum' => '2020-2065',
+                'stud_last' => 'Villegas',
+                'stud_first' => 'Kris',
+                'stud_mi' => 'P.',
+                'program_id' => '1'
+
+            ],
             
             
             

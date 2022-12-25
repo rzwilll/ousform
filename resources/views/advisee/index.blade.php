@@ -1,5 +1,7 @@
 @extends('layouts.sidebar')
-
+@section('section')
+<h3>Advisee</h3>
+@endsection
 @section('content')
 
 <link href="{{ asset('/css/advisee.css') }}" rel="stylesheet">
@@ -86,7 +88,7 @@
                         @foreach($adviseelist as $student )
                           <tr>
                             <td>{{$student['stud_idnum']}}</td>
-                            <td>{{$student['stud_last']}}</td>
+                            <td>{{$student['stud_first']}} {{$student['stud_mi']}} {{$student['stud_last']}} </td>
                             <td></td>
                             <td>{{$student['student_gpa']}}</td>
                             <td>1.85</td>

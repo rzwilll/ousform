@@ -1,5 +1,8 @@
 @extends('layouts.sidebar')
 
+@section('section')
+<h3>Academic Program Advising Report</h3>
+@endsection
 
 @section('content')
     <link href="{{ asset('/css/ous_view.css') }}" rel="stylesheet">

@@ -96,7 +96,7 @@
         </div>
         
         <div class="main-content">
-
+            @yield('section')
             
         <div class="advisee-container">
                 @yield('content')

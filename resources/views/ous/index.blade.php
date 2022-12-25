@@ -1,5 +1,8 @@
 @extends('layouts.sidebar')
 
+@section('section')
+<h3>Academic Program Advising Report</h3>
+@endsection
 @section('content')
 <link href="{{ asset('/css/ous_index.css') }}" rel="stylesheet">
 
@@ -22,8 +25,10 @@
                       <td>Report (A.Y: {{$val->school_year}})</td>
                         <td>{{  date('M d, Y', strtotime($val->created_at)) }}</td>
                         <td>
-                          <a href="{{ url('ous/details/'.$val->re_id) }}" type="button" class="btn btn-info"><i class='bx bxs-show'></i>View</a>
-                          <button class="edit-button"> <a href="{{ route('ous.edit')}}"><i class='bx bxs-edit' ></i>Edit</a></button>
+                          
+                          <a href="{{ url('ous/details/'.$val->re_id) }}" type="button" class="btn btn-info"><i class='bx bxs-edit'></i>Edit</a>
+                          <!-- <button class="edit-button"> <a href="{{ route('ous.edit')}}"><i class='bx bxs-edit' ></i>Edit</a></button> -->
+                          
                       </td>
                     </tr>
                   @endforeach
@@ -33,3 +38,6 @@
 
 
 @endsection
+
+
+                                        

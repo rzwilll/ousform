@@ -1,5 +1,8 @@
 @extends('layouts.sidebar')
 
+@section('section')
+<h3>Academic Program Advising Report</h3>
+@endsection
 
 @section('content')
     <link href="{{ asset('/css/ous_view.css') }}" rel="stylesheet">
@@ -94,7 +97,7 @@
                                     <?php
                                         if($report_status->status != 1){?>
                                             <td class="col-1 report-section add-btn"> 
-                                                <button type="button" class="btn  btn-info add-button" onclick="add_pogram_collaborations_linkages({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
+                                                <button type="button" class="btn  btn-info add-button" onclick="add_program_engagement_activities({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
                                             </td>   
                                         <?php }
                                     ?>
@@ -176,7 +179,7 @@
                                     <?php
                                         if($report_status->status != 1){?>
                                             <td class="col-1 report-section add-btn"> 
-                                                <button type="button" class="btn  btn-info add-button" onclick="add_pogram_collaborations_linkages({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
+                                                <button type="button" class="btn  btn-info add-button" onclick="add_program_output_deliverables({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
                                             </td>   
                                         <?php }
                                     ?>
@@ -243,7 +246,7 @@
                                     <?php
                                         if($report_status->status != 1){?>
                                             <td class="col-1 report-section add-btn"> 
-                                                <button type="button" class="btn  btn-info add-button" onclick="add_pogram_collaborations_linkages({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
+                                                <button type="button" class="btn  btn-info add-button" onclick="add_program_consultation_advising({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
                                             </td>   
                                         <?php }
                                     ?>
@@ -296,7 +299,7 @@
                                                 if($report_status->status == 1){?>
                                                     <p>{{$val_consultation_advising->action_desc}}</p>
                                                 <?php } else { ?>
-                                                    <td><input type="text " name="" id="action" value="{{$val_consultation_advising->action_desc}}" onfocusout="update_program_consultation_advising({{$val_consultation_advising->id}}, 'action_desc', this)"class="form-control"placeholder="..."></td> 
+                                                    <input type="text " name="" id="action" value="{{$val_consultation_advising->action_desc}}" onfocusout="update_program_consultation_advising({{$val_consultation_advising->id}}, 'action_desc', this)"class="form-control"placeholder="...">
                                                 <?php }
 
                                         ?>
@@ -328,7 +331,7 @@
                                     <?php
                                         if($report_status->status != 1){?>
                                             <td class="col-1 report-section add-btn"> 
-                                                <button type="button" class="btn  btn-info add-button" onclick="add_pogram_collaborations_linkages({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
+                                                <button type="button" class="btn  btn-info add-button" onclick="add_program_risk_challenges({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
                                             </td>   
                                         <?php }
                                     ?>
@@ -421,7 +424,7 @@
                                     <?php
                                         if($report_status->status != 1){?>
                                             <td class="col-1 report-section add-btn"> 
-                                                <button type="button" class="btn  btn-info add-button" onclick="add_pogram_collaborations_linkages({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
+                                                <button type="button" class="btn  btn-info add-button" onclick="add_program_problems({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
                                             </td>   
                                         <?php }
                                     ?>
@@ -472,7 +475,7 @@
                                     <?php
                                         if($report_status->status != 1){?>
                                             <td class="col-1 report-section add-btn"> 
-                                                <button type="button" class="btn  btn-info add-button" onclick="add_pogram_collaborations_linkages({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
+                                                <button type="button" class="btn  btn-info add-button" onclick="add_program_recommendations({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
                                             </td>   
                                         <?php }
                                     ?>
@@ -521,7 +524,7 @@
                                     <?php
                                         if($report_status->status != 1){?>
                                             <td class="col-1 report-section add-btn"> 
-                                                <button type="button" class="btn  btn-info add-button" onclick="add_pogram_collaborations_linkages({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
+                                                <button type="button" class="btn  btn-info add-button" onclick="add_program_plans({{$report_id}});" > <i class='bx bx-plus'></i>Add</button>
                                             </td>   
                                         <?php }
                                     ?>
@@ -563,7 +566,9 @@
                            </tbody>
                         </table>
 
-                        <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">SUBMIT</b></button>
+                        <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">Submit Report</b></button>
+                        <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">Save Changes</b></button>
+                        <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">Cancel</b></button>
                     </form>
 
 
