@@ -91,7 +91,7 @@
                             <td>{{$student['stud_first']}} {{$student['stud_mi']}} {{$student['stud_last']}} </td>
                             <td>{{$student['year_level']}}</td>
                             <td>{{number_format($student['student_gpa'], 3, '.', '')}}</td>
-                            <td>1.85</td>
+                            <td></td>
                             <td><a href="{{route('advisee.view')}}">View</a></td>
                           </tr>
                         @endforeach
