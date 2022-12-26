@@ -579,6 +579,8 @@
                             
                         </table>
                         <br>
+
+                        
                         <table id = "tbl_program_plans">
                            <thead>
                                 <tr>
@@ -1000,7 +1002,7 @@
                         <td><input type="text " name="" id="nature" class="form-control"  onfocusout="update_program_consultation_advising(${response.insertedid}, 'advising_nature_desc', this)" placeholder="....."></td>
                         <td><input type="text " name="" id="action" class="form-control" onfocusout="update_program_consultation_advising(${response.insertedid}, 'action_desc', this)" placeholder="....."></td>
                         <td class= "remove-td">
-                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_consultation(${response.insertedid})"></i></button>
                         </td> 
                     </tr>
                 `;
@@ -1022,7 +1024,7 @@
                     <tr id="tbl_tr_progrisk_${response.insertedid}">
                         <td><input type="text " name="" id="risk" class="form-control"  onfocusout="update_program_risk_challenges(${response.insertedid}, 'risk_desc', this)" placeholder="....."></td>
                         <td class= "remove-td">
-                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_risk(${response.insertedid})"></i></button>
                         </td> 
                     </tr>
                 `;
@@ -1044,7 +1046,7 @@
                     <tr id="tbl_tr_progcollab_${response.insertedid}">
                         <td><input type="text " name="" id="collaboration" class="form-control"  onfocusout=" update_program_collaboration_linkages(${response.insertedid}, 'collaboration_desc, this)" placeholder="....."></td>
                         <td class= "remove-td">
-                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_collaborations(${response.insertedid})"></i></button>
                         </td> 
                     </tr>
                 `;
@@ -1067,7 +1069,7 @@
                     <tr id="tbl_tr_progproblem_${response.insertedid}">
                         <td><input type="text " name="" id="problems" class="form-control"  onfocusout="update_program_problems_ecountered(${response.insertedid}, 'problem_desc', this)" placeholder="....."></td>
                         <td class= "remove-td">
-                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_problems(${response.insertedid})"></i></button>
                         </td> 
                     </tr>
                 `;
@@ -1089,7 +1091,7 @@
                     <tr id="tbl_tr_progreco_${response.insertedid}">
                         <td><input type="text " name="" id="recommendations" class="form-control"  onfocusout="update_program_recommendations(${response.insertedid}, 'recommendation_desc', this)" placeholder="....."></td>
                         <td class= "remove-td">
-                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_recommendations(${response.insertedid})"></i></button>
                         </td> 
                     </tr>
                 `;
