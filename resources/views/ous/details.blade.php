@@ -1112,7 +1112,7 @@
                         <td><input type="text " name="" id="plans" class="form-control"  onfocusout="update_program_plans(${response.insertedid}, 'plan_desc', this)" placeholder="....."></td>
                         
                         <td class= "remove-td">
-                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
+                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_plans(${response.insertedid})"></i></button>
                         </td> 
                     </tr>
                 `;
