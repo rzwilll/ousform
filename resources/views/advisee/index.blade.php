@@ -94,8 +94,7 @@
                                 <td>{{number_format($student['student_gpa'], 3, '.', '')}}</td>
                                 <td></td>
                                 <td>
-                                    <a href="{{ url('advisee/view/'.$student['id']. '/'.$student['year_id'].'/'.$student['sem_id'].'/'.$student['year_level']) }}">View</a>
-                                  
+                                    <button type="button" class="btn btn-success btn-sm" onclick="grade_details({{$student['id']}}, {{$student['year_id']}}, {{$student['sem_id']}}, {{$student['year_level']}})" >Success</button>
                                 </td>
                             </tr>
                             @endforeach
@@ -134,7 +133,7 @@
                             <td>${response[i].student_gpa}</td>
                             <td></td>
                             <td>
-                                ${link}
+                                <button type="button" class="btn btn-success btn-sm" onclick="grade_details(${response[i].id}, ${acad_year}, ${acad_semester}, ${response[i].year_level})" >Success</button>
                             </td>
                         </tr>
                     `;
@@ -144,5 +143,17 @@
                 
             }
         });
+    }
+
+
+
+    function grade_details(std_id, acad_year, acad_semester, year_level){
+
+        var ids = std_id+" "+acad_year+" "+acad_semester+" "+year_level;
+
+        var url = "{{ route('advisee.show', ':ids') }}";
+        url = url.replace(':ids', ids);
+        location.href = url;
+
     }
 </script>

@@ -220,23 +220,24 @@ class AdviseeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id, $year_id, $sem_id, $year_level)
+    public function show($ids)
     {
-
-        // return $year_id;
-        
-        $student_info = Student::where('id', $id)->first();
+        $parameters = explode(" ", $ids);
+        $student_info = Student::where('id', $parameters[0])->first();
+        $year_level = $parameters[3];
+        $sem_id = $parameters[2];
+        $acad_year = $parameters[1];
 
         $student_grade = DB::table('subject_grades')
         ->join('acad_terms', 'subject_grades.term_id', '=', 'acad_terms.id')
         ->join('subjects', 'subject_grades.subject_id', '=', 'subjects.id')
         ->where('acad_terms.acad_sem', $sem_id)
-        ->where('acad_terms.acadyear_id', $year_id) 
-        ->where('subject_grades.stud_id',$id)
+        ->where('acad_terms.acadyear_id', $acad_year) 
+        ->where('subject_grades.stud_id',$parameters[0])
         ->get();
         // return $student_grade;
 
-        $acad_year = AcadYear::where('id', $year_id)->first();
+        $acad_year = AcadYear::where('id', $parameters[1])->first();
 
         $gpa = 0;
         $total_units = 0;

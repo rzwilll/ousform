@@ -599,7 +599,7 @@
                            </thead>
                            <tbody>
                                 @foreach($program_program_plans as $index => $val_program_plans)
-                                <tr id = "tbl_tr_{{$val_program_plans->id}}">
+                                <tr id = "tbl_tr_progplan_{{$val_program_plans->id}}">
                                     <!-- <td><input type="text " name="" id="plans" value="{{$val_program_plans->plan_desc}}" onfocusout="update_program_plans({{$val_program_plans->id}}, 'plan_desc', this)" class="form-control"placeholder="..."></td>    -->
 
                                     
@@ -622,7 +622,7 @@
                                                 <td class= "remove-td">
                                                     <?php
                                                         if($index > 2){?>
-                                                        <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_plans({{$val_program_plans->id}})"></i></button>
+                                                        <button type="button" class = "remove-btn" onclick="confirm_remove_program_plans({{$val_program_plans->id}})"><i class='bx bxs-trash-alt'></i></button>
                                                     <?php }
                                                     ?>
                                                 </td>   
@@ -923,7 +923,7 @@
                             timer: 1500
                         }).then(result => {
                             $(".btn").attr("disabled", false);
-                            $('#tbl_tr_'+e).remove(); 
+                            $('#tbl_tr_progplan_'+e).remove(); 
                         });
                     }
                 });
