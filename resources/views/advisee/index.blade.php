@@ -94,7 +94,7 @@
                                 <td>{{number_format($student['student_gpa'], 3, '.', '')}}</td>
                                 <td></td>
                                 <td>
-                                    <button type="button" class="btn btn-success btn-sm" onclick="grade_details({{$student['id']}}, {{$student['year_id']}}, {{$student['sem_id']}}, {{$student['year_level']}})" >Success</button>
+                                    <button type="button" class="btn btn-success btn-sm" style= "background:#931d23; border:none;" onclick="grade_details({{$student['id']}}, {{$student['year_id']}}, {{$student['sem_id']}}, {{$student['year_level']}})" > <i class='bx bx-show' style = "font-size:1.2em; margin-right:2px; padding:0;"></i> View</button>
                                 </td>
                             </tr>
                             @endforeach
@@ -133,7 +133,7 @@
                             <td>${response[i].student_gpa}</td>
                             <td></td>
                             <td>
-                                <button type="button" class="btn btn-success btn-sm" onclick="grade_details(${response[i].id}, ${acad_year}, ${acad_semester}, ${response[i].year_level})" >Success</button>
+                                <button type="button" class="btn btn-success btn-sm" style= "background:#931d23; border:none;" onclick="grade_details(${response[i].id}, ${acad_year}, ${acad_semester}, ${response[i].year_level})" > <i class='bx bx-show' style = "font-size:1.2em; margin-right:2px; padding:0;"></i> View</button>
                             </td>
                         </tr>
                     `;

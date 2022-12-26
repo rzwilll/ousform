@@ -125,7 +125,7 @@
                                     ?>
                                 </tr>
                                 @foreach($program_activities as $index => $val_progAc)
-                                <tr id="tbl_tr_{{$val_progAc->id}}">
+                                <tr id="tbl_tr_progAc_{{$val_progAc->id}}">
 
                                     <td>
                                         <?php
@@ -214,7 +214,7 @@
                                     ?>
                                 </tr>
                                 @foreach($program_outputs_deliverables as $index => $val_progDeli)
-                                    <tr id="tbl_tr_{{$val_progDeli->id}}">
+                                    <tr id="tbl_tr_progdeli_{{$val_progDeli->id}}">
 
                                     <td>
                                         <?php
@@ -297,7 +297,7 @@
                                 
                             </tr>
                                 @foreach($program_consultation_advising as $index => $val_consultation_advising)
-                            <tr id = "tbl_tr_{{$val_consultation_advising->id}}">
+                            <tr id = "tbl_tr_progconsult_{{$val_consultation_advising->id}}">
 
                                     <td>
                                         <?php
@@ -386,7 +386,7 @@
                             </thead>
                             <tbody>
                             @foreach($program_risk_challenges as $index => $val_program_risk_challenges)
-                                <tr id = "tbl_tr_{{$val_program_risk_challenges->id}}">
+                                <tr id = "tbl_tr_progrisk_{{$val_program_risk_challenges->id}}">
 
                                 <td>
                                         <?php
@@ -439,7 +439,7 @@
                             </thead>
                            <tbody>
                                 @foreach($program_collaboration_linkages as $index => $val_program_collab)
-                                <tr id = "tbl_tr_{{$val_program_collab->id}}">
+                                <tr id = "tbl_tr_progcollab_{{$val_program_collab->id}}">
                                         <td>
                                             <?php
                                                 if($report_status->status == 1){?>
@@ -489,7 +489,7 @@
                            </thead>
                            <tbody>
                            @foreach($program_problems_encountered as $index => $val_program_problem_encountered)
-                            <tr id = "tbl_tr_{{$val_program_problem_encountered->id}}">
+                            <tr id = "tbl_tr_progproblem_{{$val_program_problem_encountered->id}}">
                                     <!-- <td><input type="text " name="" id="problems" value="{{$val_program_problem_encountered->problem_desc}}" onfocusout="update_program_problems_ecountered({{$val_program_problem_encountered->id}}, 'problem_desc', this)" class="form-control"placeholder="..."></td>    -->
 
                                     <td>
@@ -544,9 +544,9 @@
                             </thead>
                             <tbody> 
                                 @foreach($program_recommendations as $index => $val_program_recommendation)
-                                <tr id = "tbl_tr_{{$val_program_recommendation->id}}">
+                                <tr id = "tbl_tr_progreco_{{$val_program_recommendation->id}}">
                                     <!-- <td><input type="text " name="" id="recommendations" value="{{$val_program_recommendation->recommendation_desc}}"  onfocusout="update_program_recommendations({{$val_program_recommendation->id}}, 'recommendation_desc', this)" class="form-control"placeholder="..."></td>    -->
-
+                                    
                                     <td>
                                         <?php
 
@@ -688,7 +688,7 @@
                             timer: 1500
                         }).then(result => {
                             $(".btn").attr("disabled", false);
-                            $('#tbl_tr_'+e).remove(); 
+                            $('#tbl_tr_progdeli_'+e).remove(); 
                         });
                     }
                 });
@@ -722,7 +722,7 @@
                             timer: 1500
                         }).then(result => {
                             $(".btn").attr("disabled", false);
-                            $('#tbl_tr_'+e).remove(); 
+                            $('#tbl_tr_progAc_'+e).remove(); 
                         });
                     }
                 });
@@ -756,7 +756,7 @@
                             timer: 1500
                         }).then(result => {
                             $(".btn").attr("disabled", false);
-                            $('#tbl_tr_'+e).remove(); 
+                            $('#tbl_tr_progconsult_'+e).remove(); 
                         });
                     }
                 });
@@ -790,7 +790,7 @@
                             timer: 1500
                         }).then(result => {
                             $(".btn").attr("disabled", false);
-                            $('#tbl_tr_'+e).remove(); 
+                            $('#tbl_tr_progrisk_'+e).remove(); 
                         });
                     }
                 });
@@ -824,7 +824,7 @@
                             timer: 1500
                         }).then(result => {
                             $(".btn").attr("disabled", false);
-                            $('#tbl_tr_'+e).remove(); 
+                            $('#tbl_tr_progcollab_'+e).remove(); 
                         });
                     }
                 });
@@ -858,7 +858,7 @@
                             timer: 1500
                         }).then(result => {
                             $(".btn").attr("disabled", false);
-                            $('#tbl_tr_'+e).remove(); 
+                            $('#tbl_tr_progproblem_'+e).remove(); 
                         });
                     }
                 });
@@ -891,7 +891,7 @@
                             timer: 1500
                         }).then(result => {
                             $(".btn").attr("disabled", false);
-                            $('#tbl_tr_'+e).remove(); 
+                            $('#tbl_tr_progreco_'+e).remove(); 
                         });
                     }
                 });
