@@ -624,6 +624,7 @@
                                                         if($index > 2){?>
                                                         <button type="button" class = "remove-btn" onclick="confirm_remove_program_plans({{$val_program_plans->id}})"><i class='bx bxs-trash-alt'></i></button>
                                                     <?php }
+
                                                     ?>
                                                 </td>   
                                             <?php }
@@ -899,7 +900,10 @@
 
         });
     }
+    
     function confirm_remove_program_plans(e){
+        alert(e);
+        return;
         swal({
             text: 'Are you sure you want to remove this?',
             showCancelButton: false,
