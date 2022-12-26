@@ -223,7 +223,13 @@ class AdviseeController extends Controller
     public function show($ids)
     {
         $parameters = explode(" ", $ids);
-        $student_info = Student::where('id', $parameters[0])->first();
+
+        // $student_info = Student::where('id', $parameters[0])->first();
+        $student_info = DB::table('students')
+        ->join('programs', 'students.program_id', '=', 'programs.id')
+        ->where('students.id', $parameters[0])
+        ->select('students.*', 'programs.program_name')->first();
+
         $year_level = $parameters[3];
         $sem_id = $parameters[2];
         $acad_year = $parameters[1];
@@ -287,4 +293,8 @@ class AdviseeController extends Controller
     {
         //
     }
+
+    // public function get_student_cgpa($std_id){
+
+    // }
 }

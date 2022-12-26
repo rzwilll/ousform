@@ -22,7 +22,7 @@
             <th>Grade</th>
         </tr>
         <tr>
-            <td colspan ="3"class="sem-info"><p><b> SY: </b> <b> {{$acad_year->acad_yr}}</b> <b>SEM: </b> <b>{{$sem_id}}</b> <small>(Bachelor of Sciene in Information Technology)</small></p>
+            <td colspan ="3"class="sem-info"><p><b> SY: </b> <b> {{$acad_year->acad_yr}}</b> <b>SEM: </b> <b>{{$sem_id}}</b> <small>({{$student_info->program_name}})</small></p>
             </td>
         </tr>
         
