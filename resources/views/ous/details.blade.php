@@ -904,8 +904,6 @@
     }
     
     function confirm_remove_program_plans(e){
-        alert(e);
-        return;
         swal({
             text: 'Are you sure you want to remove this?',
             showCancelButton: false,
@@ -1212,7 +1210,7 @@
          contentType: false,
          processData: false,
          success: (response) => {
-             
+                
          }
      });
     }

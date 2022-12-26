@@ -70,7 +70,7 @@ Route::get('/ous/remove_program_risk', [App\Http\Controllers\OUSController::clas
 
 
 // problems_recommendation
-Route::get('/ous/update_program_recommendations ', [App\Http\Controllers\OUSController::class, 'update_program_recommendations ']);
+Route::get('/ous/update_program_recommendations ', [App\Http\Controllers\OUSController::class, 'update_program_recommendations']);
 Route::get('/ous/add_program_recommendations', [App\Http\Controllers\OUSController::class, 'add_program_recommendations']);
 Route::get('/ous/remove_program_recommendations', [App\Http\Controllers\OUSController::class, 'remove_program_recommendations']);
 
