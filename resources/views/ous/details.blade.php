@@ -666,7 +666,7 @@
     function confirm_remove_program_output_deliverables(e){
         swal({
             text: 'Are you sure you want to remove this?',
-            showCancelButton: true,
+            showCancelButton: false,
             icon: "warning",
             buttons: true,
             closeModal: false,
@@ -700,7 +700,7 @@
     function confirm_remove_program_engagement_activities(e){
         swal({
             text: 'Are you sure you want to remove this?',
-            showCancelButton: true,
+            showCancelButton: false,
             icon: "warning",
             buttons: true,
             closeModal: false,
@@ -734,7 +734,7 @@
     function confirm_remove_program_consultation(e){
         swal({
             text: 'Are you sure you want to remove this?',
-            showCancelButton: true,
+            showCancelButton: false,
             icon: "warning",
             buttons: true,
             closeModal: false,
@@ -768,7 +768,7 @@
     function confirm_remove_program_risk(e){
         swal({
             text: 'Are you sure you want to remove this?',
-            showCancelButton: true,
+            showCancelButton: false,
             icon: "warning",
             buttons: true,
             closeModal: false,
@@ -802,7 +802,7 @@
     function confirm_remove_program_collaborations(e){
         swal({
             text: 'Are you sure you want to remove this?',
-            showCancelButton: true,
+            showCancelButton: false,
             icon: "warning",
             buttons: true,
             closeModal: false,
@@ -836,7 +836,7 @@
     function confirm_remove_program_problems(e){
         swal({
             text: 'Are you sure you want to remove this?',
-            showCancelButton: true,
+            showCancelButton: false,
             icon: "warning",
             buttons: true,
             closeModal: false,
@@ -869,7 +869,7 @@
     function confirm_remove_program_recommendations(e){
         swal({
             text: 'Are you sure you want to remove this?',
-            showCancelButton: true,
+            showCancelButton: false,
             icon: "warning",
             buttons: true,
             closeModal: false,
@@ -902,7 +902,7 @@
     function confirm_remove_program_plans(e){
         swal({
             text: 'Are you sure you want to remove this?',
-            showCancelButton: true,
+            showCancelButton: false,
             icon: "warning",
             buttons: true,
             closeModal: false,
@@ -947,8 +947,8 @@
             processData: false,
             success: (response) => {
 
-                var newRowContent = `
-                    <tr id="tbl_tr_${response.insertedid}">
+                var newRowContent = ` 
+                    <tr id="tbl_tr_progdeli_${response.insertedid}">
                         <td><input type="text " name="" id="prog_output" onfocusout="update_program_output_deliverables(${response.insertedid}, 'outputs_desc', this)" class="form-control"placeholder="..."></td>
                         <td><input type="text " name="" id="deliverables" onfocusout="update_program_output_deliverables(${response.insertedid}, 'deliverables_desc', this)" class="form-control"placeholder="..."></td>
                         <td class= "remove-td">
@@ -971,7 +971,7 @@
             processData: false,
             success: (response) => {
                 var newRowContent = `
-                    <tr id="tbl_tr_${response.insertedid}">
+                    <tr id="tbl_tr_progAc_${response.insertedid}">
                         <td><input type="text " name="" id="objective" class="form-control"  onfocusout="update_program_engagement_activities(${response.insertedid}, 'objective_desc', this)" placeholder="....."></td>
                         <td><input type="text " name="" id="activities" class="form-control"  onfocusout="update_program_engagement_activities(${response.insertedid}, 'activities_desc', this)" placeholder="....."></td>
                         <td><input type="text " name="" id="accomplishment" class="form-control" onfocusout="update_program_engagement_activities(${response.insertedid}, 'accomplishment_desc', this)" placeholder="....."></td>
@@ -995,7 +995,7 @@
             processData: false,
             success: (response) => {
                 var newRowContent = `
-                    <tr id="tbl_tr_${response.insertedid}">
+                    <tr id="tbl_tr_progconsult_${response.insertedid}">
                         <td><input type="text " name="" id="date" class="form-control"  onfocusout="update_program_consultation_advising(${response.insertedid}, 'date_desc', this)" placeholder="....."></td>
                         <td><input type="text " name="" id="nature" class="form-control"  onfocusout="update_program_consultation_advising(${response.insertedid}, 'advising_nature_desc', this)" placeholder="....."></td>
                         <td><input type="text " name="" id="action" class="form-control" onfocusout="update_program_consultation_advising(${response.insertedid}, 'action_desc', this)" placeholder="....."></td>
@@ -1019,7 +1019,7 @@
             processData: false,
             success: (response) => {
                 var newRowContent = `
-                    <tr id="tbl_tr_${response.insertedid}">
+                    <tr id="tbl_tr_progrisk_${response.insertedid}">
                         <td><input type="text " name="" id="risk" class="form-control"  onfocusout="update_program_risk_challenges(${response.insertedid}, 'risk_desc', this)" placeholder="....."></td>
                         <td class= "remove-td">
                         <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
@@ -1041,7 +1041,7 @@
             processData: false,
             success: (response) => {
                 var newRowContent = `
-                    <tr id="tbl_tr_${response.insertedid}">
+                    <tr id="tbl_tr_progcollab_${response.insertedid}">
                         <td><input type="text " name="" id="collaboration" class="form-control"  onfocusout=" update_program_collaboration_linkages(${response.insertedid}, 'collaboration_desc, this)" placeholder="....."></td>
                         <td class= "remove-td">
                         <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
@@ -1064,7 +1064,7 @@
             processData: false,
             success: (response) => {
                 var newRowContent = `
-                    <tr id="tbl_tr_${response.insertedid}">
+                    <tr id="tbl_tr_progproblem_${response.insertedid}">
                         <td><input type="text " name="" id="problems" class="form-control"  onfocusout="update_program_problems_ecountered(${response.insertedid}, 'problem_desc', this)" placeholder="....."></td>
                         <td class= "remove-td">
                         <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
@@ -1086,7 +1086,7 @@
             processData: false,
             success: (response) => {
                 var newRowContent = `
-                    <tr id="tbl_tr_${response.insertedid}">
+                    <tr id="tbl_tr_progreco_${response.insertedid}">
                         <td><input type="text " name="" id="recommendations" class="form-control"  onfocusout="update_program_recommendations(${response.insertedid}, 'recommendation_desc', this)" placeholder="....."></td>
                         <td class= "remove-td">
                         <button type="button" class = "remove-btn"><i class='bx bxs-trash-alt' onclick="confirm_remove_program_engagement_activities(${response.insertedid})"></i></button>
@@ -1108,7 +1108,7 @@
             processData: false,
             success: (response) => {
                 var newRowContent = `
-                    <tr id="tbl_tr_${response.insertedid}">
+                    <tr id="tbl_tr_progplan_${response.insertedid}">
                         <td><input type="text " name="" id="plans" class="form-control"  onfocusout="update_program_plans(${response.insertedid}, 'plan_desc', this)" placeholder="....."></td>
                         
                         <td class= "remove-td">
