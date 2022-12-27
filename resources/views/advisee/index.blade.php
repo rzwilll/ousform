@@ -82,7 +82,6 @@
                           <th>Full Name</th>
                           <th>Year Level</th>
                           <th>GPA</th>
-                          <th>CGPA</th>
                           <th></th>
                         </tr>
                         <tbody id="tbl-tbody-advisees">
@@ -92,7 +91,7 @@
                                 <td>{{$student['stud_first']}} {{$student['stud_mi']}} {{$student['stud_last']}} </td>
                                 <td>{{$student['year_level']}}</td>
                                 <td>{{number_format($student['student_gpa'], 3, '.', '')}}</td>
-                                <td></td>
+                                
                                 <td>
                                     <button type="button" class="btn btn-success btn-sm" style= "background:#931d23; border:none;" onclick="grade_details({{$student['id']}}, {{$student['year_id']}}, {{$student['sem_id']}}, {{$student['year_level']}})" > <i class='bx bx-show' style = "font-size:1.2em; margin-right:2px; padding:0;"></i> View</button>
                                 </td>
@@ -131,7 +130,7 @@
                             <td>${response[i].stud_first} ${response[i].stud_mi} ${response[i].stud_last} </td>
                             <td>${response[i].year_level}</td>
                             <td>${response[i].student_gpa}</td>
-                            <td></td>
+                        
                             <td>
                                 <button type="button" class="btn btn-success btn-sm" style= "background:#931d23; border:none;" onclick="grade_details(${response[i].id}, ${acad_year}, ${acad_semester}, ${response[i].year_level})" > <i class='bx bx-show' style = "font-size:1.2em; margin-right:2px; padding:0;"></i> View</button>
                             </td>

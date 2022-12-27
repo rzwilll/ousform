@@ -8,7 +8,7 @@
 <div class="student-info">
     <p><b>NAME: </b>{{$student_info->stud_first}} {{$student_info->stud_mi}} {{$student_info->stud_last}}</p>
     <p><b>YEAR LEVEL: </b>{{$year_level}}</p>
-    <p><b>CGPA: </b>1.85</p>
+    <!-- <p><b>CGPA: </b>1.85</p> -->
     <p><b>GPA: </b>{{$gpa}}</p>
 
 </div>
@@ -28,16 +28,16 @@
         
         @foreach($student_grade as $student )
         <tr>
-            <td>{{$student->subject_code}}</td>
-            <td>{{$student->subject_name}}</td>
+            <td class = "eval_info">{{$student->subject_code}}</td>
+            <td class = "eval_info">{{$student->subject_name}}</td>
             <!-- <td>{{$student->subject_unit}}</th> -->
-            <td><b>{{$student->grade}}</b></td>
+            <td class = "eval_info">{{$student->grade}}</td>
         </tr>
         @endforeach
         
         <tr class="gpa-data">
-            <td colspan="2" class=" text-danger gpa">GPA</td>
-            <td class=""><b class=" text-danger">{{$gpa}}</b></td>
+            <td colspan="2" class=" gpa"><b>GPA:</b></td>
+            <td class="">{{$gpa}}</td>
         </tr>
 
 

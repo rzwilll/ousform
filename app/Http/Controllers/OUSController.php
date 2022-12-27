@@ -35,11 +35,26 @@ class OUSController extends Controller
         ->join('advisees', 'advisees.term_id', '=', 'acad_terms.id')
         ->join('reports', 'reports.advisee_id', '=', 'advisees.id')
         ->where('advisees.user_id', '=', auth()->user()->id)
-        ->select('reports.id as re_id', 'acad_years.acad_yr as school_year', 'reports.created_at')
+        ->select('reports.id as re_id', 'reports.status', 'acad_years.acad_yr as school_year', 'reports.created_at')
         ->get();
         return view('ous.index', compact('reports'));
     }
 
+    public function submit_ous_report(Request $request){
+        
+        $data = $request->all();
+        if(isset($data['report_id'])){
+
+                
+            $reports = Reports::where('id', $data['report_id'])->first();
+            $reports->status = 1;
+            $reports->save();
+
+            return response()->json(array('success' => true), 200);
+        }
+
+    }
+    
     public function get_ous_details($id){
         $report_status = Reports::where('id', $id)->first();
         

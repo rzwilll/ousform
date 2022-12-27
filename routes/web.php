@@ -27,7 +27,7 @@ Auth::routes();
 
 Route::group(['middleware' => ['auth']], function() { 
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\AdviseeController:: class, 'index'])->name('home');
 
 Route::get('/advisee/index', [App\Http\Controllers\AdviseeController:: class, 'index'])->name('advisee.index');
 // Route::get('/advisee/view', [App\Http\Controllers\AdviseeController:: class, 'show'])->name('advisee.view');
@@ -91,4 +91,7 @@ Route::get('/ous/update_program_collaboration_linkages', [App\Http\Controllers\O
 Route::get('/ous/add_pogram_collaborations_linkages', [App\Http\Controllers\OUSController::class, 'add_pogram_collaborations_linkages']);
 Route::get('/ous/remove_program_collaborations', [App\Http\Controllers\OUSController::class, 'remove_program_collaborations']);
 // Route::get('/modal_report', [OUSController::class, 'load_modal_report'])->name('ous.gen_report');
+
+Route::get('/ous/submit_ous_report', [App\Http\Controllers\OUSController::class, 'submit_ous_report']);
+
 });

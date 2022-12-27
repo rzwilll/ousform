@@ -20,10 +20,10 @@
                             <td><b>Academic Year:</b></td>
                             <td>2021-2022</td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td><b>Reporting Period:</b></td>
                             <td>Second Semester of A.Y. 2021-2022</td>
-                        </tr>
+                        </tr> -->
                         <tr>
                             <td><b>Report Submission Date:</b></td>
                             <td>May 27, 2022</td>
@@ -644,12 +644,14 @@
 
                                 <?php
                                             if($report_status->status != 1){?>
-                                                <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">Submit Report</b></button>
-                                                <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">Save Changes</b></button>
-                                                <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">Cancel</b></button>
+                                                <button type =button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;" onclick="conferm_submit({{$report_id}});"><b style=" color:white; padding:1em;">Submit Report</b></button>
+                                                <a href="{{route('ous.index')}}" class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">Save as draft</b></a>
+                                                <!-- <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24; color:white;">Save as draft </button> -->
+                                                <!-- <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">Cancel</b></button> -->
 
                                             <?php } else { ?>
-                                            <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">Back</b></button>
+                                            <!-- <button class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">Back</b></button> -->
+                                            <a href="{{route('ous.index')}}" class="mt-2  text-center btn btn-primary" style=" border: none; background: #a41d24;"><b style=" color:white; padding:1em;">Back</b></a>
 
                                             <?php
                                             }
@@ -663,6 +665,42 @@
 
 @endsection
 <script>
+
+    function conferm_submit(e){
+
+        swal({
+            text: 'Are you sure you want to submit this report? Once submitted you can no longer change its content',
+            showCancelButton: false,
+            icon: "warning",
+            buttons: true,
+            closeModal: false,
+        }).then(result => {
+            
+            if (result == true){
+                $(".btn").attr("disabled", true);
+
+                $.ajax({
+                    method: 'GET',
+                    url: '/ous/submit_ous_report/?report_id='+e,
+                    success    :'success',
+                    contentType: false,
+                    processData: false,
+                    success: (response) => {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Your work has been saved',
+                            showConfirmButton: false,
+                            timer: 1500
+                        }).then(result => {
+                            location.reload();
+                        });
+                    }
+                });
+
+            }
+
+        });
+    }
 
     //remove
 
