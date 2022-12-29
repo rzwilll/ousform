@@ -85,9 +85,12 @@ class AdviseeController extends Controller
 
 
             foreach ($student_grade as $std_grade){
-                $total_units = ($total_units + $std_grade->subject_unit);
-                $total_subject_times_unit = ($total_subject_times_unit + ($std_grade->grade * $std_grade->subject_unit));
-                $yearLevel = $std_grade->year_level;
+                if($std_grade-> grade != 'INC'||$std_grade-> grade != 'WDRW' || $std_grade-> grade != 'DRP' ){
+                    $total_units = ($total_units + $std_grade->subject_unit);
+                    $total_subject_times_unit = ($total_subject_times_unit + ((float)$std_grade->grade * $std_grade->subject_unit));
+                    $yearLevel = $std_grade->year_level;
+                }
+                
             }
 
             $gpa = ($total_subject_times_unit/$total_units);
@@ -157,9 +160,12 @@ class AdviseeController extends Controller
 
 
             foreach ($student_grade as $std_grade){
-                $total_units = ($total_units + $std_grade->subject_unit);
-                $total_subject_times_unit = ($total_subject_times_unit + ($std_grade->grade * $std_grade->subject_unit));
-                $yearLevel = $std_grade->year_level;
+                if($std_grade-> grade != 'INC'||$std_grade-> grade != 'WDRW' || $std_grade-> grade != 'DRP' ){
+                    $total_units = ($total_units + $std_grade->subject_unit);
+                    $total_subject_times_unit = ($total_subject_times_unit + ((float)$std_grade->grade * $std_grade->subject_unit));
+                    $yearLevel = $std_grade->year_level;
+                }
+                
             }
 
             $gpa = ($total_subject_times_unit/$total_units);
@@ -243,6 +249,7 @@ class AdviseeController extends Controller
         ->get();
         // return $student_grade;
 
+
         $acad_year = AcadYear::where('id', $parameters[1])->first();
 
         $gpa = 0;
@@ -252,8 +259,10 @@ class AdviseeController extends Controller
 
 
         foreach ($student_grade as $std_grade){
-            $total_units = ($total_units + $std_grade->subject_unit);
-            $total_subject_times_unit = ($total_subject_times_unit + ($std_grade->grade * $std_grade->subject_unit));
+            if($std_grade-> grade != 'INC'||$std_grade-> grade != 'WDRW' || $std_grade-> grade != 'DRP' ){
+                $total_units = ($total_units + $std_grade->subject_unit);
+                $total_subject_times_unit = ($total_subject_times_unit + ((float)$std_grade->grade * $std_grade->subject_unit));
+           }
         }
         $gpa = number_format(($total_subject_times_unit/$total_units), 3, '.', '');
         
