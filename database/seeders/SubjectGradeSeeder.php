@@ -39,7 +39,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                     'id' => ' 254 ',
                     'subject_id' => ' 24 ',
-                    'grade' => ' 3 ',
+                    'grade' => ' 3.00 ',
                     'stud_id' => ' 12 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -3032,7 +3032,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 621 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 21 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3056,7 +3056,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 624 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 21 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3064,7 +3064,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 625 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 21 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3072,7 +3072,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 626 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 21 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3080,7 +3080,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 627 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 21 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3088,7 +3088,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 628 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 21 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3104,7 +3104,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 630 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 21 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3112,7 +3112,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 631 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 21 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3128,7 +3128,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 633 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 21 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3138,7 +3138,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 634 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 22 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3146,7 +3146,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 635 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 22 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3162,7 +3162,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 637 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 22 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3170,7 +3170,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 638 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 22 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3178,7 +3178,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 639 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 22 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3186,7 +3186,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 640 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 22 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3210,7 +3210,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 643 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 22 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3218,7 +3218,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 644 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 22 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3259,7 +3259,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 649 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 23 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3267,7 +3267,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 650 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 23 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3291,14 +3291,14 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 653 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 23 ',
                 'term_id' => '1',
                 'year_level' => '1'
                ],
                [
                 'id' => ' 654 ',
-                'subject_id' => ' 3 ',
+                'subject_id' => ' 3',
                 'grade' => ' 2.25 ',
                 'stud_id' => ' 23 ',
                 'term_id' => '2',
@@ -3307,7 +3307,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 655 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 3 ',
+                'grade' => ' 3.00 ',
                 'stud_id' => ' 23 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3323,7 +3323,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 657 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 23 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3331,7 +3331,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 658 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 23 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3339,7 +3339,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 659 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 23 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3351,7 +3351,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                     'id' => ' 660 ',
                     'subject_id' => ' 1 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 24 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -3359,7 +3359,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 661 ',
                     'subject_id' => ' 2 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 24 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -3391,7 +3391,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 665 ',
                     'subject_id' => ' 17 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 24 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -3399,7 +3399,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 666 ',
                     'subject_id' => ' 21 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 24 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -3407,7 +3407,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 667 ',
                     'subject_id' => ' 3 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 24 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -3415,7 +3415,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 668 ',
                     'subject_id' => ' 25 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 24 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -3423,7 +3423,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 669 ',
                     'subject_id' => ' 8 ',
-                    'grade' => ' 2.5 ',
+                    'grade' => ' 2.50 ',
                     'stud_id' => ' 24 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -3431,7 +3431,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 670 ',
                     'subject_id' => ' 10 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 24 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -3447,7 +3447,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 672 ',
                     'subject_id' => ' 18 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 24 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -3457,7 +3457,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 673 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 25 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3489,7 +3489,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 677 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 25 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3505,7 +3505,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 679 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 25 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3545,7 +3545,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 684 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 25 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3553,7 +3553,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 685 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 25 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3564,7 +3564,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 686 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 26 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3589,7 +3589,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 689 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 26 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3597,14 +3597,14 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 690 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 26 ',
                 'term_id' => '1',
                 'year_level' => '1'
                ],[
                 'id' => ' 691 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 26 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3612,7 +3612,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 692 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 26 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3620,7 +3620,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 693 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 26 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3636,7 +3636,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 695 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 26 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3652,7 +3652,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 697 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 26 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3660,7 +3660,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 698 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 26 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3678,7 +3678,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 700 ',
                     'subject_id' => ' 2 ',
-                    'grade' => ' 2.5 ',
+                    'grade' => ' 2.50 ',
                     'stud_id' => ' 27 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -3686,7 +3686,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 701 ',
                     'subject_id' => ' 24 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 27 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -3694,7 +3694,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 702 ',
                     'subject_id' => ' 12 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 27 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -3702,7 +3702,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 703 ',
                     'subject_id' => ' 33 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 27 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -3710,7 +3710,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 704 ',
                     'subject_id' => ' 17 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 27 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -3718,7 +3718,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 705 ',
                     'subject_id' => ' 21 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 27 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -3726,7 +3726,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 706 ',
                     'subject_id' => ' 3 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 27 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -3734,7 +3734,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 707 ',
                     'subject_id' => ' 25 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 27 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -3750,7 +3750,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 709 ',
                     'subject_id' => ' 10 ',
-                    'grade' => ' 2.5 ',
+                    'grade' => ' 2.50 ',
                     'stud_id' => ' 27 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -3766,7 +3766,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 711 ',
                     'subject_id' => ' 18 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 27 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -3817,7 +3817,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 717 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 28 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3825,7 +3825,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 718 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 28 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3833,7 +3833,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 719 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 28 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3841,7 +3841,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 720 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 28 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3849,7 +3849,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 721 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 28 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3885,7 +3885,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 725 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 29 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3909,7 +3909,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 728 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 29 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3917,7 +3917,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 729 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 29 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3925,7 +3925,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 730 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 29 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3933,7 +3933,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 731 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 29 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -3941,7 +3941,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 732 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 29 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3965,7 +3965,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 735 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 29 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -3981,7 +3981,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 737 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 29 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4007,7 +4007,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 740 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 30 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4015,7 +4015,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 741 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 30 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4023,7 +4023,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 742 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 30 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4031,7 +4031,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 743 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 30 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4039,7 +4039,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 744 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 30 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4047,7 +4047,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 745 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 30 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4055,7 +4055,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 746 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 3 ',
+                'grade' => ' 3.00 ',
                 'stud_id' => ' 30 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4063,7 +4063,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 747 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 30 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4079,7 +4079,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 749 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 30 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4105,7 +4105,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 752 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 31 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4113,7 +4113,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 753 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 31 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4129,7 +4129,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 755 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 31 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4137,7 +4137,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 756 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 31 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4145,7 +4145,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 757 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 31 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4161,7 +4161,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 759 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 31 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4169,7 +4169,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 760 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 31 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4177,7 +4177,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 761 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 31 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4185,7 +4185,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 762 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 31 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4193,7 +4193,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 763 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 31 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4202,7 +4202,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 764 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 32 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4210,7 +4210,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 765 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 32 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4218,7 +4218,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 766 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 32 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4234,7 +4234,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 768 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 32 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4250,7 +4250,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 770 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 32 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4258,7 +4258,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 771 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 32 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4266,7 +4266,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 772 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 5 ',
+                'grade' => ' 5.00 ',
                 'stud_id' => ' 32 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4282,7 +4282,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 774 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 32 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4290,7 +4290,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 775 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 32 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4298,7 +4298,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 776 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 32 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4315,7 +4315,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 778 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 33 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4323,7 +4323,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 779 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 33 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4331,7 +4331,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 780 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 33 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4347,7 +4347,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 782 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 33 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4355,7 +4355,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 783 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 33 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4371,7 +4371,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 785 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 33 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4387,7 +4387,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 787 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 33 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4395,7 +4395,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 788 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 33 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4403,7 +4403,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 789 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 33 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4431,7 +4431,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 792 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 34 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4447,7 +4447,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 794 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 34 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4455,7 +4455,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 795 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 34 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4463,7 +4463,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 796 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 34 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4479,7 +4479,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 798 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 34 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4487,7 +4487,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 799 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 34 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4503,7 +4503,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 801 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 34 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4522,7 +4522,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 803 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 35 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4530,7 +4530,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 804 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 35 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4546,7 +4546,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 806 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 35 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4555,7 +4555,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 807 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 35 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4563,7 +4563,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 808 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 35 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4571,7 +4571,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 809 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 35 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4603,7 +4603,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 813 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 35 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4611,7 +4611,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 814 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 35 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4619,7 +4619,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 815 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 35 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4637,7 +4637,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 817 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 36 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4645,7 +4645,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 818 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 36 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4669,7 +4669,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 821 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 36 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4677,7 +4677,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 822 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 36 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4685,7 +4685,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 823 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 36 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4693,7 +4693,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 824 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 36 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4701,7 +4701,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 825 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 36 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4709,7 +4709,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 826 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 36 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4717,7 +4717,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 827 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 36 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4725,7 +4725,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 828 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 36 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4760,7 +4760,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 832 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 37 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4776,7 +4776,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 834 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 37 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4784,7 +4784,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 835 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 37 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -4792,7 +4792,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 836 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 37 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4808,7 +4808,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 838 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 37 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4816,7 +4816,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 839 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 37 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4824,7 +4824,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 840 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 37 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -4841,7 +4841,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                     'id' => ' 842 ',
                     'subject_id' => ' 1 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 38 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -4849,7 +4849,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 843 ',
                     'subject_id' => ' 2 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 38 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -4857,7 +4857,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 844 ',
                     'subject_id' => ' 24 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 38 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -4865,7 +4865,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 845 ',
                     'subject_id' => ' 12 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 38 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -4881,7 +4881,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 847 ',
                     'subject_id' => ' 17 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 38 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -4889,7 +4889,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 848 ',
                     'subject_id' => ' 21 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 38 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -4905,7 +4905,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 850 ',
                     'subject_id' => ' 25 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 38 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -4913,7 +4913,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 851 ',
                     'subject_id' => ' 8 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 38 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -4921,7 +4921,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 852 ',
                     'subject_id' => ' 10 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 38 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -4929,7 +4929,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 853 ',
                     'subject_id' => ' 34 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 38 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -4937,7 +4937,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 854 ',
                     'subject_id' => ' 18 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 38 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -4948,7 +4948,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 855 ',
                     'subject_id' => ' 1 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 39 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -4964,7 +4964,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 857 ',
                     'subject_id' => ' 24 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 39 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -4972,7 +4972,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 858 ',
                     'subject_id' => ' 12 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 39 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -4980,7 +4980,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 859 ',
                     'subject_id' => ' 33 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 39 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -4988,7 +4988,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 860 ',
                     'subject_id' => ' 17 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 39 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -4996,7 +4996,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 861 ',
                     'subject_id' => ' 21 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 39 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -5012,7 +5012,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 863 ',
                     'subject_id' => ' 25 ',
-                    'grade' => ' 3 ',
+                    'grade' => ' 3.00 ',
                     'stud_id' => ' 39 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -5020,7 +5020,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 864 ',
                     'subject_id' => ' 8 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 39 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -5028,7 +5028,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 865 ',
                     'subject_id' => ' 10 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 39 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -5061,7 +5061,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 869 ',
                     'subject_id' => ' 2 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 40 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -5077,7 +5077,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 871 ',
                     'subject_id' => ' 12 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 40 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -5085,7 +5085,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 872 ',
                     'subject_id' => ' 33 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 40 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -5093,7 +5093,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 873 ',
                     'subject_id' => ' 17 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 40 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -5101,7 +5101,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 874 ',
                     'subject_id' => ' 21 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 40 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -5109,7 +5109,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 875 ',
                     'subject_id' => ' 3 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 40 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -5149,7 +5149,7 @@ class SubjectGradeSeeder extends Seeder
                    [
                     'id' => ' 880 ',
                     'subject_id' => ' 18 ',
-                    'grade' => ' 1 ',
+                    'grade' => ' 1.00 ',
                     'stud_id' => ' 40 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -5176,7 +5176,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 883 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 21 ',
             'term_id' =>'3',
             'year_level' => '2'
@@ -5185,7 +5185,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 884 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 21 ',
             'term_id' =>'3',
             'year_level' => '2'
@@ -5210,7 +5210,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 887 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 21 ',
             'term_id' =>'3',
             'year_level' => '2'
@@ -5258,7 +5258,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 893 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 21 ',
             'term_id' =>'4',
             'year_level' => '2'
@@ -5266,7 +5266,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 894 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 21 ',
             'term_id' =>'4',
             'year_level' => '2'
@@ -5292,7 +5292,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 897 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 3 ',
+            'grade' => ' 3.00 ',
             'stud_id' => ' 22 ',
             'term_id' =>'3',
             'year_level' => '2'
@@ -5316,7 +5316,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 900 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 22 ',
             'term_id' =>'3',
             'year_level' => '2'
@@ -5332,7 +5332,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 902 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 22 ',
             'term_id' =>'4',
             'year_level' => '2'
@@ -5364,7 +5364,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 906 ',
             'subject_id' => ' 7 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 22 ',
             'term_id' =>'4',
             'year_level' => '2'
@@ -5380,7 +5380,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 908 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 22 ',
             'term_id' =>'4',
             'year_level' => '2'
@@ -5399,7 +5399,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 910 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 23 ',
             'term_id' =>'3',
             'year_level' => '2'
@@ -5415,7 +5415,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 912 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 5 ',
+            'grade' => ' 5.00 ',
             'stud_id' => ' 23 ',
             'term_id' =>'3',
             'year_level' => '2'
@@ -5423,7 +5423,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 913 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 23 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5431,7 +5431,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 914 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 23 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5439,7 +5439,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 915 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 23 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5447,7 +5447,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 916 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 23 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5455,7 +5455,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 917 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 3 ',
+            'grade' => ' 3.00 ',
             'stud_id' => ' 23',
             'term_id' => '4',
             'year_level' => '2'
@@ -5463,7 +5463,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 918 ',
             'subject_id' => ' 41 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 23 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5495,7 +5495,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 922 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 23 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5504,7 +5504,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 923 ',
             'subject_id' => ' 4 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 24 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5512,7 +5512,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 924 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 24 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5520,7 +5520,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 925 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 24 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5528,7 +5528,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 926 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 24 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5536,7 +5536,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 927 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 24 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5544,7 +5544,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 928 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 24 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5552,7 +5552,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 929 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 24 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5560,7 +5560,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 930 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 24 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5568,7 +5568,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 931 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 24 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5584,7 +5584,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 933 ',
             'subject_id' => ' 40 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 24 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5600,7 +5600,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 935 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 24 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5608,7 +5608,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 936 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 24 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5634,7 +5634,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 939 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 25 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5658,7 +5658,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 942 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 25 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5666,7 +5666,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 943 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 25 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5674,7 +5674,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 944 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 25 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5682,7 +5682,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 945 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 5 ',
+            'grade' => ' 5.00 ',
             'stud_id' => ' 25 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5690,7 +5690,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 946 ',
             'subject_id' => ' 41 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 25 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5706,7 +5706,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 948 ',
             'subject_id' => ' 7 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 25 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5739,7 +5739,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 952 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 26 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5747,7 +5747,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 953 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 26 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5755,7 +5755,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 954 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 26 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5763,7 +5763,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 955 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 26 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5771,7 +5771,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 956 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 26 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5779,7 +5779,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 957 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 26 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5827,7 +5827,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 963 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 26 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5835,7 +5835,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 964 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 26 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5846,7 +5846,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 965 ',
             'subject_id' => ' 4 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 27 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5854,7 +5854,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 966 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 27 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5862,7 +5862,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 967 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 3 ',
+            'grade' => ' 3.00 ',
             'stud_id' => ' 27 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5870,7 +5870,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 968 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 27 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5878,7 +5878,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 969 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 27 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5886,7 +5886,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 970 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 27 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5894,7 +5894,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 971 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 27 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5910,7 +5910,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 973 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 27 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5918,7 +5918,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 974 ',
             'subject_id' => ' 41 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 27 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5926,7 +5926,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 975 ',
             'subject_id' => ' 40 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 27 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5942,7 +5942,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 977 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 27 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5950,7 +5950,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 978 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 27 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -5969,7 +5969,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 980 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 28 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -5993,7 +5993,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 983 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 28 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6001,7 +6001,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 984 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 28 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6017,7 +6017,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 986 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 28 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6025,7 +6025,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 987 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 28 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6033,7 +6033,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 988 ',
             'subject_id' => ' 41 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 28 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6065,7 +6065,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 992 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 28 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6114,7 +6114,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 998 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 29 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6130,7 +6130,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1000 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 29 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6138,7 +6138,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1001 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 5 ',
+            'grade' => ' 5.00 ',
             'stud_id' => ' 29 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6146,7 +6146,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1002 ',
             'subject_id' => ' 41 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 29 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6162,7 +6162,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1004 ',
             'subject_id' => ' 7 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 29 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6178,7 +6178,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1006 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 29 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6196,7 +6196,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1008 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 30 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6204,7 +6204,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1009 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 30 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6220,7 +6220,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1011 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 30 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6228,7 +6228,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1012 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 30 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6252,7 +6252,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1015 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 3 ',
+            'grade' => ' 3.00 ',
             'stud_id' => ' 30 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6276,7 +6276,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1018 ',
             'subject_id' => ' 7 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 30 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6301,7 +6301,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1021 ',
             'subject_id' => ' 4 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 31 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6309,7 +6309,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1022 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 31 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6325,7 +6325,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1024 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 31 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6333,7 +6333,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1025 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 31 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6341,7 +6341,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1026 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 31 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6349,7 +6349,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1027 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 31 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6357,7 +6357,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1028 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 31 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6373,7 +6373,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1030 ',
             'subject_id' => ' 41 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 31 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6389,7 +6389,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1032 ',
             'subject_id' => ' 7 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 31 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6397,7 +6397,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1033 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 31 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6405,7 +6405,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1034 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 31 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6415,7 +6415,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1035 ',
             'subject_id' => ' 4 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 32 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6431,7 +6431,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1037 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 32 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6455,7 +6455,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1040 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 32 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6463,7 +6463,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1041 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 32 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -6479,7 +6479,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1043 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 3 ',
+            'grade' => ' 3.00 ',
             'stud_id' => ' 32 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -6495,7 +6495,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1045 ',
             'subject_id' => ' 40 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 32 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -6511,7 +6511,7 @@ class SubjectGradeSeeder extends Seeder
            [
             'id' => ' 1047 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 32 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -6529,7 +6529,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1049 ',
     'subject_id' => ' 4 ',
-    'grade' => ' 2 ',
+    'grade' => ' 2.00 ',
     'stud_id' => ' 33 ', 
     'term_id' => '3',
     'year_level' => '2'
@@ -6537,7 +6537,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1050 ',
     'subject_id' => ' 37 ',
-    'grade' => ' 1 ',
+    'grade' => ' 1.00 ',
     'stud_id' => ' 33 ', 
     'term_id' => '3',
     'year_level' => '2'
@@ -6545,7 +6545,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1051 ',
     'subject_id' => ' 38 ',
-    'grade' => ' 3 ',
+    'grade' => ' 3.00 ',
     'stud_id' => ' 33 ', 
     'term_id' => '3',
     'year_level' => '2'
@@ -6553,7 +6553,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1052 ',
     'subject_id' => ' 39 ',
-    'grade' => ' 2 ',
+    'grade' => ' 2.00 ',
     'stud_id' => ' 33 ', 
     'term_id' => '3',
     'year_level' => '2'
@@ -6561,7 +6561,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1053 ',
     'subject_id' => ' 13 ',
-    'grade' => ' 1 ',
+    'grade' => ' 1.00 ',
     'stud_id' => ' 33 ', 
     'term_id' => '3',
     'year_level' => '2'
@@ -6577,7 +6577,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1055 ',
     'subject_id' => ' 19 ',
-    'grade' => ' 1.5 ',
+    'grade' => ' 1.50 ',
     'stud_id' => ' 33 ', 
     'term_id' => '3',
     'year_level' => '2'
@@ -6585,7 +6585,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1056 ',
     'subject_id' => ' 5 ',
-    'grade' => ' 1.5 ',
+    'grade' => ' 1.50 ',
     'stud_id' => ' 33 ', 
     'term_id' => '4',
     'year_level' => '2'
@@ -6594,7 +6594,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1057 ',
     'subject_id' => ' 42 ',
-    'grade' => ' 2.5 ',
+    'grade' => ' 2.50 ',
     'stud_id' => ' 33 ', 
     'term_id' => '4',
     'year_level' => '2'
@@ -6602,7 +6602,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1058 ',
     'subject_id' => ' 41 ',
-    'grade' => ' 2 ',
+    'grade' => ' 2.00 ',
     'stud_id' => ' 33 ', 
     'term_id' => '4',
     'year_level' => '2'
@@ -6610,7 +6610,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1059 ',
     'subject_id' => ' 40 ',
-    'grade' => ' 2 ',
+    'grade' => ' 2.00 ',
     'stud_id' => ' 33 ',
     'term_id' => '4',
     'year_level' => '2'
@@ -6626,7 +6626,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1061 ',
     'subject_id' => ' 16 ',
-    'grade' => ' 2 ',
+    'grade' => ' 2.00 ',
     'stud_id' => ' 33 ', 
     'term_id' => '4',
     'year_level' => '2'
@@ -6634,7 +6634,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1062 ',
     'subject_id' => ' 20 ',
-    'grade' => ' 1 ',
+    'grade' => ' 1.00 ',
     'stud_id' => ' 33 ', 
     'term_id' => '4',
     'year_level' => '2'
@@ -6661,7 +6661,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1065 ',
     'subject_id' => ' 38 ',
-    'grade' => ' 2 ',
+    'grade' => ' 2.00 ',
     'stud_id' => ' 34 ', 
     'term_id' => '3',
     'year_level' => '2'
@@ -6685,7 +6685,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1068 ',
     'subject_id' => ' 35 ',
-    'grade' => ' 1.5 ',
+    'grade' => ' 1.50 ',
     'stud_id' => ' 34 ', 
     'term_id' => '3',
     'year_level' => '2'
@@ -6693,7 +6693,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1069 ',
     'subject_id' => ' 19 ',
-    'grade' => ' 1 ',
+    'grade' => ' 1.00 ',
     'stud_id' => ' 34 ', 
     'term_id' => '3',
     'year_level' => '2'
@@ -6701,7 +6701,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1070 ',
     'subject_id' => ' 5 ',
-    'grade' => ' 2.5 ',
+    'grade' => ' 2.50 ',
     'stud_id' => ' 34 ', 
     'term_id' => '4',
     'year_level' => '2'
@@ -6717,7 +6717,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1072 ',
     'subject_id' => ' 41 ',
-    'grade' => ' 2 ',
+    'grade' => ' 2.00 ',
     'stud_id' => ' 34 ', 
     'term_id' => '4',
     'year_level' => '2'
@@ -6749,7 +6749,7 @@ class SubjectGradeSeeder extends Seeder
    [
     'id' => ' 1076 ',
     'subject_id' => ' 20 ',
-    'grade' => ' 1 ',
+    'grade' => ' 1.00 ',
     'stud_id' => ' 34 ', 
     'term_id' => '4',
     'year_level' => '2'
@@ -6760,7 +6760,7 @@ class SubjectGradeSeeder extends Seeder
                 
         'id' => ' 1077 ',
         'subject_id' => ' 4 ',
-        'grade' => ' 2 ',
+        'grade' => ' 2.00 ',
         'stud_id' => ' 35 ', 
         'term_id' => '3',
         'year_level' => '2'
@@ -6769,7 +6769,7 @@ class SubjectGradeSeeder extends Seeder
         [
         'id' => ' 1078 ',
         'subject_id' => ' 37 ',
-        'grade' => ' 1 ',
+        'grade' => ' 1.00 ',
         'stud_id' => ' 35 ', 
         'term_id' => '3',
         'year_level' => '2'
@@ -6785,7 +6785,7 @@ class SubjectGradeSeeder extends Seeder
         [
         'id' => ' 1080 ',
         'subject_id' => ' 39 ',
-        'grade' => ' 2 ',
+        'grade' => ' 2.00 ',
         'stud_id' => ' 35 ', 
         'term_id' => '3',
         'year_level' => '2'
@@ -6793,7 +6793,7 @@ class SubjectGradeSeeder extends Seeder
         [
         'id' => ' 1081 ',
         'subject_id' => ' 13 ',
-        'grade' => ' 1 ',
+        'grade' => ' 1.00 ',
         'stud_id' => ' 35 ', 
         'term_id' => '3',
         'year_level' => '2'
@@ -6809,7 +6809,7 @@ class SubjectGradeSeeder extends Seeder
         [
         'id' => ' 1083 ',
         'subject_id' => ' 19 ',
-        'grade' => ' 1 ',
+        'grade' => ' 1.00 ',
         'stud_id' => ' 35 ', 
         'term_id' => '3',
         'year_level' => '2'
@@ -6817,7 +6817,7 @@ class SubjectGradeSeeder extends Seeder
         [
         'id' => ' 1084 ',
         'subject_id' => ' 5 ',
-        'grade' => ' 2 ',
+        'grade' => ' 2.00 ',
         'stud_id' => ' 35 ', 
         'term_id' => '4',
         'year_level' => '2'
@@ -6833,7 +6833,7 @@ class SubjectGradeSeeder extends Seeder
         [
         'id' => ' 1086 ',
         'subject_id' => ' 41 ',
-        'grade' => ' 2 ',
+        'grade' => ' 2.00 ',
         'stud_id' => ' 35 ', 
         'term_id' => '4',
         'year_level' => '2'
@@ -6841,7 +6841,7 @@ class SubjectGradeSeeder extends Seeder
         [
         'id' => ' 1087 ',
         'subject_id' => ' 40 ',
-        'grade' => ' 2 ',
+        'grade' => ' 2.00 ',
         'stud_id' => ' 35 ', 
         'term_id' => '4',
         'year_level' => '2'
@@ -6849,7 +6849,7 @@ class SubjectGradeSeeder extends Seeder
         [
         'id' => ' 1088 ',
         'subject_id' => ' 7 ',
-        'grade' => ' 1.5 ',
+        'grade' => ' 1.50 ',
         'stud_id' => ' 35 ', 
         'term_id' => '4',
         'year_level' => '2'
@@ -6857,7 +6857,7 @@ class SubjectGradeSeeder extends Seeder
         [
         'id' => ' 1089 ',
         'subject_id' => ' 16 ',
-        'grade' => ' 2 ',
+        'grade' => ' 2.00 ',
         'stud_id' => ' 35 ', 
         'term_id' => '4',
         'year_level' => '2'
@@ -6865,7 +6865,7 @@ class SubjectGradeSeeder extends Seeder
         [
         'id' => ' 1090 ',
         'subject_id' => ' 20 ',
-        'grade' => ' 1 ',
+        'grade' => ' 1.00 ',
         'stud_id' => ' 35 ', 
         'term_id' => '4',
         'year_level' => '2'
@@ -6875,7 +6875,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1091 ',
             'subject_id' => ' 4 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 36 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -6883,7 +6883,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1092 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 36 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -6891,7 +6891,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1093 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 3 ',
+            'grade' => ' 3.00 ',
             'stud_id' => ' 36 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -6899,7 +6899,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1094 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 36 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -6907,7 +6907,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1095 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 36 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -6915,7 +6915,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1096 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 36 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -6923,7 +6923,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1097 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 36 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -6931,7 +6931,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1098 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 36 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -6939,7 +6939,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1099 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 36 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -6947,7 +6947,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1100 ',
             'subject_id' => ' 41 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 36 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -6955,7 +6955,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1101 ',
             'subject_id' => ' 40 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 36 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -6971,7 +6971,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1103 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 36 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -6979,7 +6979,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1104 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 36 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7006,7 +7006,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1107 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 37 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7014,7 +7014,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1108 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 37 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7030,7 +7030,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1110 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 37 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7062,7 +7062,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1114 ',
             'subject_id' => ' 41 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 37 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7078,7 +7078,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1116 ',
             'subject_id' => ' 7 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 37 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7113,7 +7113,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1120 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 38 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7121,7 +7121,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1121 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 38 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7129,7 +7129,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1122 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 38 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7137,7 +7137,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1123 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 38 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7153,14 +7153,14 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1125 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 38 ', 
             'term_id' => '3',
             'year_level' => '2'
         ],   [
             'id' => ' 1126 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 38 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7176,7 +7176,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1128 ',
             'subject_id' => ' 41 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 38 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7192,7 +7192,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1130 ',
             'subject_id' => ' 7 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 38 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7208,7 +7208,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1132 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 38 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7226,7 +7226,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1134 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 39 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7234,7 +7234,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1135 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 3 ',
+            'grade' => ' 3.00 ',
             'stud_id' => ' 39 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7250,7 +7250,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1137 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 39 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7258,7 +7258,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1138 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 39 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7274,7 +7274,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1140 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 39 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7282,7 +7282,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1141 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 3 ',
+            'grade' => ' 3.00 ',
             'stud_id' => ' 39 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7290,7 +7290,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1142 ',
             'subject_id' => ' 41 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 39 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7331,7 +7331,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1147 ',
             'subject_id' => ' 4 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 40 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7339,7 +7339,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1148 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 40 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7355,7 +7355,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1150 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 40 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7363,7 +7363,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1151 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 40 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7371,7 +7371,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1152 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 40 ', 
             'term_id' => '3',
             'year_level' => '2'
@@ -7387,7 +7387,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1154 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.000 ',
             'stud_id' => ' 40 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7411,7 +7411,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1157 ',
             'subject_id' => ' 40 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 40 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7419,7 +7419,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1158 ',
             'subject_id' => ' 7 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 40 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7427,7 +7427,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1159 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 40 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7435,7 +7435,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1160 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 40 ', 
             'term_id' => '4',
             'year_level' => '2'
@@ -7446,7 +7446,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1161 ',
             'subject_id' => ' 4 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 41 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7454,7 +7454,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1162 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 41 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7478,7 +7478,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1165 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 41 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7486,7 +7486,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1166 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 41 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7494,7 +7494,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1167 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 41 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7502,7 +7502,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1168 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 3 ',
+            'grade' => ' 3.00 ',
             'stud_id' => ' 41 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7526,7 +7526,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1171 ',
             'subject_id' => ' 40 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 41 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7542,7 +7542,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1173 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 41 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7550,7 +7550,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1174 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 41 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7560,7 +7560,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1175 ',
             'subject_id' => ' 4 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 42 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7609,7 +7609,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1181 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 42 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7625,7 +7625,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1183 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 42 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7641,7 +7641,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1185 ',
             'subject_id' => ' 40 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 42 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7649,7 +7649,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1186 ',
             'subject_id' => ' 7 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 42 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7657,7 +7657,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1187 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 42 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7665,7 +7665,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1188 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 42 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7683,7 +7683,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1190 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 3 ',
+            'grade' => ' 3.00 ',
             'stud_id' => ' 43 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7699,7 +7699,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1192 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 43 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7707,7 +7707,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1193 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 43 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7715,7 +7715,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1194 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 43 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7723,7 +7723,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1195 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 43 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7731,7 +7731,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1196 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 43 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7779,7 +7779,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1202 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 43 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7798,7 +7798,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1204 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 44 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7806,7 +7806,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1205 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 44 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7822,7 +7822,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1207 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 44 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7830,7 +7830,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1208 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 44 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7838,7 +7838,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1209 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 44 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7846,7 +7846,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1210 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 44 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7854,7 +7854,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1211 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 44 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7870,7 +7870,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1213 ',
             'subject_id' => ' 40 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 44 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7886,7 +7886,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1215 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 44 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7894,7 +7894,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1216 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 44 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7912,7 +7912,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1218 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 45 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7928,7 +7928,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1220 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 45 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7944,7 +7944,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1222 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 45 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7952,7 +7952,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1223 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 45 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -7960,7 +7960,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1224 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 45 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -7992,7 +7992,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1228 ',
             'subject_id' => ' 7 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 45 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8008,7 +8008,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1230 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 45 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8058,7 +8058,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1236 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 46 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8066,7 +8066,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1237 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 46 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8114,7 +8114,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1243 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 46 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8122,7 +8122,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1244 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 46 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8131,7 +8131,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1245 ',
             'subject_id' => ' 4 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 47 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8139,7 +8139,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1246 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 47 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8147,7 +8147,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1247 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 47 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8155,7 +8155,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1248 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 47 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8163,7 +8163,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1249 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => '47 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8171,7 +8171,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1250 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 47 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8179,7 +8179,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1251 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 47 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8195,7 +8195,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1253 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 47 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8203,7 +8203,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1254 ',
             'subject_id' => ' 41 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 47 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8227,7 +8227,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1257 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 47 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8235,7 +8235,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1258 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 47 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8244,7 +8244,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1259 ',
             'subject_id' => ' 4 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 48 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8261,7 +8261,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1261 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 48 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8269,7 +8269,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1262 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 48 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8277,7 +8277,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1263 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 48 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8293,7 +8293,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1265 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 48 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8301,7 +8301,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1266 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 48 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8325,7 +8325,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1269 ',
             'subject_id' => ' 40 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 48 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8341,7 +8341,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1271 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 48 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8349,7 +8349,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1272 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 48 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8366,7 +8366,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1274 ',
             'subject_id' => ' 37 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 49 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8374,7 +8374,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1275 ',
             'subject_id' => ' 38 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 49 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8382,7 +8382,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1276 ',
             'subject_id' => ' 39 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 49 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8398,7 +8398,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1278 ',
             'subject_id' => ' 35 ',
-            'grade' => ' 1.5 ',
+            'grade' => ' 1.50 ',
             'stud_id' => ' 49 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8406,7 +8406,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1279 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 49 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8414,7 +8414,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1280 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 49 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8422,7 +8422,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1281 ',
             'subject_id' => ' 42 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 49 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8430,7 +8430,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1282 ',
             'subject_id' => ' 41 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 49 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8454,7 +8454,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1285 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 49 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8462,7 +8462,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1286 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 49 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8505,7 +8505,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1291 ',
             'subject_id' => ' 13 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 50 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8521,7 +8521,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1293 ',
             'subject_id' => ' 19 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 50 ',
             'term_id' => '3',
             'year_level' => '2'
@@ -8530,7 +8530,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1294 ',
             'subject_id' => ' 5 ',
-            'grade' => ' 3 ',
+            'grade' => ' 3.00 ',
             'stud_id' => ' 50 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8554,7 +8554,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1297 ',
             'subject_id' => ' 40 ',
-            'grade' => ' 2.5 ',
+            'grade' => ' 2.50 ',
             'stud_id' => ' 50 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8562,7 +8562,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1298 ',
             'subject_id' => ' 7 ',
-            'grade' => ' 2 ',
+            'grade' => ' 2.00 ',
             'stud_id' => ' 50 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8570,7 +8570,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1299 ',
             'subject_id' => ' 16 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 50 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8578,7 +8578,7 @@ class SubjectGradeSeeder extends Seeder
         [
             'id' => ' 1300 ',
             'subject_id' => ' 20 ',
-            'grade' => ' 1 ',
+            'grade' => ' 1.00 ',
             'stud_id' => ' 50 ',
             'term_id' => '4',
             'year_level' => '2'
@@ -8613,7 +8613,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1304 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 41 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -8621,7 +8621,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1305 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 41 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -8629,7 +8629,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1306 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 41 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -8637,7 +8637,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1307 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 41 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -8695,7 +8695,7 @@ class SubjectGradeSeeder extends Seeder
              [
                 'id' => ' 1314 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 42 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -8719,7 +8719,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                 'id' => ' 1317 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 42 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -8727,7 +8727,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                 'id' => ' 1318 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 42 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -8751,7 +8751,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                 'id' => ' 1321 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 42 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -8767,7 +8767,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                 'id' => ' 1323 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 42 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -8783,7 +8783,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                 'id' => ' 1325 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 42 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -8817,7 +8817,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                     'id' => ' 1329 ',
                     'subject_id' => ' 24 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 43 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -8841,7 +8841,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                     'id' => ' 1332 ',
                     'subject_id' => ' 17 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 43 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -8849,7 +8849,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                     'id' => ' 1333 ',
                     'subject_id' => ' 21 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 43 ',
                     'term_id' => '1',
                     'year_level' => '1'
@@ -8865,7 +8865,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                     'id' => ' 1335 ',
                     'subject_id' => ' 25 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 43 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -8881,7 +8881,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                     'id' => ' 1337 ',
                     'subject_id' => ' 10 ',
-                    'grade' => ' 1.5 ',
+                    'grade' => ' 1.50 ',
                     'stud_id' => ' 43 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -8897,7 +8897,7 @@ class SubjectGradeSeeder extends Seeder
                 [
                     'id' => ' 1339 ',
                     'subject_id' => ' 18 ',
-                    'grade' => ' 2 ',
+                    'grade' => ' 2.00 ',
                     'stud_id' => ' 43 ',
                     'term_id' => '2',
                     'year_level' => '1'
@@ -8916,7 +8916,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1341 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 44 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -8932,7 +8932,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1343 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 44 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -8956,7 +8956,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1346 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 44 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -8972,7 +8972,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1348 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 44 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -8980,7 +8980,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1349 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 44 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9015,7 +9015,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1353 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 45 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9039,7 +9039,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1356 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 45 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9063,7 +9063,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1359 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 45 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9071,7 +9071,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1360 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 45 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9079,7 +9079,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1361 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 45 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9103,7 +9103,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1364 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 45 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9129,7 +9129,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1367 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2.24 ',
+                'grade' => ' 2.25 ',
                 'stud_id' => ' 46 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9145,7 +9145,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1369 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 46 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9153,7 +9153,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1370 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 46 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9161,7 +9161,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1371 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 46 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9169,7 +9169,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1372 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 46 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9177,7 +9177,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1373 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 46 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9193,7 +9193,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1375 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 46 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9209,7 +9209,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1377 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 46 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9227,7 +9227,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1379 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 47 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9235,7 +9235,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1380 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 47 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9243,7 +9243,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1381 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 47 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9267,7 +9267,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1384 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 47 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9291,7 +9291,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1387 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 47 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9299,7 +9299,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1388 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 47 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9315,7 +9315,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1390 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 47 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9341,7 +9341,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1393 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 48 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9349,7 +9349,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1394 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 48 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9357,7 +9357,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1395 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 48 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9373,7 +9373,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1397 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 48 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9381,7 +9381,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1398 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 48 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9389,7 +9389,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1399 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 48 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9413,7 +9413,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1402 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 48 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9429,7 +9429,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1404 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 48 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9439,7 +9439,7 @@ class SubjectGradeSeeder extends Seeder
              [
                 'id' => ' 1405 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 49 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9471,7 +9471,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1409 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 49 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9487,7 +9487,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1411 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 49 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9495,7 +9495,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1412 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 49 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9503,7 +9503,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1413 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 49 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9535,7 +9535,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1417 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 49 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9554,7 +9554,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1419 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 50 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9578,7 +9578,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1422 ',
                 'subject_id' => ' 33 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 50 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9586,7 +9586,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1423 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 50 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9594,7 +9594,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1424 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 50 ',
                 'term_id' => '1',
                 'year_level' => '1'
@@ -9602,7 +9602,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1425 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 50 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9610,7 +9610,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1426 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 50 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9618,7 +9618,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1427 ',
                 'subject_id' => ' 8 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 50 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9634,7 +9634,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1429 ',
                 'subject_id' => ' 34 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 50 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9642,7 +9642,7 @@ class SubjectGradeSeeder extends Seeder
             [
                 'id' => ' 1430 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 50 ',
                 'term_id' => '2',
                 'year_level' => '1'
@@ -9659,7 +9659,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1432 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9683,7 +9683,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1435 ',
                 'subject_id' => ' 9 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9691,7 +9691,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1436 ',
                 'subject_id' => ' 23 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9699,7 +9699,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1437 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9707,7 +9707,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1438 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9716,7 +9716,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1439 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9724,7 +9724,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1440 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9732,7 +9732,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1441 ',
                 'subject_id' => ' 6 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9740,7 +9740,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1442 ',
                 'subject_id' => ' 7 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9756,7 +9756,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1444 ',
                 'subject_id' => ' 23 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9764,7 +9764,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1445 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9772,7 +9772,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1446 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9797,7 +9797,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1449 ',
                 'subject_id' => ' 6 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9805,7 +9805,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1450 ',
                 'subject_id' => ' 7 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9821,7 +9821,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1452 ',
                 'subject_id' => ' 23 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9829,7 +9829,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1453 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9837,7 +9837,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1454 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9846,7 +9846,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1455 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9870,7 +9870,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1458 ',
                 'subject_id' => ' 7 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9894,7 +9894,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1461 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9910,7 +9910,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1463 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9926,7 +9926,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1465 ',
                 'subject_id' => ' 6 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9942,7 +9942,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1467 ',
                 'subject_id' => ' 9 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9958,7 +9958,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1469 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9966,7 +9966,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1470 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9982,7 +9982,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1472 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9990,7 +9990,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1473 ',
                 'subject_id' => ' 6 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -9998,7 +9998,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1474 ',
                 'subject_id' => ' 7 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10006,7 +10006,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1475 ',
                 'subject_id' => ' 9 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10014,7 +10014,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1476 ',
                 'subject_id' => ' 23 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10022,7 +10022,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1477 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10030,7 +10030,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1478 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10038,7 +10038,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1479 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10046,7 +10046,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1480 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10062,7 +10062,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1482 ',
                 'subject_id' => ' 7 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10086,7 +10086,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1485 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10094,7 +10094,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1486 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10110,7 +10110,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1488 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10118,7 +10118,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1489 ',
                 'subject_id' => ' 6 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10126,7 +10126,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1490 ',
                 'subject_id' => ' 7 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10134,7 +10134,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1491 ',
                 'subject_id' => ' 9 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10150,7 +10150,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1493 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10158,7 +10158,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1494 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10166,7 +10166,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1495 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10174,7 +10174,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1496 ',
                 'subject_id' => ' 2 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10206,7 +10206,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1500 ',
                 'subject_id' => ' 23 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10214,7 +10214,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1501 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10222,7 +10222,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1502 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10270,7 +10270,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1508 ',
                 'subject_id' => ' 23 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10278,7 +10278,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1509 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10286,7 +10286,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1510 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10295,7 +10295,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1511 ',
                 'subject_id' => ' 1 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10343,7 +10343,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1517 ',
                 'subject_id' => ' 21 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10351,7 +10351,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1518 ',
                 'subject_id' => ' 17 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 1 ',
                 'year_level' => ' 1 '
@@ -10359,7 +10359,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1519 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10367,7 +10367,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1520 ',
                 'subject_id' => ' 28 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10391,7 +10391,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1523 ',
                 'subject_id' => ' 13 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10407,7 +10407,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1525 ',
                 'subject_id' => ' 22 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10423,7 +10423,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1527 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10439,7 +10439,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1529 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10455,7 +10455,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1531 ',
                 'subject_id' => ' 13 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10471,7 +10471,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1533 ',
                 'subject_id' => ' 22 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10495,7 +10495,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1536 ',
                 'subject_id' => ' 28 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10503,7 +10503,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1537 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10519,7 +10519,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1539 ',
                 'subject_id' => ' 13 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10535,7 +10535,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1541 ',
                 'subject_id' => ' 22 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10543,7 +10543,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1542 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10551,7 +10551,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1543 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10583,7 +10583,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1547 ',
                 'subject_id' => ' 13 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10591,7 +10591,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1548 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 3 ',
+                'grade' => ' 3.00 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10607,7 +10607,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1550 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10622,7 +10622,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1552 ',
                 'subject_id' => ' 28 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10630,7 +10630,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1553 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10646,7 +10646,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1555 ',
                 'subject_id' => ' 13 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10654,7 +10654,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1556 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10662,7 +10662,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1557 ',
                 'subject_id' => ' 22 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10670,7 +10670,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1558 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10678,7 +10678,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1559 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10686,7 +10686,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1560 ',
                 'subject_id' => ' 28 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10702,7 +10702,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1562 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10726,7 +10726,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1565 ',
                 'subject_id' => ' 22 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10734,7 +10734,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1566 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10758,7 +10758,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1569 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10782,7 +10782,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1572 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10790,7 +10790,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1573 ',
                 'subject_id' => ' 22 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10798,7 +10798,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1574 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10806,7 +10806,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1575 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10814,7 +10814,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1576 ',
                 'subject_id' => ' 28 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10830,7 +10830,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1578 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10838,7 +10838,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1579 ',
                 'subject_id' => ' 13 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10846,7 +10846,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1580 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10854,7 +10854,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1581 ',
                 'subject_id' => ' 22 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10862,7 +10862,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1582 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10870,7 +10870,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1583 ',
                 'subject_id' => ' 3 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10886,7 +10886,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1585 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10918,7 +10918,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1589 ',
                 'subject_id' => ' 22 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10926,7 +10926,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1590 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10950,7 +10950,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1593 ',
                 'subject_id' => ' 10 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10958,7 +10958,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1594 ',
                 'subject_id' => ' 12 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10974,7 +10974,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1596 ',
                 'subject_id' => ' 24 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10982,7 +10982,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1597 ',
                 'subject_id' => ' 22 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10990,7 +10990,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1598 ',
                 'subject_id' => ' 18 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 2 ',
                 'year_level' => ' 1 '
@@ -10998,7 +10998,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1599 ',
                 'subject_id' => ' 4 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11006,7 +11006,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1600 ',
                 'subject_id' => ' 14 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11022,7 +11022,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1602 ',
                 'subject_id' => ' 29 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11038,7 +11038,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1604 ',
                 'subject_id' => ' 36 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11046,7 +11046,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1605 ',
                 'subject_id' => ' 19 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11070,7 +11070,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1608 ',
                 'subject_id' => ' 15 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11102,7 +11102,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1612 ',
                 'subject_id' => ' 19 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11110,7 +11110,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1613 ',
                 'subject_id' => ' 4 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11118,7 +11118,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1614 ',
                 'subject_id' => ' 14 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11126,7 +11126,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1615 ',
                 'subject_id' => ' 15 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11134,7 +11134,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1616 ',
                 'subject_id' => ' 29 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11142,7 +11142,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1617 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 3 ',
+                'grade' => ' 3.00 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11150,7 +11150,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1618 ',
                 'subject_id' => ' 36 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11158,7 +11158,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1619 ',
                 'subject_id' => ' 19 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11166,7 +11166,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1620 ',
                 'subject_id' => ' 4 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11214,7 +11214,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1626 ',
                 'subject_id' => ' 19 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11230,7 +11230,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1628 ',
                 'subject_id' => ' 14 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11246,7 +11246,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1630 ',
                 'subject_id' => ' 29 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11254,7 +11254,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1631 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11262,7 +11262,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1632 ',
                 'subject_id' => ' 36 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11278,7 +11278,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1634 ',
                 'subject_id' => ' 4 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11294,7 +11294,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1636 ',
                 'subject_id' => ' 15 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11310,7 +11310,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1638 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11326,7 +11326,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1640 ',
                 'subject_id' => ' 19 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11342,7 +11342,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1642 ',
                 'subject_id' => ' 14 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11350,7 +11350,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1643 ',
                 'subject_id' => ' 15 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11366,7 +11366,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1645 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11382,7 +11382,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1647 ',
                 'subject_id' => ' 19 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11406,7 +11406,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1650 ',
                 'subject_id' => ' 15 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11430,7 +11430,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1653 ',
                 'subject_id' => ' 36 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11438,7 +11438,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1654 ',
                 'subject_id' => ' 19 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11446,7 +11446,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1655 ',
                 'subject_id' => ' 4 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11462,7 +11462,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1657 ',
                 'subject_id' => ' 15 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11478,7 +11478,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1659 ',
                 'subject_id' => ' 25 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11494,7 +11494,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1661 ',
                 'subject_id' => ' 19 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11503,7 +11503,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1662 ',
                 'subject_id' => ' 4 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11519,7 +11519,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1664 ',
                 'subject_id' => ' 15 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11551,7 +11551,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1668 ',
                 'subject_id' => ' 19 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 3 ',
                 'year_level' => ' 2 '
@@ -11568,7 +11568,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1670 ',
                 'subject_id' => ' 16 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11616,7 +11616,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1676 ',
                 'subject_id' => ' 27 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 61 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11625,7 +11625,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1677 ',
                 'subject_id' => ' 5 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11641,7 +11641,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1679 ',
                 'subject_id' => ' 30 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11649,7 +11649,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1680 ',
                 'subject_id' => ' 31 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11665,7 +11665,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1682 ',
                 'subject_id' => ' 20 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11673,7 +11673,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1683 ',
                 'subject_id' => ' 26 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11681,7 +11681,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1684 ',
                 'subject_id' => ' 27 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 62 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11697,7 +11697,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1686 ',
                 'subject_id' => ' 16 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11721,7 +11721,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1689 ',
                 'subject_id' => ' 32 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11729,7 +11729,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1690 ',
                 'subject_id' => ' 20 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11737,7 +11737,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1691 ',
                 'subject_id' => ' 26 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 63 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11753,7 +11753,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1693 ',
                 'subject_id' => ' 5 ',
-                'grade' => ' 2.5 ',
+                'grade' => ' 2.50 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11769,7 +11769,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1695 ',
                 'subject_id' => ' 30 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11777,7 +11777,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1696 ',
                 'subject_id' => ' 31 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11793,7 +11793,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1698 ',
                 'subject_id' => ' 20 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11809,7 +11809,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1700 ',
                 'subject_id' => ' 27 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 64 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11825,7 +11825,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1702 ',
                 'subject_id' => ' 16 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11841,7 +11841,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1704 ',
                 'subject_id' => ' 31 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11857,7 +11857,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1706 ',
                 'subject_id' => ' 20 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11873,7 +11873,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1708 ',
                 'subject_id' => ' 27 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 65 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11881,7 +11881,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1709 ',
                 'subject_id' => ' 5 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11913,7 +11913,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1713 ',
                 'subject_id' => ' 32 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11921,7 +11921,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1714 ',
                 'subject_id' => ' 20 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11929,7 +11929,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1715 ',
                 'subject_id' => ' 26 ',
-                'grade' => ' 1 ',
+                'grade' => ' 1.00 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11937,7 +11937,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1716 ',
                 'subject_id' => ' 27 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 66 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11945,7 +11945,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1717 ',
                 'subject_id' => ' 5 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11961,7 +11961,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1719 ',
                 'subject_id' => ' 30 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11969,7 +11969,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1720 ',
                 'subject_id' => ' 31 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -11993,7 +11993,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1723 ',
                 'subject_id' => ' 26 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 67 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -12017,7 +12017,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1726 ',
                 'subject_id' => ' 16 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -12041,7 +12041,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1729 ',
                 'subject_id' => ' 32 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -12065,7 +12065,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1732 ',
                 'subject_id' => ' 27 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 68 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -12081,7 +12081,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1734 ',
                 'subject_id' => ' 16 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -12089,7 +12089,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1735 ',
                 'subject_id' => ' 30 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -12097,7 +12097,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1736 ',
                 'subject_id' => ' 31 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -12105,7 +12105,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1737 ',
                 'subject_id' => ' 32 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -12129,7 +12129,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1740 ',
                 'subject_id' => ' 27 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 69 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -12145,7 +12145,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1742 ',
                 'subject_id' => ' 16 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -12153,7 +12153,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1743 ',
                 'subject_id' => ' 30 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -12161,7 +12161,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1744 ',
                 'subject_id' => ' 31 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -12169,7 +12169,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1745 ',
                 'subject_id' => ' 32 ',
-                'grade' => ' 1.5 ',
+                'grade' => ' 1.50 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '
@@ -12185,7 +12185,7 @@ class SubjectGradeSeeder extends Seeder
                [
                 'id' => ' 1747 ',
                 'subject_id' => ' 26 ',
-                'grade' => ' 2 ',
+                'grade' => ' 2.00 ',
                 'stud_id' => ' 70 ',
                 'term_id' => ' 4 ',
                 'year_level' => ' 2 '

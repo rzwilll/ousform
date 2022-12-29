@@ -26,7 +26,14 @@
                         <td>{{  date('M d, Y', strtotime($val->created_at)) }}</td>
                         <td>
                           
-                          <a href="{{ url('ous/details/'.$val->re_id) }}" type="button" class="btn btn-info"><i class='bx bxs-edit'></i>Edit</a>
+          
+                          <a href="{{ url('ous/details/'.$val->re_id) }}" type="button" class="btn btn-info">
+                            @if($val->status == 1)
+                            <i class='bx bx-show'></i>View
+                            @elseif($val->status!=1)
+                            <i class='bx bxs-edit'></i>Edit
+                            @endif
+                          </a>
                           <!-- <button class="edit-button"> <a href="{{ route('ous.edit')}}"><i class='bx bxs-edit' ></i>Edit</a></button> -->
                           
                       </td>
