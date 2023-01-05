@@ -17,6 +17,7 @@ use App\Models\ProgramPlans;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use Carbon\Carbon;
+use Auth;
 
 
 
@@ -56,7 +57,35 @@ class OUSController extends Controller
     }
     
     public function get_ous_details($id){
+
+
+        $total_REA =0;
+        $total_DEA =0;
+        $total_CEA =0;
+        $total_GPA_below =0;
+        $total_CGPA_below =0;
+        $total_completion = 0;
+        $failure_rate= 0;
+        $dropout_rate=0;
+
+     
+
+
+        $advisee = Auth::user()->name;
         $report_status = Reports::where('id', $id)->first();
+        $report_academic_year = DB::table('acad_years')
+            ->join('acad_terms', 'acad_terms.acadyear_id', '=', 'acad_years.id')
+            ->join('advisees', 'advisees.term_id', '=', 'acad_terms.id')
+            ->join('reports', 'reports.advisee_id', '=', 'advisees.id')
+            ->where('advisees.user_id', '=', auth()->user()->id)
+            ->select('acad_years.id','acad_years.acad_yr as school_year', 'reports.created_at')
+            ->first();
+
+
+            
+    
+         
+        
         
         $program_activities = ProgramEngagementActivities::where("report_id", $id)->get();
         $program_outputs_deliverables = ProgramOutputsDeliverables::where("report_id", $id)->get();
@@ -68,9 +97,160 @@ class OUSController extends Controller
         $program_program_plans = ProgramPlans::where("report_id", $id)->get();
 
         $report_id = $id;
+
+        $program_name = DB::table('advisees')
+        ->join('users', 'users.id', '=', 'advisees.user_id')
+        ->join('students', 'advisees.student_id', '=', 'students.id')
+        ->join('programs','programs.id','students.program_id')
+        ->join('departments','programs.department_id','departments.id')
+        ->join('acad_terms', 'advisees.term_id', '=', 'acad_terms.id')
+        ->where('users.id', '=', auth()->user()->id)
+        ->where('acad_terms.acadyear_id', $report_academic_year->id)
+        ->select('programs.program_name','departments.department_name')
+        ->first(); 
+
+        $adviseelist_students = DB::table('advisees')
+        ->join('users', 'users.id', '=', 'advisees.user_id')
+        ->join('students', 'advisees.student_id', '=', 'students.id')
+        ->join('programs','programs.id','students.program_id')
+        ->join('acad_terms', 'advisees.term_id', '=', 'acad_terms.id')
+        ->where('users.id', '=', auth()->user()->id)
+        ->where('acad_terms.acadyear_id', $report_academic_year->id)
+        ->select('students.*','programs.program_name')
+        ->get(); 
+
+        // dd($program_name);
+
+
+        $total_program_enrolees = DB::table('advisees')
+        ->join('users', 'users.id', '=', 'advisees.user_id')
+        ->join('students', 'advisees.student_id', '=', 'students.id')
+        ->join('acad_terms', 'advisees.term_id', '=', 'acad_terms.id')
+        ->join('programs','programs.id','students.program_id')
+        ->where('acad_terms.acadyear_id', $report_academic_year->id)
+        ->select('students.*')
+        ->count(); 
+
+        //return $total_program_enrolees;
+
+        $total_enroled = DB::table('advisees')
+        ->join('users', 'users.id', '=', 'advisees.user_id')
+        ->join('students', 'advisees.student_id', '=', 'students.id')
+        ->join('acad_terms', 'advisees.term_id', '=', 'acad_terms.id')
+        ->join('programs','programs.id','students.program_id')
+        ->where('users.id', '=', auth()->user()->id)
+        ->where('acad_terms.acadyear_id', $report_academic_year->id)
+        ->select('students.*')
+        ->count(); 
+
+        $students_failing = DB::table('subject_grades')
+        ->join('acad_terms', 'subject_grades.term_id', '=', 'acad_terms.id')
+        ->join('subjects', 'subject_grades.subject_id', '=', 'subjects.id')
+        ->join('advisees','subject_grades.stud_id','advisees.student_id')
+        ->join('users','advisees.user_id','users.id')
+        ->where('users.id', Auth::user()->id)
+        ->where('acad_terms.acadyear_id', $report_academic_year->id) 
+        ->where('subject_grades.grade', 5)
+        ->count();
+
+        $total_grade_INC = DB::table('subject_grades')
+        ->join('acad_terms', 'subject_grades.term_id', '=', 'acad_terms.id')
+        ->join('subjects', 'subject_grades.subject_id', '=', 'subjects.id')
+        ->join('advisees','subject_grades.stud_id','advisees.student_id')
+        ->join('users','advisees.user_id','users.id')
+        ->where('users.id', Auth::user()->id)
+        ->where('acad_terms.acadyear_id', $report_academic_year->id) 
+        ->where('subject_grades.grade', 'INC')
+        ->count();
+
+        $total_withdrawn_students  = DB::table('subject_grades')
+        ->join('acad_terms', 'subject_grades.term_id', '=', 'acad_terms.id')
+        ->join('subjects', 'subject_grades.subject_id', '=', 'subjects.id')
+        ->join('advisees','subject_grades.stud_id','advisees.student_id')
+        ->join('users','advisees.user_id','users.id')
+        ->where('users.id', Auth::user()->id)
+        ->where('acad_terms.acadyear_id', $report_academic_year->id) 
+        ->where('subject_grades.grade', 'WDRW')
+        ->count();
+
+
+
+
+
+        foreach ($adviseelist_students as $value) {
+
+            $student_grade = DB::table('subject_grades')
+            ->join('acad_terms', 'subject_grades.term_id', '=', 'acad_terms.id')
+            ->join('subjects', 'subject_grades.subject_id', '=', 'subjects.id')
+            ->where('acad_terms.acadyear_id', $report_academic_year->id) 
+            ->where('subject_grades.stud_id',$value->id)
+            ->select('subjects.subject_unit', 'subject_grades.year_level', 'subject_grades.grade')
+            ->get();
+
+            $gpa = 0;
+            $total_units = 0;
+            $total_subject_times_unit = 0;
+            $yearLevel = "";
+
+            
+            foreach ($student_grade as $std_grade){
+                if($std_grade-> grade != 'INC'||$std_grade-> grade != 'WDRW' || $std_grade-> grade != 'DRP' ){
+                    $total_units = ($total_units + $std_grade->subject_unit);
+                    $total_subject_times_unit = ($total_subject_times_unit + ((float)$std_grade->grade * $std_grade->subject_unit));
+                    $yearLevel = $std_grade->year_level;
+
+                }
+
+                if($std_grade == 'DRP')
+                {
+                    $dropout_rate++;
+                }
+                
+            }
+
+            $gpa = ($total_subject_times_unit/$total_units);
+
+
+            if($gpa <= 1.25)
+            {
+                $total_REA ++;
+            }
+
+            if($gpa <= 1.5)
+            {
+                $total_CEA ++;
+            }
+
+            if($gpa <= 1.75)
+            {
+                $total_DEA ++;
+            }
+
+            if($gpa <= 3)
+            {
+                $total_completion++;
+            }
+
+            if($gpa > 3)
+            {
+                $failure_rate++;
+            }
+
+            if($gpa > 2.50)
+            {
+                $total_GPA_below++;
+            }
+
+           
+        }
+
+        // dd($total_completion);
+ 
         return view('ous.details', compact('program_activities', 'report_id', 'program_outputs_deliverables', 
                     'program_consultation_advising', 'program_risk_challenges','program_collaboration_linkages', 
-                    'program_problems_encountered','program_recommendations','program_program_plans', 'report_status'));
+                    'program_problems_encountered','program_recommendations','program_program_plans', 'report_status',
+                    'advisee','report_academic_year','total_grade_INC','total_withdrawn_students',
+                    'total_REA','total_CEA','total_DEA','total_GPA_below','total_CGPA_below','total_program_enrolees','total_enroled','program_name','total_completion','students_failing','failure_rate'));
     }
 
     //UPDATE 
