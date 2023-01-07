@@ -58,7 +58,6 @@ class OUSController extends Controller
     
     public function get_ous_details($id){
 
-
         $total_REA =0;
         $total_DEA =0;
         $total_CEA =0;
@@ -67,6 +66,8 @@ class OUSController extends Controller
         $total_completion = 0;
         $failure_rate= 0;
         $dropout_rate=0;
+        $total_gpa = 0;
+        $total_cgpa = 0;
 
      
 
@@ -78,8 +79,12 @@ class OUSController extends Controller
             ->join('advisees', 'advisees.term_id', '=', 'acad_terms.id')
             ->join('reports', 'reports.advisee_id', '=', 'advisees.id')
             ->where('advisees.user_id', '=', auth()->user()->id)
+            ->where('reports.id',$id)
             ->select('acad_years.id','acad_years.acad_yr as school_year', 'reports.created_at')
             ->first();
+
+
+        // return $report_academic_year->id;
 
 
             
@@ -240,17 +245,22 @@ class OUSController extends Controller
             {
                 $total_GPA_below++;
             }
+            
+            $total_gpa +=$gpa;
 
-           
+            $total_cgpa += $gpa;
+
+            
         }
 
-        // dd($total_completion);
+         
  
         return view('ous.details', compact('program_activities', 'report_id', 'program_outputs_deliverables', 
                     'program_consultation_advising', 'program_risk_challenges','program_collaboration_linkages', 
                     'program_problems_encountered','program_recommendations','program_program_plans', 'report_status',
-                    'advisee','report_academic_year','total_grade_INC','total_withdrawn_students',
-                    'total_REA','total_CEA','total_DEA','total_GPA_below','total_CGPA_below','total_program_enrolees','total_enroled','program_name','total_completion','students_failing','failure_rate'));
+                    'advisee','report_academic_year','total_grade_INC','total_withdrawn_students', 'total_gpa','total_cgpa',
+                    'total_REA','total_CEA','total_DEA','total_GPA_below','total_CGPA_below','total_program_enrolees',
+                    'total_enroled','program_name','total_completion','students_failing','failure_rate'));
     }
 
     //UPDATE 

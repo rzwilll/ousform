@@ -49,34 +49,37 @@
                             </tr>
                             <tr>
                                 @php
-                                    $percentage =  $total_completion/$total_enroled * 100;
+                                    $percentage_survival =  $total_completion/$total_enroled * 100;
                                 @endphp
                                 <td><b>Survival Rate:</b></td>
-                                <td>{{ $percentage }}% ({{ $total_completion }} out of {{ $total_enroled }})</td>
+                                <td>{{ $percentage_survival }}% ({{ $total_completion }} out of {{ $total_enroled }})</td>
                                 <td><b>Number of Students withdraw from the Program:</b></td>
                                 <td>{{ $total_withdrawn_students }}</td>
                             </tr>
                             <tr>
                                 @php
-                                   $percentage =  $total_completion/$total_enroled * 100;
+                                   $percentage_cpmpletion=  $total_completion/$total_enroled * 100;
                                 @endphp
                                 <td><b>Completion Rate:</b></td>
-                                <td>{{ $percentage }}% ({{ $total_completion }} out of {{ $total_enroled }})</td>
+                                <td>{{ $percentage_cpmpletion }}% ({{ $total_completion }} out of {{ $total_enroled }})</td>
                                 <td><b>Number of Students with failing grades:</b></td>
                                 <td>{{ $students_failing }}</td>
                             </tr>
                             <tr>
+                                @php
+                                    $percentage_promotion =  $total_completion/$total_enroled * 100;
+                                @endphp
                                 <td><b>Promotion Rate:</b></td>
-                                <td>100% (out of {{ $total_enroled }})</td>
+                                <td>{{ $percentage_promotion }} ( {{ $total_completion }}out of {{ $total_enroled }})</td>
                                 <td><b>Number of Rizal's Excellence Awardees:</b></td>
                                 <td>{{ $total_REA }}</td>
                             </tr>
                             <tr>
                                 @php
-                                    $percentage =  $failure_rate/$total_enroled * 100;
+                                    $percentage_failure_rate =  $failure_rate/$total_enroled * 100;
                                 @endphp
                                 <td><b>Failure Rate:</b></td>
-                                <td>{{ $percentage }}% ({{ $failure_rate }} out of {{ $total_enroled }})</td>
+                                <td>{{ $percentage_failure_rate }}% ({{ $failure_rate }} out of {{ $total_enroled }})</td>
                                 <td><b>Number of Chancellor's Excellence Awardees:</b></td>
                                 <td>{{ $total_CEA }}</td>
                             </tr>
@@ -87,14 +90,20 @@
                                 <td>{{ $total_DEA }}</td>
                             </tr>
                             <tr>
+                                @php
+                                    $average_gpa =  $total_gpa/$total_enroled;
+                                @endphp
                                 <td><b>Average GPA of Students:</b></td>
-                                <td>1.5444</td>
+                                <td>{{ number_format($average_gpa,3) }}</td>
                                 <td><b>Number of Students with GPA below 2.50:</b></td>
                                 <td> {{ $total_GPA_below }}</td>
                             </tr>
                             <tr>
+                                @php
+                                    $average_cgpa =  $total_cgpa/$total_enroled;
+                                @endphp
                                 <td><b>Average CGPA of Students:</b></td>
-                                <td>1.75</td>
+                                <td>{{ number_format($average_cgpa,3) }}</td>
                                 <td><b>Number of Students with CGPA below 2.50:</b></td>
                                 <td> {{ $total_GPA_below }}</td>
                             </tr>
